@@ -1,0 +1,125 @@
+.index {
+  overflow: hidden;
+  position: relative;
+
+  &__logo {
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    z-index: 3;
+    &__graphic {
+      @include break('mobile') {
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 10;
+      }
+    }
+  }
+
+  &__nav {
+    z-index: 5;
+  }
+
+  &__nav a {
+    color: $color-brutal-blue;
+    font-family: $ff-syne;
+    font-variation-settings: $fw-syne-bold;
+    transition: color 0.25s ease-out;
+
+    &:hover {
+      color: $color-brutal-yellow;
+    }
+  }
+
+  &__big-typo {
+    color: $color-brutal-blue;
+    font-family: $ff-syne;
+    font-size: 25vw;
+    font-variation-settings: "wght" 600;
+    left: 50%;
+    letter-spacing: -0.03em;
+    line-height: 0.8;
+    mix-blend-mode: difference;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.35s ease-out, transform 0.35s, font-variation-settings 0.4s ease-out;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+    &.--visible {
+      opacity: 1;
+      font-variation-settings: "wght" 900;
+      //transform: translate(-50%, -50%);
+      transition: opacity 0.15s ease-in, transform 0.35s, font-variation-settings 1s cubic-bezier(.03,.71,.33,1);
+    }
+  }
+
+  &__hands__left,
+  &__hands__right {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+
+    canvas {
+      opacity: 0;
+      width: 23vw;
+      min-width: 250px;
+      visibility: hidden;
+      transition: transform 0.5s ease-out, opacity 0.5s;
+
+      &.--visible {
+        opacity: 1;
+        transform: translate(0, 0);
+        visibility: visible;
+      }
+    }
+
+  }
+
+  &__hands__left {
+    transform: translate(-85%, -20%);
+
+    @include break('tablet') {
+      transform: translate(-150%, -50%);
+    }
+
+    canvas {
+      transform: translate(-25%, 0);
+      transform-origin: 150% 50%;
+    }
+  }
+
+  &__hands__right {
+    transform: translate(-20%, -85%);
+    z-index: 2;
+
+    @include break('tablet') {
+      transform: translate(50%, -50%);
+    }
+
+    canvas {
+      transform: translate(25%, 0);
+      transform-origin: -50% 50%;
+    }
+  }
+}
+
+
+.index.--view-out {
+  .index__big-typo,
+  .index__hands__left,
+  .index__hands__right {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+}
+

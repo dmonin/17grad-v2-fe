@@ -1,0 +1,12 @@
+extends layout
+
+block styles
+  if isDev
+    link(rel='stylesheet', href=scriptPath + 'css/view-index.css')
+  else
+    style
+      include ../../public/css/view-index.css
+
+block content
+  include index-content
+

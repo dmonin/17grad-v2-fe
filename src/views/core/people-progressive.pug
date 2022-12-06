@@ -1,0 +1,58 @@
+section.core__people.parallax
+  h1
+    +translation('core.people.title')
+  .section-intro
+    p
+      +translation('core.people.text.line1')
+    p
+      +translation('core.people.text.line2')
+  .core__people__member.parallax
+    .core__people__member__picture
+      .core__people__member__picture__slices
+        each val in [1, 2, 3]
+          .image-slice
+            +responsiveImage(media.imgDmitry, '30vw', 'Dmitry Monin', {loading: 'lazy'})
+    h3
+      span Dmitry
+    p
+      +translation('core.people.dmitry')
+  .core__people__member.parallax
+    .core__people__member__picture
+      .core__people__member__picture__slices
+        each val in [1, 2, 3]
+          .image-slice
+            +responsiveImage(media.imgSascha, '30vw', 'Sascha Geerdts', {loading: 'lazy'})
+    h3
+      span Sascha
+    p
+      +translation('core.people.sascha')
+  .core__people__member.parallax
+    .core__people__member__picture
+      .core__people__member__picture__slices
+        each val in [1, 2, 3]
+          .image-slice
+            +responsiveImage(media.imgNatalie, '30vw', 'Natalie Pawlik', {loading: 'lazy'})
+    h3
+      span Natalie
+    p
+      +translation('core.people.natalie')
+  .core__people__member.parallax
+    .core__people__member__picture
+      .core__people__member__picture__slices
+        each val in [1, 2, 3]
+          .image-slice
+            +responsiveImage(media.imgDean, '30vw', 'Dean Jürges', {loading: 'lazy'})
+    h3
+      span Dean
+    p
+      +translation('core.people.dean')
+  .core__people__member.parallax
+    .core__people__member__picture
+      .core__people__member__picture__slices
+        each val in [1, 2, 3]
+          .image-slice
+            +responsiveImage(media.imgGavin, '30vw', 'Gavin Auerswald', {loading: 'lazy'})
+    h3
+      span Gavin
+    p
+      +translation('core.people.gavin')

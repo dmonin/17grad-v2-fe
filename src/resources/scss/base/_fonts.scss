@@ -1,0 +1,35 @@
+$ff-path: '/'; // cross origin doesn't work for fonts
+@font-face{
+  font-family: $ff-light;
+  src:url($ff-path + "fonts/futura-light/futura-light.woff2") format("woff2"), url($ff-path + "fonts/futura-light/futura-light.woff") format("woff");
+  font-display: fallback;
+}
+@font-face{
+  font-family: $ff-default;
+  src:url($ff-path + "fonts/futura-medium/futura-medium.woff2") format("woff2"), url($ff-path + "fonts/futura-medium/futura-medium.woff") format("woff");
+  font-display: fallback;
+}
+@font-face{
+  font-family: $ff-bold;
+  src:url($ff-path + "fonts/futura-heavy/futura-heavy.woff2") format("woff2"), url($ff-path + "fonts/futura-heavy/futura-heavy.woff") format("woff");
+  font-display: fallback;
+}
+@font-face{
+  font-family: $ff-accent;
+  src:url($ff-path + "fonts/saol-display/SaolDisplay-Regular.woff2") format("woff2"), url($ff-path + "fonts/saol-display/SaolDisplay-Regular.woff") format("woff");
+  font-weight: 800;
+  font-display: fallback;
+}
+
+///  Brutal
+@font-face{
+  font-family: $ff-syne;
+  src:url($ff-path + "fonts/syne/Syne-VariableFont_wght.ttf") format("truetype");
+  font-display: fallback;
+}
+
+@font-face{
+  font-family: $ff-syne-italic;
+  src:url($ff-path + "fonts/syne/Syne-Italic.woff2") format("woff2"), url($ff-path + "fonts/syne/Syne-Italic.woff") format("woff");
+  font-display: fallback;
+}

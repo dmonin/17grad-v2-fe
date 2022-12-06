@@ -1,0 +1,72 @@
+.offline {
+  background:#ffffff;
+  box-sizing: border-box;
+  color: #101014;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.3;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 4rem;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+
+  h2, h3 {
+    color: $color-blue;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    @include break("mobile") {
+      font-size: 6vw;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+
+  p, .email {
+    margin: 0.25rem 0;
+    @include break("mobile") {
+      margin: 1rem 0;
+    }
+  }
+
+  .contact-options {
+    display: flex;
+    margin-top: 1rem;
+    max-width: 1024px;
+    flex-wrap: wrap;
+  }
+
+  .contact-item {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .email {
+    display: flex;
+    .email-item {
+      margin: 0 0.1rem;
+    }
+  }
+
+  .address span {
+    display: block;
+  }
+
+  .rtl {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+}
+

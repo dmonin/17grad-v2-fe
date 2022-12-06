@@ -1,0 +1,27 @@
+section.core__header.parallax.appear(data-appear-duration=3000)
+    h1
+      +translation('core.header.h1')
+    .core__header__square &nbsp;
+    h2
+      div.header-text
+        span
+          +translation('core.header.h2.weare')
+      div.header-text
+        span
+          +translation('core.header.h2.seventeen')
+        span
+          +translation('core.header.h2.degrees')
+    .core__header__content
+      .core__header__content__info
+        h3
+          span.futura
+            +translation('core.header.text.line1')
+          span &nbsp;
+          span
+            +translation('core.header.text.line2')
+        p
+          +translation('core.header.since.text')
+          +translation('core.header.since.year')
+    .core__header__picture
+      .core__header__picture__wrap
+        +responsiveImage(media.imgTeam, '78vw', texts['core.header.imagealt'])

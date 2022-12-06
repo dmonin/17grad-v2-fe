@@ -1,0 +1,52 @@
+@import "../ui/article";
+@import "../ui/hotspot";
+
+.play-view {
+  // background: #fff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+.play-area {
+  // background: transparent url("/webgl/play/background-progressive.jpg");
+  // background-size: cover;
+  height: 100vh;
+  width: 300vw;
+
+  .element {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 300px;
+
+    &.editable:hover .collage-item {
+      outline: 1px solid #E4EA4533;
+    }
+
+    &.editor-selected .collage-item,
+    &.editor-selected:hover .collage-item {
+      outline: 1px solid #4747fe;
+    }
+  }
+
+  .collage-item {
+    line-height: 0;
+    font-size: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .element[data-alignment=top] .collage-item {
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .element[data-alignment=bottom] .collage-item {
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 0);
+  }
+}

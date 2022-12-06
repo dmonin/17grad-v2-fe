@@ -1,0 +1,12 @@
+section.core__clients.parallax
+  h1
+    +translation('core.clients.h1')
+  .section-intro.appear(data-appear-duration=1000)
+    p.appear(data-letter=texts['core.clients.text'].substr(0, 1))
+      span
+        +translation('core.clients.text')
+  .core__clients__list.cmp(data-clients=clients.join(','))
+    -var visibleClients = clients.slice(0, 12)
+    each client in visibleClients
+      .client(data-name=client)
+        +icon(client)

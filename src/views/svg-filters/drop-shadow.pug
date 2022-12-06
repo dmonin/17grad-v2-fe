@@ -1,0 +1,9 @@
+svg(height='0' xmlns='http://www.w3.org/2000/svg')
+  filter#filter-drop-shadow
+    fegaussianblur(in='SourceAlpha' stddeviation='4')
+      feoffset(dx='12' dy='12' result='offsetblur')
+        feflood(flood-color='rgba(0,0,0,0.5)')
+          fecomposite(in2='offsetblur' operator='in')
+            femerge
+              femergenode
+                femergenode(in='SourceGraphic')

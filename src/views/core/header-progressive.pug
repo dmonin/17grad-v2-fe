@@ -1,0 +1,24 @@
+section.core__header.parallax.appear
+  .background-circles.cmp
+  .core__header__bg
+  h1(data-label='core')
+    +translation('core.header.h1')
+  h2(data-label='17\260')
+    div 17&deg;
+  .core__header__picture
+    .core__header__picture__wrap
+      +responsiveImage(media.imgTeam, '78vw', texts['core.header.imagealt'], {
+        'data-webgl-program': 'image-distort'
+      })
+  .core__header__content
+    h3.appear
+      span.futura
+        +translation('core.header.text.line1')
+      span &nbsp;
+      span
+        +translation('core.header.text.line2')
+    p
+      +translation('core.header.since.text')
+      +translation('core.header.since.year')
+  .yellow-half-circle
+  canvas.webgl-overlay

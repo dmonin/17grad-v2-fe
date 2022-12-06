@@ -1,0 +1,39 @@
+.loading {
+  height: 100%;
+  left: 0;
+  // mix-blend-mode: multiply;
+  overflow: hidden;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+
+  .loading-text {
+    // color: $color-corporate-blue;
+    font-size: 15vw;
+    line-height: 1;
+    opacity: 1;
+    // height: 100%;
+    left: 50%;
+
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 80%;
+    transform: translate(100vw, -50%);
+    // transform: translate(-50%, -50%);
+    transition: transform 1s ease-out;
+  }
+
+  &.--visible .loading-text {
+    transform: translate(-50%, -50%);
+    visibility: visible;
+  }
+
+  &.--hidden .loading-text {
+    transform: translate(-150vw, -50%);
+    visibility: visible;
+    transition-timing-function: ease-in;
+  }
+}

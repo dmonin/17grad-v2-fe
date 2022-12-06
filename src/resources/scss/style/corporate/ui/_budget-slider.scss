@@ -1,0 +1,15 @@
+.budget-slider {
+  .track {
+    background: $color-corporate-blue;
+  }
+
+  .value {
+    // color: $color-corporate-blue;
+    font-family: $ff-accent;
+  }
+
+  .track-min,
+  .track-max {
+    background: $color-corporate-blue;
+  }
+}

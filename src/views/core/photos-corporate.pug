@@ -1,0 +1,18 @@
+section.core__photos
+  .core__photos__photo1.parallax
+    h2(data-extra="handshakes") handshakes
+    - var aspectRatio= media.imgHandshake.height / media.imgHandshake.width
+    .image-wrap(style="--aspect-ratio: " + aspectRatio)
+      +responsiveImage(media.imgHandshake, '56vw', 'Corporate Handshake', {loading: 'lazy'})
+  .core__photos__photo2.parallax
+    .square
+    - var aspectRatio= media.imgInterior.height / media.imgInterior.width
+    .image-wrap(style="--aspect-ratio: " + aspectRatio)
+      +responsiveImage(media.imgInterior, isMobile ? '80vw' : '40vw', 'Standing Desk, Wood, Metal', {loading: 'lazy'})
+  .core__photos__photo3.parallax
+    - var aspectRatio= media.imgDiscussion.height / media.imgDiscussion.width
+    .image-wrap(style="--aspect-ratio: " + aspectRatio)
+      +responsiveImage(media.imgDiscussion, '48vw', 'Corporate Meeting', {loading: 'lazy'})
+    .square
+    .ornament.svg-icon.parallax
+      include ../icons/corporate-ornament

@@ -1,0 +1,32 @@
+.logo {
+  content-visibility: visible;
+  contain: initial;
+
+  svg {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 0.25s ease-out;
+
+    &:first-child {
+      color: $color-progressive-yellow;
+      transform: translate(-2px, -2px);
+    }
+
+    &:last-child {
+      color: $color-progressive-blue;
+      mix-blend-mode: multiply;
+      transform: translate(2px, 2px);
+    }
+  }
+
+  &:hover {
+    svg:first-child {
+      transform: translate(-4px, -4px);
+    }
+
+    svg:last-child {
+      transform: translate(4px, 4px);
+    }
+  }
+}

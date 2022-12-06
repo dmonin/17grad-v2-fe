@@ -1,0 +1,36 @@
+@use "sass:math";
+
+.work-list__slide {
+  h3 {
+    color: $color-corporate-blue;
+  }
+
+  &.--project &__content__info {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(5px);
+  }
+
+  &__button {
+    background: $color-corporate-blue;
+    $icon-aspect-ratio: math.div(46, 20);
+    @include inline-icon() {
+      height: 16px;
+      margin-left: 1rem;
+      width: 16px * $icon-aspect-ratio;
+    }
+
+    @include break("tablet") {
+      display: flex;
+      padding: 1.5em 2em;
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__image-secondary .shadow {
+    background: rgba(71, 71, 254, 0.65);
+    backdrop-filter: blur(3px);
+    //opacity: 0.5;
+  }
+}

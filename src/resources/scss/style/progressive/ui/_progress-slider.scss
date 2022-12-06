@@ -1,0 +1,25 @@
+.progress-slider {
+  font-family: $ff-bold;
+
+  .bar {
+    background: #D1CBC8;
+    height: 1px;
+  }
+  .track {
+    height: 3px;
+    transform: translate(0, -1px);
+  }
+  .value-of {
+    display: none;
+  }
+
+  button {
+    color: $color-progressive-blue;
+    font-family: inherit;
+    text-transform: lowercase;
+  }
+  button:hover {
+    color: $color-progressive-yellow;
+    //font-kerning: 3;
+  }
+}

@@ -1,0 +1,24 @@
+body {
+  overscroll-behavior: none;
+}
+
+.scrollable {
+  overscroll-behavior: none;
+  overflow: hidden;
+  // overflow: scroll;
+  // &.--initialized {
+  //   overflow: hidden;
+  // }
+}
+
+.scrollable__content {
+  overscroll-behavior: none;
+  touch-action: pan-y;
+  display: flex;
+}
+
+.scrollable__item {
+  touch-action: pan-y;
+  flex-shrink: 0;
+  flex-grow: 1;
+}

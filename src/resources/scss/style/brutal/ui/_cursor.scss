@@ -1,0 +1,45 @@
+#cursor {
+  &.--hi {
+    .cursor-state.--in .icon-container,
+    .cursor-state.--out .icon-container,
+    .cursor-state .icon-container {
+      height: 100px;
+      width: 100px;
+      transition-duration: 0.5s;
+      transition-delay: 0s;
+    }
+  }
+
+  &.--drag,
+  &.--dragging {
+    .cursor-state {
+      transition: transform 0.2s ease-out;
+    }
+    .icon-container {
+      transition: none;
+    }
+    .cursor-state.--in,
+    .cursor-state.--out {
+      transform: translate(-50%, -50%);
+    }
+  }
+  &.--dragging {
+    .cursor-state {
+      transform: translate(-50%, -50%) scale(2.2);
+    }
+  }
+}
+#cursor-bg {
+  border-width: 5px;
+  color: $color-brutal-blue;
+
+  &.--drag,
+  &.--dragging {
+    color: $color-brutal-blue;
+  }
+
+  &.--dragging {
+    height: 80px;
+    width: 80px;
+  }
+}

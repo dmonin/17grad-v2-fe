@@ -1,0 +1,22 @@
+
+
+.index.--view-out {
+  .index__logo__angle {
+    transition: transform 1s ease-in 0.25s;
+    transform: translate(-50%, -200vh);
+  }
+
+  .index__logo__graphic {
+    transition: transform 1s ease-in;
+    transform: translate(-50%, -200vh);
+  }
+  .index__about {
+    transition: transform 1s ease-in 0.25s;
+    transform: translate(0, -100vh);
+  }
+
+  .index__nav {
+    transition: transform 1s ease-in 0.35s;
+    transform: translate(0, -100vh);
+  }
+}

@@ -1,0 +1,106 @@
+.top-button {
+  background: transparent;
+  border: 0px none;
+  padding: 0;
+  // height: 72px;
+  // width: 72px;
+
+  .arrow {
+    background: none;
+    @include break('mobile') {
+      background: $color-brutal-blue;
+    }
+
+    border-radius: 50%;
+    height: 72px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: height 1.1s, width 1.1s;
+    width: 72px;
+    z-index: 2;
+
+    &.arrow-up {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+
+    &:after {
+      @extend %pseudo-element;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      @include brutalArrow('FFE6A3');
+      transform:  translate(-50%, -50%) scale(0.6, 0.6);
+    }
+
+    &.arrow-back:after {
+      transform:  translate(-50%, -50%) scale(-0.6, 0.6);
+    }
+  }
+
+
+  &[data-direction=back] .arrow {
+    display: block;
+    transform:  translate(-50%, -50%) scaleX(-1);
+    transition: transform 0.15s, width 0.15s, height 0.15s;
+  }
+
+  &:hover .arrow {
+    // background-color: $color-brutal-pink;
+    height: 78px;
+    width: 78px;
+  }
+
+  .top-button__text {
+    color: $color-brutal-blue;
+    transform: rotate(var(--angle, 0deg)) translate(-62px, -62px);
+    transform-origin: 100% 100%;
+    mix-blend-mode: difference;
+
+  }
+  .char {
+    --i: calc(100% / (var(--char-total) + 1));
+    --units: 1;
+    --l: calc(var(--char-total) + 1);
+    --rotation-unit: calc((1turn / var(--l)) * var(--char-index, 1));
+    transform: rotate(var(--rotation-unit));
+    transform-origin: center;
+    width: 124px;
+    height: 124px;
+    text-align: center;
+    // offset-path: path('M124,62 C124,96.24165 96.24165,124 62,124 27.75835,124 0,96.24165 0,62 0,27.75835 27.75835,0 62,0 96.24165,0 124,27.75835 124,62 z');
+    // offset-distance: calc(var(--i) * var(--char-index));
+    position: absolute;
+    // padding-top: 1rem;
+    top: 0rem;
+    left: 0rem;
+  }
+
+  .--view-out &,
+  &.appear {
+    .top-button__text {
+      opacity: 0;
+      transition: opacity 0.25s ease-in;
+    }
+
+    .arrow {
+      transform: translate(-50%, -250%);
+      transition: transform 0.25s ease-in 0.15s;
+    }
+  }
+
+  &.--appear-in {
+    .arrow {
+      transform: translate(-50%, -50%);
+      transition: transform 0.25s ease-out 0.5s;
+    }
+
+    .top-button__text {
+      opacity: 1;
+      transition: opacity 0.25s ease-out 0.65s;
+    }
+  }
+
+}

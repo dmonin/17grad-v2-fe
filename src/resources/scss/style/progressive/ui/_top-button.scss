@@ -1,0 +1,17 @@
+.top-button {
+  background: $color-progressive-yellow;
+  border: 0px none;
+  color: $color-progressive-blue;
+  font-family: $ff-bold;
+  font-size: 1.25rem;
+
+  .arrow {
+    @include progressiveArrow('4747FE');
+  }
+
+  &:before {
+    @include progressiveArrow('4747FE');
+  }
+
+
+}

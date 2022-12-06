@@ -1,0 +1,98 @@
+.index {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: $spacing-header-mobile;
+  position: relative;
+  width: 100%;
+
+  h1 {
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+    font-style: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  @include break('mobile') {
+    padding-top: $spacing-header-desktop;
+  }
+
+  @include break('tablet-landscape') {
+    overflow: hidden;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    width: 80vw;
+    z-index: 2;
+
+    @include break('tablet-landscape') {
+      flex: 1;
+      width: 70vw;
+    }
+  }
+
+  &__about {
+    line-height: 1.2;
+    margin: 0 auto;
+    text-indent: 2rem;
+    font-size: 8vw;
+    width: auto;
+    padding: $spacing-border-mobile;
+    @include break('tablet-landscape') {
+      padding: $spacing-border-desktop;
+      text-indent: 6rem;
+    }
+
+    @include break('tablet-landscape') {
+      bottom: $spacing-border-desktop;
+      font-size: 3.2vw;
+      padding: 0;
+      right: $spacing-border-desktop;
+      position: absolute;
+      width: 36%;
+      text-indent: 1em;
+    }
+  }
+
+  &__nav {
+    box-sizing: border-box;
+    font-size: 25vw;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 3;
+
+    @include break('mobile') {
+      font-size: 10vw;
+    }
+
+    @include break('tablet-landscape') {
+      font-size: 3.5vw;
+    }
+
+    .scrollable__content {
+      padding: 0 $spacing-border-mobile;
+      @include break('tablet-landscape') {
+        padding: $spacing-border-desktop;
+      }
+    };
+
+    ul {
+      display: flex;
+    }
+    li {
+      margin-right: 3rem;
+      position: relative;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+

@@ -1,0 +1,44 @@
+.style-switcher
+  include ../mixins/icon
+  include ../mixins/translation
+  include close
+  .magic
+    video(muted=true, crossorigin='anonymous', playsinline=true)
+    .decoration
+  h2
+    div.style-switcher__header
+      span
+        +translation('style-switch.header.start')
+      span.flexible
+        +translation('style-switch.header.end')
+  .style-switcher__content
+    .style-switcher__item.--corporate
+      .text
+        +translation('style-switch.corporate')
+    .style-switcher__item.--progressive
+      .text
+        +translation('style-switch.progressive')
+      .text
+        +translation('style-switch.progressive')
+    .style-switcher__item.--brutal(data-label=texts['style-switch.brutal'])
+      .text(data-label=texts['style-switch.brutal'])
+        +translation('style-switch.brutal')
+    .style-switcher__slider
+      .style-switcher__slider__track
+        svg(class="style-shape",version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+          path
+        svg(class="style-shape",version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+          path
+    .style-switcher__slider__dot.--corporate #[.select-button]
+      svg(class="style-shape",version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+        path
+    .style-switcher__slider__dot.--progressive #[.select-button]
+      svg(class="style-shape",version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+        path
+    .style-switcher__slider__dot.--brutal #[.select-button]
+      svg(class="style-shape",version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+        path
+  .style-switcher__info
+    h3
+    .style-switcher__info__description
+      p

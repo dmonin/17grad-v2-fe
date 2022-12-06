@@ -1,0 +1,51 @@
+include mixins/responsive-image.pug
+include mixins/icon.pug
+include mixins/top-button.pug
+include mixins/translation.pug
+div(data-appear-duration=3000, class=fromPath && fromPath.match(/work.+/) ? "work-view --appearing" : "work-view appear --appearing")
+  if style == 'progressive'
+    .background-circles.cmp
+  +topButton(texts['work.top-button'], baseUrl + 'contact')
+  .work-list.scrollable.cmp(data-name='scrollable',data-drag-speed=0.8,data-snap-delay=1000,data-scrollboth='true')
+    .scrollable__content
+      .scrollable__item.work-list__slide.--start.parallax
+        .work-list__slide__content
+          h1(data-label='Work')
+            +translation('work.intro.h1')
+          p
+            +translation('work.intro.line1')
+          p
+            +translation('work.intro.line2')
+      each project in projects
+        .scrollable__item.work-list__slide.parallax.--project(data-name=project.id, data-color1=project.color1, data-color2=project.color2,data-no-drag-cursor="true")
+          .work-list__slide__image(data-cursor='eye,,eye').cmp
+            +responsiveImage(project.image1, '56vw', project.image1Title)
+            .work-list__slide__image-secondary
+              +responsiveImage(project.image2, '10vw', project.image2Title)
+              .shadow
+          .work-list__slide__content(data-cursor='eye,,eye')
+            .work-list__slide__content__info
+              h2.project-title
+                span= project.title_line1
+                |
+                |
+                span= project.title_line2
+              h3.project-client.appear
+                span= project.clientShort
+            .work-list__slide__button(data-cursor='eye,,eye')
+              span
+                +translation('work.button.view-case')
+              .arrow
+      div.work-list__end
+  .progress-slider.cmp(data-name='progress')
+    .position
+      span.value 0
+      |
+      |
+      span.value-of / 0
+    if style == 'brutal'
+      include work/work-progress-brutal
+    else
+      include work/work-progress
+    button(data-cursor='active')
+      +translation('work.button.next')

@@ -1,0 +1,42 @@
+.style-switch-button {
+  @extend %button-reset;
+  border: 2px solid #000;
+  border-radius: 30px;
+  contain: layout paint;
+  content-visibility: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 2rem 0.5rem 3rem;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50%;
+  top: $spacing-header-mobile;
+  z-index: 5;
+
+  @include break('tablet') {
+    font-size: 1.25rem;
+    top: $spacing-header-desktop;
+  }
+
+  @include break('laptop') {
+    font-size: 1.5rem;
+    padding: 1rem 3rem 1rem 4rem;
+  }
+
+  &:before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 1rem;
+    left: 1.25rem;
+    margin-top: -2px;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    width: 1rem;
+
+    @include break('laptop') {
+      left: 2rem;
+    }
+  }
+}

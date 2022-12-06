@@ -1,0 +1,78 @@
+// Icons
+.value-icon.appear circle,
+.value-icon.appear ellipse {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 2s ease-in-out;
+}
+
+.value-icon.--appear-in ellipse,
+.value-icon.--appear-in circle {
+  stroke-dashoffset: 0;
+}
+
+.value-icon.appear line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  transition: stroke-dashoffset 2s ease-in-out;
+}
+
+.value-icon.--appear-in line {
+  stroke-dashoffset: 0;
+}
+
+
+.value-icon.appear path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: stroke-dashoffset 2s ease-in-out;
+}
+
+.value-icon.--appear-in path {
+  stroke-dashoffset: 0;
+}
+
+.value-icon.appear g.corporate-value-icon path {
+  opacity: 0;
+  transform: translate(0, 20%);
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-delay: 2s;
+}
+
+.value-icon.--appear-in g.corporate-value-icon path {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+// Value Texts
+.core__values__value h3 .appear,
+.core__values__value p.appear {
+  opacity: 0.05;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translate(0, 20%);
+}
+
+.core__values__value h3 .--appear-in,
+.core__values__value p.--appear-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.core__values__value:nth-child(2) {
+  g.corporate-value-icon path {
+    transition-delay: 2.5s;
+  }
+  h3 span, p {
+    transition-delay: 0.5s;
+  }
+}
+.core__values__value:nth-child(3) {
+  g.corporate-value-icon path {
+    transition-delay: 3s;
+  }
+  h3 span, p {
+    transition-delay: 0.75s;
+  }
+}

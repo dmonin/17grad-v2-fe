@@ -1,0 +1,53 @@
+.style-switch-button {
+  contain: layout paint;
+  content-visibility: auto;
+  cursor: pointer;
+  height: 25px;
+  // transform: translate(-50%, -50%);
+  transition: transform 1s cubic-bezier(.75,-0.5,0,1.75);
+  position: fixed;
+  width: 25px;
+  z-index: 10;
+  visibility: hidden;
+  will-change: transform;
+
+  svg {
+    transition: transform 0.25s ease-in-out;
+  }
+
+  &.left {
+    left: 30px;
+    transform: translate(-200%, 0) skew(30deg, 30deg);
+    top: var(--position, 0);
+  }
+
+  &.top {
+    top: $spacing-header-mobile;
+    @include break('tablet') {
+      top: $spacing-header-desktop;
+    }
+
+    left: var(--position, 0);
+    margin-top: -0.35rem;
+    transform: translate(0, -200%) skew(30deg, 30deg);
+  }
+
+  &.right {
+    right: 30px;
+    top: var(--position, 0);
+    transform: translate(200%, 0) skew(30deg, 30deg);
+  }
+
+  &.--visible {
+    visibility: visible;
+    transform: translate(0, 0);
+  }
+
+  &.--visible:hover svg {
+    transform: scale(1.1);
+   }
+
+  svg path {
+    fill: $color-blue;
+  }
+}

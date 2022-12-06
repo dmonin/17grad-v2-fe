@@ -1,0 +1,139 @@
+.navigation {
+  background: $color-brutal-yellow;
+
+  &__header {
+    font-family: $ff-syne;
+    font-variation-settings: $fw-syne-bold;
+    top: 2em;
+  }
+
+  a {
+    transition: color 0.3s ease-out ;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  &__content-bg-menu {
+    background: $color-brutal-yellow;
+  }
+
+  .navigation__links nav.main {
+    li {
+      color: $color-brutal-yellow ;
+      //color: rgba (0, 0, 0, 0);
+      position: relative;
+      width: fit-content;
+      a span {
+        transition: font-variation-settings 0.5s ease-out;
+      }
+    }
+    li .prefix {
+      color: inherit;
+      position: static;
+
+      &:after {
+        background: $color-brutal-pink;
+        border: 0px none;
+        height: 3px;
+        transition: height 0.25s linear;
+        bottom: 12px;
+
+        .nav-expanded & {
+          transition-delay: 0s;
+        }
+      }
+    }
+    li:hover .prefix:after {
+      height: 0.36em;
+      transition: height 0.2s ease-in-out;
+    }
+
+    li:hover a span {
+      font-variation-settings: "wght" 900;
+      transition: font-variation-settings 0.3s ease-out;
+    }
+
+    .num {
+      color: $color-brutal-pink;
+    }
+
+    a {
+      color: $color-brutal-blue;
+      font-family: $ff-syne;
+      font-variation-settings: $fw-syne-bold;
+    }
+
+    li.active a {
+      color: $color-brutal-blue;
+      font-family: $ff-syne-italic;
+      letter-spacing: 1rem;
+      mix-blend-mode: difference;
+      //-webkit-text-stroke: none;
+    }
+
+    li.active .prefix:after {
+      height: 0.36em;
+    }
+
+    li.active .num {
+      color: $color-brutal-blue;
+    }
+  }
+
+  @include break('tablet-landscape', 'max') {
+    &__content,
+    &__footer {after
+      a {
+        color: white;
+      }
+    }
+  }
+
+  &__footer {
+    h3 {
+      color: $color-brutal-pink;
+      font-size: 1rem;
+    }
+  }
+
+  &__footer__item ul {
+    a:hover {
+      color: $color-brutal-pink;
+      text-decoration: line-through;
+    }
+
+  }
+
+  &__content-bg {
+    background: $color-brutal-blue;
+  }
+
+  &__content {
+    color: $color-brutal-white;
+
+    .address p:first-of-type {
+      font-family: $ff-syne;
+      font-variation-settings: $fw-syne-bold;
+    }
+
+    &__item:last-child a {
+      color: $color-brutal-yellow;
+      transition: color 0.3s ease-out ;
+      &:after {
+        transition: margin-top 0.2s ease-out ;
+        border-bottom: 2px solid $color-brutal-pink;
+      }
+    }
+    & a:hover {
+      color: $color-brutal-pink;
+
+      &:after {
+        margin-top: 0.65em;
+      }
+    }
+  }
+}

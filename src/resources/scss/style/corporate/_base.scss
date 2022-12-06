@@ -1,0 +1,36 @@
+html, body {
+  background: $color-corporate-dark;
+  color: $color-corporate-white;
+  font-family: $ff-light, $ff-default, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: $ff-accent, 'Times New Roman', Times, serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 4.5rem;
+  @include break('mobile') {
+    font-size: 12.5vw;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  @include break("mobile") {
+    font-size: calc(1.8rem + 3.3vw);
+  }
+
+  @include break("tablet") {
+    font-size: calc(1.8rem + 2.8vw);
+  }
+}
+
+h3 {
+  font-size: calc(1.5rem + 1.3vw);
+}
+
+.highlight {
+  font-family: $ff-default;
+}

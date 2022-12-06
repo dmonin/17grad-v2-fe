@@ -1,0 +1,98 @@
+nav.navigation
+  .navigation__header
+    +translation('navigation.header')
+  include close
+  .navigation__content-bg
+  .navigation__loader
+  .navigation__wrap
+    .navigation__main
+      .navigation__links
+        .navigation__content-bg-menu
+        nav.main
+          ul
+            li(data-path='/').active
+              .prefix
+                .num 00
+              a(href='/', data-cursor='active')
+                span
+                  +translation('navigation.item.index')
+            li(data-path='/work')
+              .prefix
+                .num 01
+              a(href='work', data-cursor='active')
+                span
+                  +translation('navigation.item.work')
+            li(data-path='/core')
+              .prefix
+                .num 02
+              a(href='core', data-cursor='active')
+                span
+                  +translation('navigation.item.core')
+            li(data-path='/contact')
+              .prefix
+                .num 03
+              a(href='contact', data-cursor='hi')
+                span
+                  +translation('navigation.item.contact')
+      .navigation__content
+        .navigation__content__items
+          .navigation__content__item
+            h3
+              +translation('navigation.contact.h1')
+            .address
+              a(href=texts['navigation.contact.address.link'],data-cursor='active')
+                span
+                  strong
+                    +translation('navigation.contact.address.line1')
+                span
+                  +translation('navigation.contact.address.line2')
+                span
+                  +translation('navigation.contact.address.line3')
+                  .arrow
+          .navigation__content__item
+            h3
+              +translation('navigation.write-us')
+            p
+              a(href='mailto:hej@17grad.com',data-cursor='hi')
+                span hej@17grad.com
+    .navigation__footer
+      .navigation__footer__item
+        h3
+          +translation('navigation.more')
+        ul
+          li
+            a(href='https://dribbble.com/17GRAD',data-cursor='active')
+              span dribbble
+          li
+            a(href='https://www.instagram.com/17_grad/',data-cursor='active')
+              span instagram
+          li
+            a(href='https://medium.com/reflektor-blog',data-cursor='active')
+              span medium
+      .navigation__footer__item
+        ul
+          if locale == 'en'
+            li
+              a(href='/de',data-cursor='active',rel='redirect')
+                span Deutsch
+            li
+              a(href='/es',data-cursor='active',rel='redirect')
+                span Español
+          else if locale == 'de'
+            li
+              a(href='/',data-cursor='active',rel='redirect')
+                span English
+            li
+              a(href='/es',data-cursor='active',rel='redirect')
+                span Español
+          else if locale == 'es'
+            li
+              a(href='/',data-cursor='active',rel='redirect')
+                span English
+            li
+              a(href='/de',data-cursor='active',rel='redirect')
+                span Deutsch
+          li
+            a(href='imprint',data-cursor='active')
+              span
+                +translation('navigation.imprint')

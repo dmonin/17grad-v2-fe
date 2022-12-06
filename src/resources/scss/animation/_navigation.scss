@@ -1,0 +1,224 @@
+.navigation {
+  height: 0%;
+  // transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out;
+
+  .nav-expanded & {
+    height: 100%;
+    transition: height 0.4s ease-in-out;
+  }
+
+  .nav-out & {
+    transform: translate(0, -100%);
+    transition: transform 0.4s ease-in-out 0.4s;
+  }
+
+  &__header {
+    .nav-expanded & {
+      animation: appearTopBar 0.6s ease-out 0.4s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .nav-out & {
+      animation: dissappearTopBar 0.4s ease-in;
+    }
+
+  }
+
+  &__content-bg {
+    height: 0;
+    transition: height 0.6s ease-in-out 0.4s;
+    .nav-expanded & {
+      height: 100%;
+    }
+
+    .nav-out & {
+      transform: translate(0, -100%);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  &__content-bg-menu {
+    height: 100%;
+    transform: translate(0, -100%);
+    transition: transform 0.4s ease-in-out 0.4s;
+    .nav-expanded & {
+      transform: translate(0, 0%);
+
+    }
+
+    .nav-out & {
+      transform: translate(0, -100%);
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+
+  nav.main li .prefix:after {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+
+    .nav-expanded & {
+      transition: transform 0.6s ease-in-out 0.4s;
+      transform: scaleX(1);
+    }
+
+    .nav-out & {
+      transition: transform 0.4s ease-in-out;
+      transform-origin: 100% 0;
+      transform: scaleX(0);
+    }
+  }
+
+  &__content h3,
+  nav.main .num {
+    .nav-expanded & {
+      animation: appearHeader 0.6s ease-in-out 0.4s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .nav-out & {
+      animation: dissapearHeader 0.4s ease-in-out;
+    }
+  }
+
+  nav.main a {
+    .nav-expanded & {
+      animation: appearLargeElement 0.6s ease-out 0.4s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+    }
+
+    .nav-out & {
+      animation: dissapearLargeElement 0.4s ease-in;
+    }
+  }
+
+  &__footer,
+  .address,
+  &__content__item p {
+    .nav-expanded & {
+      animation: appearMediumElement 0.6s ease-in-out 0.4s forwards;
+      opacity: 0;
+    }
+
+    .nav-out & {
+      animation: dissapearMediumElement 0.4s ease-in-out;
+    }
+  }
+}
+
+@keyframes appearSmallElement {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes appearTopBar {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes dissappearTopBar {
+  0% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -150%);
+  }
+}
+
+@keyframes appearHeader {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes appearMediumElement {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes appearLargeElement {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes dissapearHeader {
+  0% {
+    opacity: 0.5;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+}
+
+@keyframes dissapearSmallElement {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+}
+
+
+@keyframes dissapearMediumElement {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, -30px);
+  }
+}
+
+@keyframes dissapearLargeElement {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -40px);
+  }
+}

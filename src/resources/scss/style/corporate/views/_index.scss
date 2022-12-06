@@ -1,0 +1,134 @@
+@use "sass:math";
+
+.index {
+  a {
+    transition: color 0.2s ease-in;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__logo {
+    &__graphic {
+      $ratio: math.div(612, 1044);
+      position: relative;
+      perspective: 2000px;
+      transform-style: preserve-3d;
+      transform-origin: 50% 50%;
+
+      @include break('mobile') {
+        padding-top: $ratio * 100%;
+      }
+
+      @include break('tablet-landscape') {
+        // height: 80vw;
+        left: 50%;
+        width: 80vw;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    svg {
+      // height: 100%;
+      width: 100%;
+      transform: rotateZ(-17deg);
+
+      @include break('mobile') {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) rotateX(calc(40deg * var(--mouse-y, 1))) rotateY(calc(-40deg * var(--mouse-x, 1))) rotateZ(-17deg);
+        width: 70%
+      }
+    }
+
+    .logo-square rect {
+      fill:none;
+      stroke:#030303;
+      stroke-width:1;
+      stroke-miterlimit:10;
+    }
+
+    rect, .logo-spiral path {
+      opacity: 0;
+      transition: opacity 0.2s ease-out;
+    }
+
+    &__angle {
+      cursor: pointer;
+      left: 50%;
+      // font-size: 2rem;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: transform 0.25s ease-out;
+      z-index: 2;
+      &:hover {
+        color: $color-corporate-blue;
+        // transform: translate(-50%, -50%) rotate(-17deg);
+      }
+    }
+
+    &.--wireframe rect,
+    &.--wireframe .logo-spiral path {
+      opacity: 1;
+    }
+
+    .logo-spiral path {
+      fill:none;
+      stroke:#707070;
+      stroke-width:1;
+      stroke-miterlimit:10;
+      stroke-dasharray:3;
+    }
+
+    .logo-dotted-region rect {
+      fill:none;
+      stroke:#707070;
+      stroke-width:1;
+      stroke-miterlimit:4;
+      stroke-dasharray:3;
+    }
+
+    .logo-triangle polygon {
+      fill:#4747FE;
+    }
+  }
+
+  &__about {
+    h1 {
+      font-family: $ff-accent;
+    }
+    z-index: 3;
+  }
+
+  &__nav {
+    font-family: $ff-accent;
+    padding-top: 0.25em;
+
+    li {
+      transition: color 0.2s ease-in;
+
+      &:before {
+        color: #ccc;
+        content: attr(data-num);
+        font-family: $ff-light;
+        font-size: 1rem;
+        left: 0;
+        line-height: 1;
+        position: absolute;
+        transform: translate(0, -100%);
+        top: 1rem;
+
+        @include break('tablet-landscape') {
+          top: 0.3rem;
+        }
+      }
+
+      &:hover a {
+        color: $color-corporate-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.style-switcher.--brutal {
+  .style-switcher__item.--brutal .text{
+    color: $color-brutal-pink;
+  }
+
+  .style-switcher__item.--brutal:before,
+  .style-switcher__item.--brutal:after,
+  .style-switcher__item.--brutal .text:before,
+  .style-switcher__item.--brutal .text:after {
+    -webkit-text-stroke: 1px $color-brutal-pink;
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.25s ease-in-out, color 0.25s ease-in-out, -webkit-text-stroke 0.25s 0.25s ease-in-out;
+  }
+
+  .style-switcher__item.--brutal {
+    &:before {
+      transform: translate(-50%, -200%);
+    }
+
+    &:after {
+      transform: translate(-50%, 200%);
+    }
+
+    .text {
+      &:before {
+        transform: translate(0, -100%);
+      }
+      &:after {
+        transform: translate(0, 100%);
+      }
+    }
+  }
+
+}
+

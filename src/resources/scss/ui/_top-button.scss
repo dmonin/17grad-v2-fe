@@ -1,0 +1,38 @@
+.top-button {
+  $top-button-visibility-breakpoint: 'tablet';
+
+  @extend %button-reset;
+  $break-with-text: 'mobile';
+  display: none;
+  border-radius: 2rem;
+  color: #fff;
+  align-items: center;
+  left: 50%;
+  padding: 1rem 1rem;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: transform 0.25s ease-out;
+  top: $spacing-header-mobile;
+  @include break($top-button-visibility-breakpoint) {
+    display: flex;
+    top: $spacing-header-desktop;
+  }
+  z-index: 10;
+
+  &[data-direction=back] .arrow {
+    display: block;
+    transform: translate(250%, 0) rotate(180deg);
+  }
+
+  &[data-direction=back]:before {
+    display: block;
+    transform: rotate(180deg);
+  }
+
+  &__text {
+    display: none;
+    @include break($break-with-text) {
+      display: flex;
+    }
+  }
+}

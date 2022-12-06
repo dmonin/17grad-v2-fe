@@ -1,0 +1,470 @@
+$work-list-mobile-breakpoint: 'mobile';
+
+// Global View
+.work-view {
+  box-sizing: border-box;
+  position: relative;
+
+  &.--appearing {
+    overflow: hidden;
+  }
+
+  &.--expanding {
+    z-index: 2;
+  }
+
+  @include break($work-list-mobile-breakpoint, 'max') {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+  }
+}
+// Container for Projects
+.work-list {
+  box-sizing: border-box;
+  cursor: none;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 6rem;
+
+  @include break($work-list-mobile-breakpoint) {
+    height: 100vh;
+    padding-bottom: 6rem;
+  }
+  width: 100%;
+
+  .scrollable__content {
+    box-sizing: border-box;
+    align-items: stretch;
+  }
+
+  &__end {
+    height: 20px;
+    flex: 1 0 1px;
+  }
+
+  // Project Item
+  &__slide {
+    align-items: stretch;
+    flex: 1 0 80vw;
+    flex-direction: column;
+    display: flex;
+    margin-right: 10vw;
+    position: relative;
+
+    .--view-out-to-project &:not(.--current) {
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+
+    @include break($work-list-mobile-breakpoint) {
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    // Area with the text
+    &__content {
+      box-sizing: border-box;
+      display: flex;
+      flex: 1;
+      font-size: 4.8vh;
+      flex-direction: column;
+      justify-content: flex-end;
+      @include break('mobile') {
+        flex: initial;
+      }
+
+      &__info {
+        box-sizing: border-box;
+        display: flex;
+        flex: 1;
+        font-size: 8.8vw;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        @include break($work-list-mobile-breakpoint) {
+          flex: initial;
+          padding: 1rem 0;
+          font-size: 2.3vw;
+          max-width: 10em;
+          z-index: 2;
+          // see parallax stylesheet for parallax transform
+        }
+      }
+    }
+
+    // Project Headline
+    h2 {
+      @extend %custom-header;
+      font-size: inherit;
+      line-height: 1.1;
+      order: 2;
+      padding: 1rem;
+      @include break($work-list-mobile-breakpoint) {
+        padding: 2rem 2rem 3rem;
+      }
+    }
+
+    // Client
+    h3 {
+      font-size: 1.25rem;
+      // margin-bottom: 1rem;
+      margin-bottom: 0rem;
+      line-height: 1.1;
+      padding: 1rem 1rem 0 1rem;
+      width: fit-content;
+      @include break($work-list-mobile-breakpoint) {
+        padding: 1rem 2rem 0;
+      }
+    }
+
+    // Primary Image
+    &__image {
+      flex: initial;
+      font-size: 0;
+      line-height: 0;
+      position: relative;
+
+      will-change: transform;
+      // see parallax stylesheet for parallax transform
+
+      @include break($work-list-mobile-breakpoint) {
+        flex: 1;
+      }
+
+      @include break($work-list-mobile-breakpoint) {
+        img {
+          width: 100%;
+        }
+      }
+
+      &.ready > img {
+        visibility: hidden;
+      }
+    }
+
+    // Secondary Image
+    &__image-secondary {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      transition: opacity 1.5s;
+
+      // see parallax stylesheet for parallax transform
+
+      img {
+        height: auto;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
+
+      .shadow {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transform: translate(10%, 10%);
+        transition: opacity 0.5s 1.5s;
+      }
+    }
+
+    &__image-secondary .resp-img {
+      box-shadow: 0px 50px 50px -5px rgba(0, 0, 0, 0.25);
+    }
+
+    // Button to Detail Page
+    &__button {
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      line-height: 1.2;
+      padding: 1em;
+      white-space: nowrap;
+      width: fit-content;
+      z-index: 4;
+
+      @include break('mobile') {
+        font-size: 1.25rem;
+      }
+
+      span {
+        display: none;
+      }
+
+      @include break($work-list-mobile-breakpoint) {
+        span {
+          display: block;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    // Start Slide (with "Work" headline)
+    &.--start {
+      flex: 1;
+      display: flex;
+      // margin-right: 20vw;
+      @include break('tablet') {
+        margin-right: 30vw;
+      }
+
+      h1 {
+        @include break($work-list-mobile-breakpoint, 'max') {
+          font-size: 30vw;
+        }
+      }
+
+      p {
+        @include break($work-list-mobile-breakpoint, "max") {
+          padding: 0 15vw 0 0;
+        }
+        @include break($work-list-mobile-breakpoint) {
+          align-self: flex-end;
+          max-width: 17em;
+        }
+      }
+
+      p:nth-child(2) {
+        text-indent: 1.5em;
+        @include break("mobile") {
+          text-indent: 3em;
+        }
+      }
+
+      .work-list__slide__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: none;
+        padding: 0 0 0 $spacing-border-mobile;
+        transform: none;
+        width: fit-content;
+
+        @include break($work-list-mobile-breakpoint) {
+          // align-items: flex-end;
+          padding: 0 0 0 $spacing-border-desktop;
+        }
+      }
+    }
+  }
+}
+
+.work-list__slide.--appearing {
+  .work-list__slide__image-secondary {
+    opacity: 0;
+    transition: none;
+  }
+
+  .work-list__slide__image-secondary .shadow {
+    opacity: 0;
+    transition: none;
+  }
+}
+
+.work-list__slide.--expanding {
+  .work-list__slide__content {
+    opacity: 0;
+    transform: translate(50%, 0);
+    transition: transform 0.5s ease-in, opacity 0.5s;
+  }
+
+  .work-list__slide__image-secondary {
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+}
+
+.work-detail-header {
+  left: 0;
+  height: 70%;
+  @include break('mobile') {
+    height: 100vh;
+  }
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  transition: all 0.75s ease-out;
+  transition-property: left, top, width, height, opacity;
+  z-index: 2;
+
+  &.reverse-animation {
+    transition: all 1s ease-out;
+    transition-property: left, top, width, height, opacity;
+  }
+
+  .resp-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  h1 {
+    color: #fff;
+    bottom: 5vh;
+    font-size: 1.75rem;
+    @include break('mobile') {
+      bottom: $spacing-border-desktop;
+      font-size: 4vw;
+    }
+    left: $spacing-border-desktop;
+    line-height: 1;
+    position: absolute;
+    z-index: 2;
+
+    .text-line {
+      white-space: nowrap;
+    }
+  }
+
+  &:after {
+    @extend %pseudo-element;
+    background: var(--color1, #f00);
+    mix-blend-mode: multiply;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: opacity 0.5s ease-out;
+  }
+
+  &.--out {
+    &:after,
+    h1,
+    .client-logo {
+      opacity: 0;
+      transition: opacity 0.35s ease-in;
+    }
+  }
+
+  &.--in {
+    &:after {
+      opacity: 0;
+    }
+    position: absolute;
+    h1 {
+      transform: translate(0, 100%);
+    }
+
+    .client-logo {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+  }
+
+  .client-logo {
+    height: 30vw;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    z-index: 10;
+
+    &.appear {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+
+    &.--appear-in {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+  }
+}
+
+.work-detail {
+  padding-top: 70vh;
+  overflow: hidden;
+  position: relative;
+  @include break('mobile') {
+    padding-top: 100vh;
+  }
+
+  &.--out {
+    opacity: 0;
+    transform: translate(0, 25vh);
+    transition: opacity 0.25s, transform 0.25s;
+  }
+
+  &__info {
+    @include border-padding();
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+      margin-bottom: 1rem;
+      @include break('mobile') {
+        margin-bottom: 3rem;
+      }
+      width: 100%;
+    }
+
+    p {
+      max-width: 30em;
+    }
+
+    .info,
+    .fact-sheet {
+      box-sizing: border-box;
+      width: 100%;
+      @include break('mobile') {
+        padding: 1rem;
+        width: 50%;
+      }
+    }
+    .info {
+      p:first-child {
+        text-indent: 2rem;
+        @include break('mobile') {
+          text-indent: 5rem;
+        }
+      }
+    }
+  }
+
+  .fact-sheet {
+    display: flex;
+    flex-wrap: wrap;
+    @include break('mobile') {
+      padding-left: 10vw;
+    }
+
+    div, p, label {
+      font-size: 1rem;
+      @include break('tablet') {
+        font-size: 1.25rem;
+      }
+
+      @include break('laptop') {
+        font-size: 1.5rem;
+      }
+    }
+
+    label {
+      font-family: $ff-bold;
+      text-transform: uppercase;
+    }
+    &__item {
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+
+      @include break('laptop') {
+        margin-right: 6rem;
+      }
+
+      &:nth-child(2n) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

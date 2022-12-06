@@ -1,0 +1,4 @@
+mixin topButton(text, action, cursor='active', attr)
+  button.top-button.cmp.appear(data-action=action,data-cursor=cursor,data-appear-duration=850)&attributes(attr)
+    span.top-button__text=text
+    .arrow

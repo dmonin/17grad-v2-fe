@@ -1,0 +1,7 @@
+.button {
+  background: $color-brutal-blue;
+
+  .arrow {
+    @include brutalArrowSvg('E4EA45');
+  }
+}

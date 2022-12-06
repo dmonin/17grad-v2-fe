@@ -1,0 +1,12 @@
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/spacing";
+@import 'variables/animation';
+
+// Non Essential animations (see base.scss for essential animations)
+@import 'animation/appear-basics';
+@import 'animation/navigation';
+@import 'animation/style-switch-menu';
+@import 'animation/work';
+@import 'animation/work-detail-appear';
+@import 'animation/index';

@@ -1,0 +1,56 @@
+.progress-slider {
+  align-items: center;
+  box-sizing: border-box;
+  // content-visibility: auto;
+  // contain: layout paint;
+  display: flex;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 1.5rem $spacing-border-mobile;
+  position: relative;
+  transition: transform 0.5s ease-out 0.5s;
+  transform: translate(0, 150%);
+  width: 91%;
+  z-index: 10;
+
+  &.--visible {
+    transform: translate(0, 0);
+  }
+
+  @include break('mobile') {
+    margin-top: 0rem;
+  }
+
+  @include break('tablet') {
+    font-size: 1.25rem;
+    width: auto;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem $spacing-border-desktop;
+    // width: fit-content;
+    position: absolute;
+  }
+
+  .bar {
+    background: $color-corporate-black;
+    height: 2px;
+    margin: 0 1rem;
+    width: 5rem;
+  }
+
+  .track {
+    background: $color-corporate-blue;
+    height: 2px;
+    width: calc(var(--percent, 0) * 1%);
+  }
+
+  button {
+    @extend %button-reset;
+  }
+
+  &.--last-active button {
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+}

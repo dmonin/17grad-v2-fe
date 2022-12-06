@@ -1,0 +1,322 @@
+/**
+ * Quick-Rules:
+ * + positive values > element moves faster than page scrolls
+ * - negative values > element moves slower than page scrolls
+ *
+ * % values is a relation to element size, i.e. 10% = 10% of element height / width (depending on movement direction)
+ * vh / vw are the values in relation to viewport size (height, width), i.e. 10vh = 10% of viewport's height
+ * 1em value depending on the current font-size, i.e. 1em = current font size in pixels
+ * rem/px - better not to use, as everything scales, but might make sense on the mobile viewports, 1rem = 16px
+ */
+
+// Blue Backgraound
+.core__header__picture {
+  $parallax-value: 10%;
+  transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+}
+
+// Headline Core
+.core__header h1 {
+  $parallax-blue-font: 30%;
+  $parallax-yellow-font: 20%;
+
+  &:before {
+    transform: translate(30%, calc(35% + #{$parallax-blue-font} * var(--parallax, 0)));
+  }
+
+  transform: translate(0, calc(30% +#{$parallax-yellow-font} * var(--parallax, 0)));
+
+
+}
+
+// 17º 17º 17º
+.core__header h2 {
+  $parallax-g1701: -50%;
+  $parallax-g1702: -100%;
+  $parallax-g1703: -150%;
+
+  &:before {
+    transform: translate(0, calc(#{$parallax-g1701} * var(--parallax, 0)));
+  }
+
+  div {
+    transform: translate(0, calc(-50% + -200% * var(--parallax, 0)));
+    @include break('tablet') {
+      transform: translate(0, calc(#{$parallax-g1702} * var(--parallax, 0)));
+    }
+  }
+
+  &:after {
+    transform: translate(0, calc(#{$parallax-g1703} * var(--parallax, 0)));
+  }
+}
+
+.core__header__content {
+  $parallax-value: -30%;
+  transform: translate(0, calc(-10% + #{$parallax-value} * var(--parallax, 0)));
+}
+
+// Yellow Circle
+.core__header .yellow-half-circle {
+  transform: translate(0, calc(-100% + 50% * var(--parallax, 0)));
+  @include break('tablet') {
+    transform: translate(0, calc(50% * var(--parallax, 0)));
+  }
+}
+
+// About Area
+.core__main {
+  // Header
+  h2 {
+    $parallax-value: 20%;
+    transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+
+  // Text
+  &__info {
+    //$parallax-value: -30%;
+    //transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+}
+
+// X
+.core__photos__interior__x {
+  $parallax-interior-x: -40%;
+  transform: translate(0, calc(#{$parallax-interior-x} * var(--parallax, 0)));
+}
+
+// Photo 1
+.core__photos__photo1__wrap {
+  $parallax-value: 20%;
+  transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+}
+
+// Big yellow circle
+.core__photos__photo1 .circle {
+  $parallax-photo1-circle: 30%;
+  transform: translate(-50%, calc(#{$parallax-photo1-circle} * var(--parallax, 0)));
+}
+
+// Photo 2
+.core__photos__photo2__wrap {
+  $parallax-value: -10%;
+  transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+}
+
+// Photo 3
+.core__photos__photo3__wrap {
+  $parallax-value: 20%;
+  transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+}
+
+// Blue square on the right
+.core__photos__photo3 .square-blue {
+  $parallax-photo3-square-blue: -20%;
+  transform: translate(0, calc(#{$parallax-photo3-square-blue} * var(--parallax, 0)));
+}
+
+// Yellow square on the right
+.core__photos__photo3 .square-yellow {
+  $parallax-photo3-square-yellow: -30%;
+  transform: translate(0, calc(#{$parallax-photo3-square-yellow} * var(--parallax, 0)));
+}
+
+
+// Value 1
+.core__values__value:nth-child(1) {
+  .value-image {
+    $parallax-value: -30%;
+    transform: translate(calc(#{$parallax-value} * var(--parallax, 0)), -50%);
+  }
+
+  h3 {
+    $parallax-value: 20%;
+    transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+
+  p {
+    //$parallax-value: -20%;
+    //transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+}
+
+// Value 2
+.core__values__value:nth-child(2) {
+  .value-image {
+    $parallax-value: -40%;
+    transform: translate(calc(#{$parallax-value} * var(--parallax, 0)), -50%);
+  }
+
+  h3 {
+    $parallax-value: 20%;
+    transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+
+  p {
+    //$parallax-value: -20%;
+    //transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+}
+
+// Value 3
+.core__values__value:nth-child(3) {
+  .value-image {
+    $parallax-value: -50%;
+    transform: translate(calc(#{$parallax-value} * var(--parallax, 0)), -50%);
+  }
+
+  h3 {
+    $parallax-value: 20%;
+    transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+
+  p {
+    //$parallax-value: -20%;
+    //transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+}
+
+// People
+.core__people {
+  // h1 span {
+  //   display: block;
+  //   $parallax-value: 100%;
+  //   transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  // }
+
+  @include break('tablet') {
+    .section-intro {
+      $parallax-value: -5%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+}
+
+// People's photos
+.core__people__member {
+  // Dmitry
+  &:nth-child(3) {
+    $base-parallax: 0%;
+    .core__people__member__picture {
+      $parallax-value: $base-parallax;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    h3 {
+      $parallax-value: $base-parallax + 5%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    p {
+      $parallax-value: $base-parallax + 20%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+
+  // Sascha
+  &:nth-child(4) {
+    $base-parallax: -10%;
+    .core__people__member__picture {
+      $parallax-value: $base-parallax + 3%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    h3 {
+      $parallax-value: $base-parallax + 12%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    p {
+      $parallax-value: $base-parallax + 25%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+
+  // Natalie
+  &:nth-child(5) {
+    $base-parallax: 10%;
+    .core__people__member__picture {
+      $parallax-value: $base-parallax;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    h3 {
+      $parallax-value: $base-parallax + 5%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    p {
+      $parallax-value: $base-parallax + 20%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+
+  // Dean
+  &:nth-child(6) {
+    $base-parallax: 0%;
+    .core__people__member__picture {
+      $parallax-value: $base-parallax;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    h3 {
+      $parallax-value: $base-parallax + 10%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    p {
+      $parallax-value: $base-parallax + 20%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+
+  // Gavin
+  &:nth-child(7) {
+    $base-parallax: 15%;
+    .core__people__member__picture {
+      $parallax-value: $base-parallax;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    h3 {
+      $parallax-value: $base-parallax + 10%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    p {
+      $parallax-value: $base-parallax + 20%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+}
+
+// Clients
+.core__clients {
+  // Header
+  &__header {
+    h1 {
+      $parallax-value: 20%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+
+    .section-intro {
+      $parallax-value: 0%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  }
+}
+
+// Work With Us
+.core__work-with-us {
+  // Header
+  h1 {
+    $parallax-value: -20%;
+    transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+
+  // Text
+  &__text {
+    //$parallax-value: -20%;
+    //transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+  }
+}

@@ -1,0 +1,46 @@
+.core__clients {
+  &__logo__right,
+  &__logo__left {
+    transition: transform 0.75s cubic-bezier(.42,.04,.38,1);
+    transition-property: transform, left, opacity;
+
+    &.--in {
+      transform: translate(-50%, 0);
+      left: 50%;
+      animation-delay: 1s;
+      transition-timing-function: cubic-bezier(.34,.7,.31,1);
+    }
+    &.--out {
+      transition-timing-function: ease-in;
+    }
+  }
+
+  &__logo__left {
+    left: 100%;
+    fill: $color-progressive-blue;
+
+    &.--in {
+      transform: translate(-49.75%, 0);
+    }
+
+    &.--out {
+      left: 0%;
+      transform: translate(-100%, 0%);
+    }
+  }
+
+  &__logo__right {
+    fill: $color-progressive-yellow;
+    mix-blend-mode: multiply;
+    transform: translate(-100%, 0%);
+
+    &.--in {
+      transform: translate(-50.25%, 0);
+    }
+
+    &.--out {
+      left: 100%;
+      transform: translate(0, 0);
+    }
+  }
+}

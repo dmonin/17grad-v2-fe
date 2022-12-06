@@ -1,0 +1,22 @@
+.--project[data-name=lih] {
+  .work-list__slide__image-secondary {
+    right: 10%;
+    width: 40vw;
+    top: -10%;
+
+    @include break('mobile') {
+      right: 20%;
+      top: -10%;
+      width: 25vw;
+    }
+
+    .shadow {
+      // transform: translate(10%, -10%);
+      transform: translate3d(calc(10% + 115% * var(--parallax, 0)), -10%, 0);
+      @include break('mobile') {
+        transform: translate3d(calc(10% + 60% * var(--parallax, 0)), -10%, 0);
+      }
+    }
+    // transform: translate(20%, 10%);
+  }
+}

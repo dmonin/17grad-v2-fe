@@ -1,0 +1,12 @@
+@mixin border-padding(
+  $property: 'padding',
+  $break: 'tablet',
+  $desktop: $spacing-border-desktop,
+  $mobile: $spacing-border-mobile) {
+
+  #{$property}: $mobile;
+
+  @include break($break) {
+    #{$property}: $desktop;
+  }
+}

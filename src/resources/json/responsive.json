@@ -1,0 +1,1194 @@
+{
+  "./public/img/core-brutal/01-dean-sascha-720.jpg": {
+    "srcset": "./public/img/core-brutal/256/01-dean-sascha-720.jpg 256w,./public/img/core-brutal/512/01-dean-sascha-720.jpg 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/01-dean-sascha-720.webp": {
+    "srcset": "./public/img/core-brutal/256/01-dean-sascha-720.webp 256w,./public/img/core-brutal/512/01-dean-sascha-720.webp 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/01-interior.jpg": {
+    "srcset": "./public/img/core-brutal/256/01-interior.jpg 256w,./public/img/core-brutal/512/01-interior.jpg 512w,./public/img/core-brutal/968/01-interior.jpg 968w,./public/img/core-brutal/1280/01-interior.jpg 1280w,./public/img/core-brutal/1680/01-interior.jpg 1680w,./public/img/core-brutal/1920/01-interior.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-brutal/01-interior.webp": {
+    "srcset": "./public/img/core-brutal/256/01-interior.webp 256w,./public/img/core-brutal/512/01-interior.webp 512w,./public/img/core-brutal/968/01-interior.webp 968w,./public/img/core-brutal/1280/01-interior.webp 1280w,./public/img/core-brutal/1680/01-interior.webp 1680w,./public/img/core-brutal/1920/01-interior.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-brutal/02-gavin-720.jpg": {
+    "srcset": "./public/img/core-brutal/256/02-gavin-720.jpg 256w,./public/img/core-brutal/512/02-gavin-720.jpg 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/02-gavin-720.webp": {
+    "srcset": "./public/img/core-brutal/256/02-gavin-720.webp 256w,./public/img/core-brutal/512/02-gavin-720.webp 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/03-natalie-720.jpg": {
+    "srcset": "./public/img/core-brutal/256/03-natalie-720.jpg 256w,./public/img/core-brutal/512/03-natalie-720.jpg 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/03-natalie-720.webp": {
+    "srcset": "./public/img/core-brutal/256/03-natalie-720.webp 256w,./public/img/core-brutal/512/03-natalie-720.webp 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/04-dmitry-720.jpg": {
+    "srcset": "./public/img/core-brutal/256/04-dmitry-720.jpg 256w,./public/img/core-brutal/512/04-dmitry-720.jpg 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/04-dmitry-720.webp": {
+    "srcset": "./public/img/core-brutal/256/04-dmitry-720.webp 256w,./public/img/core-brutal/512/04-dmitry-720.webp 512w",
+    "width": 256,
+    "height": 341
+  },
+  "./public/img/core-brutal/hand-dog.png": {
+    "srcset": "./public/img/core-brutal/256/hand-dog.png 256w,./public/img/core-brutal/512/hand-dog.png 512w,./public/img/core-brutal/968/hand-dog.png 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-brutal/hand-dog.webp": {
+    "srcset": "./public/img/core-brutal/256/hand-dog.webp 256w,./public/img/core-brutal/512/hand-dog.webp 512w,./public/img/core-brutal/968/hand-dog.webp 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-brutal/hand-excellent.png": {
+    "srcset": "./public/img/core-brutal/256/hand-excellent.png 256w,./public/img/core-brutal/512/hand-excellent.png 512w,./public/img/core-brutal/968/hand-excellent.png 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-brutal/hand-excellent.webp": {
+    "srcset": "./public/img/core-brutal/256/hand-excellent.webp 256w,./public/img/core-brutal/512/hand-excellent.webp 512w,./public/img/core-brutal/968/hand-excellent.webp 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-brutal/hand-swear.png": {
+    "srcset": "./public/img/core-brutal/256/hand-swear.png 256w,./public/img/core-brutal/512/hand-swear.png 512w,./public/img/core-brutal/968/hand-swear.png 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-brutal/hand-swear.webp": {
+    "srcset": "./public/img/core-brutal/256/hand-swear.webp 256w,./public/img/core-brutal/512/hand-swear.webp 512w,./public/img/core-brutal/968/hand-swear.webp 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-brutal/hero-desktop.jpg": {
+    "srcset": "./public/img/core-brutal/256/hero-desktop.jpg 256w,./public/img/core-brutal/512/hero-desktop.jpg 512w,./public/img/core-brutal/968/hero-desktop.jpg 968w,./public/img/core-brutal/1280/hero-desktop.jpg 1280w,./public/img/core-brutal/1680/hero-desktop.jpg 1680w",
+    "width": 256,
+    "height": 172
+  },
+  "./public/img/core-brutal/hero-desktop.webp": {
+    "srcset": "./public/img/core-brutal/256/hero-desktop.webp 256w,./public/img/core-brutal/512/hero-desktop.webp 512w,./public/img/core-brutal/968/hero-desktop.webp 968w,./public/img/core-brutal/1280/hero-desktop.webp 1280w,./public/img/core-brutal/1680/hero-desktop.webp 1680w",
+    "width": 256,
+    "height": 172
+  },
+  "./public/img/core-brutal/team-onepeople.jpg": {
+    "srcset": "./public/img/core-brutal/256/team-onepeople.jpg 256w,./public/img/core-brutal/512/team-onepeople.jpg 512w,./public/img/core-brutal/968/team-onepeople.jpg 968w",
+    "width": 256,
+    "height": 308
+  },
+  "./public/img/core-brutal/team-onepeople.webp": {
+    "srcset": "./public/img/core-brutal/256/team-onepeople.webp 256w,./public/img/core-brutal/512/team-onepeople.webp 512w,./public/img/core-brutal/968/team-onepeople.webp 968w",
+    "width": 256,
+    "height": 308
+  },
+  "./public/img/core-brutal/team.jpg": {
+    "srcset": "./public/img/core-brutal/256/team.jpg 256w,./public/img/core-brutal/512/team.jpg 512w,./public/img/core-brutal/968/team.jpg 968w",
+    "width": 256,
+    "height": 308
+  },
+  "./public/img/core-brutal/team.webp": {
+    "srcset": "./public/img/core-brutal/256/team.webp 256w,./public/img/core-brutal/512/team.webp 512w,./public/img/core-brutal/968/team.webp 968w",
+    "width": 256,
+    "height": 308
+  },
+  "./public/img/core-corporate/01-interior.jpg": {
+    "srcset": "./public/img/core-corporate/256/01-interior.jpg 256w,./public/img/core-corporate/512/01-interior.jpg 512w,./public/img/core-corporate/968/01-interior.jpg 968w,./public/img/core-corporate/1280/01-interior.jpg 1280w,./public/img/core-corporate/1680/01-interior.jpg 1680w,./public/img/core-corporate/1920/01-interior.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-corporate/01-interior.webp": {
+    "srcset": "./public/img/core-corporate/256/01-interior.webp 256w,./public/img/core-corporate/512/01-interior.webp 512w,./public/img/core-corporate/968/01-interior.webp 968w,./public/img/core-corporate/1280/01-interior.webp 1280w,./public/img/core-corporate/1680/01-interior.webp 1680w,./public/img/core-corporate/1920/01-interior.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-corporate/02-handshake.jpg": {
+    "srcset": "./public/img/core-corporate/256/02-handshake.jpg 256w,./public/img/core-corporate/512/02-handshake.jpg 512w,./public/img/core-corporate/968/02-handshake.jpg 968w,./public/img/core-corporate/1280/02-handshake.jpg 1280w,./public/img/core-corporate/1680/02-handshake.jpg 1680w,./public/img/core-corporate/1920/02-handshake.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-corporate/02-handshake.webp": {
+    "srcset": "./public/img/core-corporate/256/02-handshake.webp 256w,./public/img/core-corporate/512/02-handshake.webp 512w,./public/img/core-corporate/968/02-handshake.webp 968w,./public/img/core-corporate/1280/02-handshake.webp 1280w,./public/img/core-corporate/1680/02-handshake.webp 1680w,./public/img/core-corporate/1920/02-handshake.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-corporate/03-discussion.jpg": {
+    "srcset": "./public/img/core-corporate/256/03-discussion.jpg 256w,./public/img/core-corporate/512/03-discussion.jpg 512w,./public/img/core-corporate/968/03-discussion.jpg 968w,./public/img/core-corporate/1280/03-discussion.jpg 1280w,./public/img/core-corporate/1680/03-discussion.jpg 1680w,./public/img/core-corporate/1920/03-discussion.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-corporate/03-discussion.webp": {
+    "srcset": "./public/img/core-corporate/256/03-discussion.webp 256w,./public/img/core-corporate/512/03-discussion.webp 512w,./public/img/core-corporate/968/03-discussion.webp 968w,./public/img/core-corporate/1280/03-discussion.webp 1280w,./public/img/core-corporate/1680/03-discussion.webp 1680w,./public/img/core-corporate/1920/03-discussion.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-corporate/04-work-with-us.jpg": {
+    "srcset": "./public/img/core-corporate/256/04-work-with-us.jpg 256w,./public/img/core-corporate/512/04-work-with-us.jpg 512w,./public/img/core-corporate/968/04-work-with-us.jpg 968w,./public/img/core-corporate/1280/04-work-with-us.jpg 1280w,./public/img/core-corporate/1680/04-work-with-us.jpg 1680w",
+    "width": 256,
+    "height": 173
+  },
+  "./public/img/core-corporate/04-work-with-us.webp": {
+    "srcset": "./public/img/core-corporate/256/04-work-with-us.webp 256w,./public/img/core-corporate/512/04-work-with-us.webp 512w,./public/img/core-corporate/968/04-work-with-us.webp 968w,./public/img/core-corporate/1280/04-work-with-us.webp 1280w,./public/img/core-corporate/1680/04-work-with-us.webp 1680w",
+    "width": 256,
+    "height": 173
+  },
+  "./public/img/core-corporate/hero-desktop.jpg": {
+    "srcset": "./public/img/core-corporate/256/hero-desktop.jpg 256w,./public/img/core-corporate/512/hero-desktop.jpg 512w,./public/img/core-corporate/968/hero-desktop.jpg 968w,./public/img/core-corporate/1280/hero-desktop.jpg 1280w,./public/img/core-corporate/1680/hero-desktop.jpg 1680w",
+    "width": 256,
+    "height": 172
+  },
+  "./public/img/core-corporate/hero-desktop.webp": {
+    "srcset": "./public/img/core-corporate/256/hero-desktop.webp 256w,./public/img/core-corporate/512/hero-desktop.webp 512w,./public/img/core-corporate/968/hero-desktop.webp 968w,./public/img/core-corporate/1280/hero-desktop.webp 1280w,./public/img/core-corporate/1680/hero-desktop.webp 1680w",
+    "width": 256,
+    "height": 172
+  },
+  "./public/img/core-corporate/team-dean-a.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-dean-a.jpg 256w,./public/img/core-corporate/512/team-dean-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dean-a.webp": {
+    "srcset": "./public/img/core-corporate/256/team-dean-a.webp 256w,./public/img/core-corporate/512/team-dean-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dean-b.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-dean-b.jpg 256w,./public/img/core-corporate/512/team-dean-b.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dean-b.webp": {
+    "srcset": "./public/img/core-corporate/256/team-dean-b.webp 256w,./public/img/core-corporate/512/team-dean-b.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dmitry-a.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-dmitry-a.jpg 256w,./public/img/core-corporate/512/team-dmitry-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dmitry-a.webp": {
+    "srcset": "./public/img/core-corporate/256/team-dmitry-a.webp 256w,./public/img/core-corporate/512/team-dmitry-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dmitry-b.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-dmitry-b.jpg 256w,./public/img/core-corporate/512/team-dmitry-b.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-dmitry-b.webp": {
+    "srcset": "./public/img/core-corporate/256/team-dmitry-b.webp 256w,./public/img/core-corporate/512/team-dmitry-b.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-gavin-a.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-gavin-a.jpg 256w,./public/img/core-corporate/512/team-gavin-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-gavin-a.webp": {
+    "srcset": "./public/img/core-corporate/256/team-gavin-a.webp 256w,./public/img/core-corporate/512/team-gavin-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-gavin-b.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-gavin-b.jpg 256w,./public/img/core-corporate/512/team-gavin-b.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-gavin-b.webp": {
+    "srcset": "./public/img/core-corporate/256/team-gavin-b.webp 256w,./public/img/core-corporate/512/team-gavin-b.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-natalie-a.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-natalie-a.jpg 256w,./public/img/core-corporate/512/team-natalie-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-natalie-a.webp": {
+    "srcset": "./public/img/core-corporate/256/team-natalie-a.webp 256w,./public/img/core-corporate/512/team-natalie-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-natalie-b.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-natalie-b.jpg 256w,./public/img/core-corporate/512/team-natalie-b.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-natalie-b.webp": {
+    "srcset": "./public/img/core-corporate/256/team-natalie-b.webp 256w,./public/img/core-corporate/512/team-natalie-b.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-sascha-a.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-sascha-a.jpg 256w,./public/img/core-corporate/512/team-sascha-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-sascha-a.webp": {
+    "srcset": "./public/img/core-corporate/256/team-sascha-a.webp 256w,./public/img/core-corporate/512/team-sascha-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-sascha-b.jpg": {
+    "srcset": "./public/img/core-corporate/256/team-sascha-b.jpg 256w,./public/img/core-corporate/512/team-sascha-b.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-corporate/team-sascha-b.webp": {
+    "srcset": "./public/img/core-corporate/256/team-sascha-b.webp 256w,./public/img/core-corporate/512/team-sascha-b.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/01-interior.jpg": {
+    "srcset": "./public/img/core-progressive/256/01-interior.jpg 256w,./public/img/core-progressive/512/01-interior.jpg 512w,./public/img/core-progressive/968/01-interior.jpg 968w,./public/img/core-progressive/1280/01-interior.jpg 1280w,./public/img/core-progressive/1680/01-interior.jpg 1680w,./public/img/core-progressive/1920/01-interior.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/01-interior.webp": {
+    "srcset": "./public/img/core-progressive/256/01-interior.webp 256w,./public/img/core-progressive/512/01-interior.webp 512w,./public/img/core-progressive/968/01-interior.webp 968w,./public/img/core-progressive/1280/01-interior.webp 1280w,./public/img/core-progressive/1680/01-interior.webp 1680w,./public/img/core-progressive/1920/01-interior.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/02-discussion.jpg": {
+    "srcset": "./public/img/core-progressive/256/02-discussion.jpg 256w,./public/img/core-progressive/512/02-discussion.jpg 512w,./public/img/core-progressive/968/02-discussion.jpg 968w,./public/img/core-progressive/1280/02-discussion.jpg 1280w,./public/img/core-progressive/1680/02-discussion.jpg 1680w,./public/img/core-progressive/1920/02-discussion.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/02-discussion.webp": {
+    "srcset": "./public/img/core-progressive/256/02-discussion.webp 256w,./public/img/core-progressive/512/02-discussion.webp 512w,./public/img/core-progressive/968/02-discussion.webp 968w,./public/img/core-progressive/1280/02-discussion.webp 1280w,./public/img/core-progressive/1680/02-discussion.webp 1680w,./public/img/core-progressive/1920/02-discussion.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/03-discussion.jpg": {
+    "srcset": "./public/img/core-progressive/256/03-discussion.jpg 256w,./public/img/core-progressive/512/03-discussion.jpg 512w,./public/img/core-progressive/968/03-discussion.jpg 968w,./public/img/core-progressive/1280/03-discussion.jpg 1280w,./public/img/core-progressive/1680/03-discussion.jpg 1680w,./public/img/core-progressive/1920/03-discussion.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/03-discussion.webp": {
+    "srcset": "./public/img/core-progressive/256/03-discussion.webp 256w,./public/img/core-progressive/512/03-discussion.webp 512w,./public/img/core-progressive/968/03-discussion.webp 968w,./public/img/core-progressive/1280/03-discussion.webp 1280w,./public/img/core-progressive/1680/03-discussion.webp 1680w,./public/img/core-progressive/1920/03-discussion.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/04-work-with-us.jpg": {
+    "srcset": "./public/img/core-progressive/256/04-work-with-us.jpg 256w,./public/img/core-progressive/512/04-work-with-us.jpg 512w,./public/img/core-progressive/968/04-work-with-us.jpg 968w,./public/img/core-progressive/1280/04-work-with-us.jpg 1280w,./public/img/core-progressive/1680/04-work-with-us.jpg 1680w,./public/img/core-progressive/1920/04-work-with-us.jpg 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/04-work-with-us.webp": {
+    "srcset": "./public/img/core-progressive/256/04-work-with-us.webp 256w,./public/img/core-progressive/512/04-work-with-us.webp 512w,./public/img/core-progressive/968/04-work-with-us.webp 968w,./public/img/core-progressive/1280/04-work-with-us.webp 1280w,./public/img/core-progressive/1680/04-work-with-us.webp 1680w,./public/img/core-progressive/1920/04-work-with-us.webp 1920w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/core-progressive/hand-dog.png": {
+    "srcset": "./public/img/core-progressive/256/hand-dog.png 256w,./public/img/core-progressive/512/hand-dog.png 512w,./public/img/core-progressive/968/hand-dog.png 968w,./public/img/core-progressive/1280/hand-dog.png 1280w,./public/img/core-progressive/1680/hand-dog.png 1680w,./public/img/core-progressive/1920/hand-dog.png 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-progressive/hand-dog.webp": {
+    "srcset": "./public/img/core-progressive/256/hand-dog.webp 256w,./public/img/core-progressive/512/hand-dog.webp 512w,./public/img/core-progressive/968/hand-dog.webp 968w,./public/img/core-progressive/1280/hand-dog.webp 1280w,./public/img/core-progressive/1680/hand-dog.webp 1680w,./public/img/core-progressive/1920/hand-dog.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-progressive/hand-excellent.png": {
+    "srcset": "./public/img/core-progressive/256/hand-excellent.png 256w,./public/img/core-progressive/512/hand-excellent.png 512w,./public/img/core-progressive/968/hand-excellent.png 968w,./public/img/core-progressive/1280/hand-excellent.png 1280w,./public/img/core-progressive/1680/hand-excellent.png 1680w,./public/img/core-progressive/1920/hand-excellent.png 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-progressive/hand-excellent.webp": {
+    "srcset": "./public/img/core-progressive/256/hand-excellent.webp 256w,./public/img/core-progressive/512/hand-excellent.webp 512w,./public/img/core-progressive/968/hand-excellent.webp 968w,./public/img/core-progressive/1280/hand-excellent.webp 1280w,./public/img/core-progressive/1680/hand-excellent.webp 1680w,./public/img/core-progressive/1920/hand-excellent.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-progressive/hand-swear.png": {
+    "srcset": "./public/img/core-progressive/256/hand-swear.png 256w,./public/img/core-progressive/512/hand-swear.png 512w,./public/img/core-progressive/968/hand-swear.png 968w,./public/img/core-progressive/1280/hand-swear.png 1280w,./public/img/core-progressive/1680/hand-swear.png 1680w,./public/img/core-progressive/1920/hand-swear.png 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-progressive/hand-swear.webp": {
+    "srcset": "./public/img/core-progressive/256/hand-swear.webp 256w,./public/img/core-progressive/512/hand-swear.webp 512w,./public/img/core-progressive/968/hand-swear.webp 968w,./public/img/core-progressive/1280/hand-swear.webp 1280w,./public/img/core-progressive/1680/hand-swear.webp 1680w,./public/img/core-progressive/1920/hand-swear.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/core-progressive/hero-desktop.jpg": {
+    "srcset": "./public/img/core-progressive/256/hero-desktop.jpg 256w,./public/img/core-progressive/512/hero-desktop.jpg 512w,./public/img/core-progressive/968/hero-desktop.jpg 968w,./public/img/core-progressive/1280/hero-desktop.jpg 1280w,./public/img/core-progressive/1680/hero-desktop.jpg 1680w",
+    "width": 256,
+    "height": 172
+  },
+  "./public/img/core-progressive/hero-desktop.webp": {
+    "srcset": "./public/img/core-progressive/256/hero-desktop.webp 256w,./public/img/core-progressive/512/hero-desktop.webp 512w,./public/img/core-progressive/968/hero-desktop.webp 968w,./public/img/core-progressive/1280/hero-desktop.webp 1280w,./public/img/core-progressive/1680/hero-desktop.webp 1680w",
+    "width": 256,
+    "height": 172
+  },
+  "./public/img/core-progressive/team-dean-a.jpg": {
+    "srcset": "./public/img/core-progressive/256/team-dean-a.jpg 256w,./public/img/core-progressive/512/team-dean-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-dean-a.webp": {
+    "srcset": "./public/img/core-progressive/256/team-dean-a.webp 256w,./public/img/core-progressive/512/team-dean-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-dmitry-a.jpg": {
+    "srcset": "./public/img/core-progressive/256/team-dmitry-a.jpg 256w,./public/img/core-progressive/512/team-dmitry-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-dmitry-a.webp": {
+    "srcset": "./public/img/core-progressive/256/team-dmitry-a.webp 256w,./public/img/core-progressive/512/team-dmitry-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-gavin-a.jpg": {
+    "srcset": "./public/img/core-progressive/256/team-gavin-a.jpg 256w,./public/img/core-progressive/512/team-gavin-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-gavin-a.webp": {
+    "srcset": "./public/img/core-progressive/256/team-gavin-a.webp 256w,./public/img/core-progressive/512/team-gavin-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-natalie-a.jpg": {
+    "srcset": "./public/img/core-progressive/256/team-natalie-a.jpg 256w,./public/img/core-progressive/512/team-natalie-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-natalie-a.webp": {
+    "srcset": "./public/img/core-progressive/256/team-natalie-a.webp 256w,./public/img/core-progressive/512/team-natalie-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-sascha-a.jpg": {
+    "srcset": "./public/img/core-progressive/256/team-sascha-a.jpg 256w,./public/img/core-progressive/512/team-sascha-a.jpg 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/core-progressive/team-sascha-a.webp": {
+    "srcset": "./public/img/core-progressive/256/team-sascha-a.webp 256w,./public/img/core-progressive/512/team-sascha-a.webp 512w",
+    "width": 256,
+    "height": 332
+  },
+  "./public/img/play/background-progressive.jpg": {
+    "srcset": "./public/img/play/256/background-progressive.jpg 256w,./public/img/play/512/background-progressive.jpg 512w,./public/img/play/968/background-progressive.jpg 968w,./public/img/play/1280/background-progressive.jpg 1280w,./public/img/play/1680/background-progressive.jpg 1680w,./public/img/play/1920/background-progressive.jpg 1920w",
+    "width": 256,
+    "height": 139
+  },
+  "./public/img/play/background-progressive.webp": {
+    "srcset": "./public/img/play/256/background-progressive.webp 256w,./public/img/play/512/background-progressive.webp 512w,./public/img/play/968/background-progressive.webp 968w,./public/img/play/1280/background-progressive.webp 1280w,./public/img/play/1680/background-progressive.webp 1680w,./public/img/play/1920/background-progressive.webp 1920w",
+    "width": 256,
+    "height": 139
+  },
+  "./public/img/play/dmitry.png": {
+    "srcset": "./public/img/play/256/dmitry.png 256w",
+    "width": 256,
+    "height": 717
+  },
+  "./public/img/play/dmitry.webp": {
+    "srcset": "./public/img/play/256/dmitry.webp 256w",
+    "width": 256,
+    "height": 717
+  },
+  "./public/img/play/element-aquarium-commodores.png": {
+    "srcset": "./public/img/play/256/element-aquarium-commodores.png 256w,./public/img/play/512/element-aquarium-commodores.png 512w",
+    "width": 256,
+    "height": 403
+  },
+  "./public/img/play/element-aquarium-commodores.webp": {
+    "srcset": "./public/img/play/256/element-aquarium-commodores.webp 256w,./public/img/play/512/element-aquarium-commodores.webp 512w",
+    "width": 256,
+    "height": 403
+  },
+  "./public/img/play/element-hand-butler.png": {
+    "srcset": "./public/img/play/256/element-hand-butler.png 256w",
+    "width": 256,
+    "height": 264
+  },
+  "./public/img/play/element-hand-butler.webp": {
+    "srcset": "./public/img/play/256/element-hand-butler.webp 256w",
+    "width": 256,
+    "height": 264
+  },
+  "./public/img/play/element-skulptur.png": {
+    "srcset": "./public/img/play/256/element-skulptur.png 256w",
+    "width": 256,
+    "height": 750
+  },
+  "./public/img/play/element-skulptur.webp": {
+    "srcset": "./public/img/play/256/element-skulptur.webp 256w",
+    "width": 256,
+    "height": 750
+  },
+  "./public/img/play/sascha.png": {
+    "srcset": "./public/img/play/256/sascha.png 256w",
+    "width": 256,
+    "height": 695
+  },
+  "./public/img/play/sascha.webp": {
+    "srcset": "./public/img/play/256/sascha.webp 256w",
+    "width": 256,
+    "height": 695
+  },
+  "./public/img/progressive-logo/logo-attraction-map-transparent-red-blue.png": {
+    "srcset": "./public/img/progressive-logo/256/logo-attraction-map-transparent-red-blue.png 256w,./public/img/progressive-logo/512/logo-attraction-map-transparent-red-blue.png 512w,./public/img/progressive-logo/968/logo-attraction-map-transparent-red-blue.png 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/progressive-logo/logo-attraction-map-transparent-red-blue.webp": {
+    "srcset": "./public/img/progressive-logo/256/logo-attraction-map-transparent-red-blue.webp 256w,./public/img/progressive-logo/512/logo-attraction-map-transparent-red-blue.webp 512w,./public/img/progressive-logo/968/logo-attraction-map-transparent-red-blue.webp 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/progressive-logo/logo-attraction-map.png": {
+    "srcset": "./public/img/progressive-logo/256/logo-attraction-map.png 256w,./public/img/progressive-logo/512/logo-attraction-map.png 512w,./public/img/progressive-logo/968/logo-attraction-map.png 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/progressive-logo/logo-attraction-map.webp": {
+    "srcset": "./public/img/progressive-logo/256/logo-attraction-map.webp 256w,./public/img/progressive-logo/512/logo-attraction-map.webp 512w,./public/img/progressive-logo/968/logo-attraction-map.webp 968w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/work-daesk/daesk-02-works-komposition.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-02-works-komposition.jpg 256w,./public/img/work-daesk/512/daesk-02-works-komposition.jpg 512w,./public/img/work-daesk/968/daesk-02-works-komposition.jpg 968w,./public/img/work-daesk/1280/daesk-02-works-komposition.jpg 1280w,./public/img/work-daesk/1680/daesk-02-works-komposition.jpg 1680w,./public/img/work-daesk/1920/daesk-02-works-komposition.jpg 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/work-daesk/daesk-02-works-komposition.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-02-works-komposition.webp 256w,./public/img/work-daesk/512/daesk-02-works-komposition.webp 512w,./public/img/work-daesk/968/daesk-02-works-komposition.webp 968w,./public/img/work-daesk/1280/daesk-02-works-komposition.webp 1280w,./public/img/work-daesk/1680/daesk-02-works-komposition.webp 1680w,./public/img/work-daesk/1920/daesk-02-works-komposition.webp 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/work-daesk/daesk-04a-smartphone.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-04a-smartphone.jpg 256w,./public/img/work-daesk/512/daesk-04a-smartphone.jpg 512w,./public/img/work-daesk/968/daesk-04a-smartphone.jpg 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/work-daesk/daesk-04a-smartphone.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-04a-smartphone.webp 256w,./public/img/work-daesk/512/daesk-04a-smartphone.webp 512w,./public/img/work-daesk/968/daesk-04a-smartphone.webp 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/work-daesk/daesk-04b-smartphone.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-04b-smartphone.jpg 256w,./public/img/work-daesk/512/daesk-04b-smartphone.jpg 512w,./public/img/work-daesk/968/daesk-04b-smartphone.jpg 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/work-daesk/daesk-04b-smartphone.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-04b-smartphone.webp 256w,./public/img/work-daesk/512/daesk-04b-smartphone.webp 512w,./public/img/work-daesk/968/daesk-04b-smartphone.webp 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/work-daesk/daesk-04c-smartphone.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-04c-smartphone.jpg 256w,./public/img/work-daesk/512/daesk-04c-smartphone.jpg 512w,./public/img/work-daesk/968/daesk-04c-smartphone.jpg 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/work-daesk/daesk-04c-smartphone.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-04c-smartphone.webp 256w,./public/img/work-daesk/512/daesk-04c-smartphone.webp 512w,./public/img/work-daesk/968/daesk-04c-smartphone.webp 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/work-daesk/daesk-05-works-komposition.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-05-works-komposition.jpg 256w,./public/img/work-daesk/512/daesk-05-works-komposition.jpg 512w,./public/img/work-daesk/968/daesk-05-works-komposition.jpg 968w,./public/img/work-daesk/1280/daesk-05-works-komposition.jpg 1280w,./public/img/work-daesk/1680/daesk-05-works-komposition.jpg 1680w,./public/img/work-daesk/1920/daesk-05-works-komposition.jpg 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/work-daesk/daesk-05-works-komposition.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-05-works-komposition.webp 256w,./public/img/work-daesk/512/daesk-05-works-komposition.webp 512w,./public/img/work-daesk/968/daesk-05-works-komposition.webp 968w,./public/img/work-daesk/1280/daesk-05-works-komposition.webp 1280w,./public/img/work-daesk/1680/daesk-05-works-komposition.webp 1680w,./public/img/work-daesk/1920/daesk-05-works-komposition.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/work-daesk/daesk-07-works-komposition.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-07-works-komposition.jpg 256w,./public/img/work-daesk/512/daesk-07-works-komposition.jpg 512w,./public/img/work-daesk/968/daesk-07-works-komposition.jpg 968w,./public/img/work-daesk/1280/daesk-07-works-komposition.jpg 1280w,./public/img/work-daesk/1680/daesk-07-works-komposition.jpg 1680w,./public/img/work-daesk/1920/daesk-07-works-komposition.jpg 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/work-daesk/daesk-07-works-komposition.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-07-works-komposition.webp 256w,./public/img/work-daesk/512/daesk-07-works-komposition.webp 512w,./public/img/work-daesk/968/daesk-07-works-komposition.webp 968w,./public/img/work-daesk/1280/daesk-07-works-komposition.webp 1280w,./public/img/work-daesk/1680/daesk-07-works-komposition.webp 1680w,./public/img/work-daesk/1920/daesk-07-works-komposition.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/work-daesk/daesk-08-works-komposition.jpg": {
+    "srcset": "./public/img/work-daesk/256/daesk-08-works-komposition.jpg 256w,./public/img/work-daesk/512/daesk-08-works-komposition.jpg 512w,./public/img/work-daesk/968/daesk-08-works-komposition.jpg 968w,./public/img/work-daesk/1280/daesk-08-works-komposition.jpg 1280w,./public/img/work-daesk/1680/daesk-08-works-komposition.jpg 1680w,./public/img/work-daesk/1920/daesk-08-works-komposition.jpg 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/work-daesk/daesk-08-works-komposition.webp": {
+    "srcset": "./public/img/work-daesk/256/daesk-08-works-komposition.webp 256w,./public/img/work-daesk/512/daesk-08-works-komposition.webp 512w,./public/img/work-daesk/968/daesk-08-works-komposition.webp 968w,./public/img/work-daesk/1280/daesk-08-works-komposition.webp 1280w,./public/img/work-daesk/1680/daesk-08-works-komposition.webp 1680w,./public/img/work-daesk/1920/daesk-08-works-komposition.webp 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/work-daesk/shirts.jpg": {
+    "srcset": "./public/img/work-daesk/256/shirts.jpg 256w,./public/img/work-daesk/512/shirts.jpg 512w,./public/img/work-daesk/968/shirts.jpg 968w,./public/img/work-daesk/1280/shirts.jpg 1280w,./public/img/work-daesk/1680/shirts.jpg 1680w,./public/img/work-daesk/1920/shirts.jpg 1920w",
+    "width": 256,
+    "height": 165
+  },
+  "./public/img/work-daesk/shirts.webp": {
+    "srcset": "./public/img/work-daesk/256/shirts.webp 256w,./public/img/work-daesk/512/shirts.webp 512w,./public/img/work-daesk/968/shirts.webp 968w,./public/img/work-daesk/1280/shirts.webp 1280w,./public/img/work-daesk/1680/shirts.webp 1680w,./public/img/work-daesk/1920/shirts.webp 1920w",
+    "width": 256,
+    "height": 165
+  },
+  "./public/img/work-lih/compensaid-full-01-startpage.jpg": {
+    "srcset": "./public/img/work-lih/256/compensaid-full-01-startpage.jpg 256w,./public/img/work-lih/512/compensaid-full-01-startpage.jpg 512w,./public/img/work-lih/968/compensaid-full-01-startpage.jpg 968w,./public/img/work-lih/1280/compensaid-full-01-startpage.jpg 1280w",
+    "width": 256,
+    "height": 1021
+  },
+  "./public/img/work-lih/compensaid-full-01-startpage.webp": {
+    "srcset": "./public/img/work-lih/256/compensaid-full-01-startpage.webp 256w,./public/img/work-lih/512/compensaid-full-01-startpage.webp 512w,./public/img/work-lih/968/compensaid-full-01-startpage.webp 968w,./public/img/work-lih/1280/compensaid-full-01-startpage.webp 1280w",
+    "width": 256,
+    "height": 1021
+  },
+  "./public/img/work-lih/compensaid-full-02-project.jpg": {
+    "srcset": "./public/img/work-lih/256/compensaid-full-02-project.jpg 256w,./public/img/work-lih/512/compensaid-full-02-project.jpg 512w,./public/img/work-lih/968/compensaid-full-02-project.jpg 968w,./public/img/work-lih/1280/compensaid-full-02-project.jpg 1280w",
+    "width": 256,
+    "height": 963
+  },
+  "./public/img/work-lih/compensaid-full-02-project.webp": {
+    "srcset": "./public/img/work-lih/256/compensaid-full-02-project.webp 256w,./public/img/work-lih/512/compensaid-full-02-project.webp 512w,./public/img/work-lih/968/compensaid-full-02-project.webp 968w,./public/img/work-lih/1280/compensaid-full-02-project.webp 1280w",
+    "width": 256,
+    "height": 963
+  },
+  "./public/img/work-xbionic/x-bionic-startpage.jpg": {
+    "srcset": "./public/img/work-xbionic/256/x-bionic-startpage.jpg 256w,./public/img/work-xbionic/512/x-bionic-startpage.jpg 512w,./public/img/work-xbionic/968/x-bionic-startpage.jpg 968w,./public/img/work-xbionic/1280/x-bionic-startpage.jpg 1280w",
+    "width": 256,
+    "height": 1004
+  },
+  "./public/img/work-xbionic/x-bionic-startpage.webp": {
+    "srcset": "./public/img/work-xbionic/256/x-bionic-startpage.webp 256w,./public/img/work-xbionic/512/x-bionic-startpage.webp 512w,./public/img/work-xbionic/968/x-bionic-startpage.webp 968w,./public/img/work-xbionic/1280/x-bionic-startpage.webp 1280w",
+    "width": 256,
+    "height": 1004
+  },
+  "./public/img/works-brutal/project-daesk-01-logo.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-daesk-01-logo.jpg 256w,./public/img/works-brutal/512/project-daesk-01-logo.jpg 512w,./public/img/works-brutal/968/project-daesk-01-logo.jpg 968w,./public/img/works-brutal/1280/project-daesk-01-logo.jpg 1280w,./public/img/works-brutal/1680/project-daesk-01-logo.jpg 1680w,./public/img/works-brutal/1920/project-daesk-01-logo.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-daesk-01-logo.webp": {
+    "srcset": "./public/img/works-brutal/256/project-daesk-01-logo.webp 256w,./public/img/works-brutal/512/project-daesk-01-logo.webp 512w,./public/img/works-brutal/968/project-daesk-01-logo.webp 968w,./public/img/works-brutal/1280/project-daesk-01-logo.webp 1280w,./public/img/works-brutal/1680/project-daesk-01-logo.webp 1680w,./public/img/works-brutal/1920/project-daesk-01-logo.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-daesk-01.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-daesk-01.jpg 256w,./public/img/works-brutal/512/project-daesk-01.jpg 512w,./public/img/works-brutal/968/project-daesk-01.jpg 968w,./public/img/works-brutal/1280/project-daesk-01.jpg 1280w,./public/img/works-brutal/1680/project-daesk-01.jpg 1680w,./public/img/works-brutal/1920/project-daesk-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-daesk-01.webp": {
+    "srcset": "./public/img/works-brutal/256/project-daesk-01.webp 256w,./public/img/works-brutal/512/project-daesk-01.webp 512w,./public/img/works-brutal/968/project-daesk-01.webp 968w,./public/img/works-brutal/1280/project-daesk-01.webp 1280w,./public/img/works-brutal/1680/project-daesk-01.webp 1680w,./public/img/works-brutal/1920/project-daesk-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-daesk-02.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-daesk-02.jpg 256w,./public/img/works-brutal/512/project-daesk-02.jpg 512w,./public/img/works-brutal/968/project-daesk-02.jpg 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-brutal/project-daesk-02.webp": {
+    "srcset": "./public/img/works-brutal/256/project-daesk-02.webp 256w,./public/img/works-brutal/512/project-daesk-02.webp 512w,./public/img/works-brutal/968/project-daesk-02.webp 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-brutal/project-lih-01-logo.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-lih-01-logo.jpg 256w,./public/img/works-brutal/512/project-lih-01-logo.jpg 512w,./public/img/works-brutal/968/project-lih-01-logo.jpg 968w,./public/img/works-brutal/1280/project-lih-01-logo.jpg 1280w,./public/img/works-brutal/1680/project-lih-01-logo.jpg 1680w,./public/img/works-brutal/1920/project-lih-01-logo.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-lih-01-logo.webp": {
+    "srcset": "./public/img/works-brutal/256/project-lih-01-logo.webp 256w,./public/img/works-brutal/512/project-lih-01-logo.webp 512w,./public/img/works-brutal/968/project-lih-01-logo.webp 968w,./public/img/works-brutal/1280/project-lih-01-logo.webp 1280w,./public/img/works-brutal/1680/project-lih-01-logo.webp 1680w,./public/img/works-brutal/1920/project-lih-01-logo.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-lih-01.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-lih-01.jpg 256w,./public/img/works-brutal/512/project-lih-01.jpg 512w,./public/img/works-brutal/968/project-lih-01.jpg 968w,./public/img/works-brutal/1280/project-lih-01.jpg 1280w,./public/img/works-brutal/1680/project-lih-01.jpg 1680w,./public/img/works-brutal/1920/project-lih-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-lih-01.webp": {
+    "srcset": "./public/img/works-brutal/256/project-lih-01.webp 256w,./public/img/works-brutal/512/project-lih-01.webp 512w,./public/img/works-brutal/968/project-lih-01.webp 968w,./public/img/works-brutal/1280/project-lih-01.webp 1280w,./public/img/works-brutal/1680/project-lih-01.webp 1680w,./public/img/works-brutal/1920/project-lih-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-lih-02.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-lih-02.jpg 256w,./public/img/works-brutal/512/project-lih-02.jpg 512w,./public/img/works-brutal/968/project-lih-02.jpg 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-brutal/project-lih-02.webp": {
+    "srcset": "./public/img/works-brutal/256/project-lih-02.webp 256w,./public/img/works-brutal/512/project-lih-02.webp 512w,./public/img/works-brutal/968/project-lih-02.webp 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-brutal/project-xbionic-01-logo.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-xbionic-01-logo.jpg 256w,./public/img/works-brutal/512/project-xbionic-01-logo.jpg 512w,./public/img/works-brutal/968/project-xbionic-01-logo.jpg 968w,./public/img/works-brutal/1280/project-xbionic-01-logo.jpg 1280w,./public/img/works-brutal/1680/project-xbionic-01-logo.jpg 1680w,./public/img/works-brutal/1920/project-xbionic-01-logo.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-xbionic-01-logo.webp": {
+    "srcset": "./public/img/works-brutal/256/project-xbionic-01-logo.webp 256w,./public/img/works-brutal/512/project-xbionic-01-logo.webp 512w,./public/img/works-brutal/968/project-xbionic-01-logo.webp 968w,./public/img/works-brutal/1280/project-xbionic-01-logo.webp 1280w,./public/img/works-brutal/1680/project-xbionic-01-logo.webp 1680w,./public/img/works-brutal/1920/project-xbionic-01-logo.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-xbionic-01.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-xbionic-01.jpg 256w,./public/img/works-brutal/512/project-xbionic-01.jpg 512w,./public/img/works-brutal/968/project-xbionic-01.jpg 968w,./public/img/works-brutal/1280/project-xbionic-01.jpg 1280w,./public/img/works-brutal/1680/project-xbionic-01.jpg 1680w,./public/img/works-brutal/1920/project-xbionic-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-xbionic-01.webp": {
+    "srcset": "./public/img/works-brutal/256/project-xbionic-01.webp 256w,./public/img/works-brutal/512/project-xbionic-01.webp 512w,./public/img/works-brutal/968/project-xbionic-01.webp 968w,./public/img/works-brutal/1280/project-xbionic-01.webp 1280w,./public/img/works-brutal/1680/project-xbionic-01.webp 1680w,./public/img/works-brutal/1920/project-xbionic-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-brutal/project-xbionic-02.jpg": {
+    "srcset": "./public/img/works-brutal/256/project-xbionic-02.jpg 256w,./public/img/works-brutal/512/project-xbionic-02.jpg 512w",
+    "width": 256,
+    "height": 383
+  },
+  "./public/img/works-brutal/project-xbionic-02.webp": {
+    "srcset": "./public/img/works-brutal/256/project-xbionic-02.webp 256w,./public/img/works-brutal/512/project-xbionic-02.webp 512w",
+    "width": 256,
+    "height": 383
+  },
+  "./public/img/works-corporate/project-daesk-01.jpg": {
+    "srcset": "./public/img/works-corporate/256/project-daesk-01.jpg 256w,./public/img/works-corporate/512/project-daesk-01.jpg 512w,./public/img/works-corporate/968/project-daesk-01.jpg 968w,./public/img/works-corporate/1280/project-daesk-01.jpg 1280w,./public/img/works-corporate/1680/project-daesk-01.jpg 1680w,./public/img/works-corporate/1920/project-daesk-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-corporate/project-daesk-01.webp": {
+    "srcset": "./public/img/works-corporate/256/project-daesk-01.webp 256w,./public/img/works-corporate/512/project-daesk-01.webp 512w,./public/img/works-corporate/968/project-daesk-01.webp 968w,./public/img/works-corporate/1280/project-daesk-01.webp 1280w,./public/img/works-corporate/1680/project-daesk-01.webp 1680w,./public/img/works-corporate/1920/project-daesk-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-corporate/project-daesk-02.jpg": {
+    "srcset": "./public/img/works-corporate/256/project-daesk-02.jpg 256w,./public/img/works-corporate/512/project-daesk-02.jpg 512w,./public/img/works-corporate/968/project-daesk-02.jpg 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-corporate/project-daesk-02.webp": {
+    "srcset": "./public/img/works-corporate/256/project-daesk-02.webp 256w,./public/img/works-corporate/512/project-daesk-02.webp 512w,./public/img/works-corporate/968/project-daesk-02.webp 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-corporate/project-lih-01.jpg": {
+    "srcset": "./public/img/works-corporate/256/project-lih-01.jpg 256w,./public/img/works-corporate/512/project-lih-01.jpg 512w,./public/img/works-corporate/968/project-lih-01.jpg 968w,./public/img/works-corporate/1280/project-lih-01.jpg 1280w,./public/img/works-corporate/1680/project-lih-01.jpg 1680w,./public/img/works-corporate/1920/project-lih-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-corporate/project-lih-01.webp": {
+    "srcset": "./public/img/works-corporate/256/project-lih-01.webp 256w,./public/img/works-corporate/512/project-lih-01.webp 512w,./public/img/works-corporate/968/project-lih-01.webp 968w,./public/img/works-corporate/1280/project-lih-01.webp 1280w,./public/img/works-corporate/1680/project-lih-01.webp 1680w,./public/img/works-corporate/1920/project-lih-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-corporate/project-lih-02.jpg": {
+    "srcset": "./public/img/works-corporate/256/project-lih-02.jpg 256w,./public/img/works-corporate/512/project-lih-02.jpg 512w,./public/img/works-corporate/968/project-lih-02.jpg 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-corporate/project-lih-02.webp": {
+    "srcset": "./public/img/works-corporate/256/project-lih-02.webp 256w,./public/img/works-corporate/512/project-lih-02.webp 512w,./public/img/works-corporate/968/project-lih-02.webp 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-corporate/project-xbionic-01.jpg": {
+    "srcset": "./public/img/works-corporate/256/project-xbionic-01.jpg 256w,./public/img/works-corporate/512/project-xbionic-01.jpg 512w,./public/img/works-corporate/968/project-xbionic-01.jpg 968w,./public/img/works-corporate/1280/project-xbionic-01.jpg 1280w,./public/img/works-corporate/1680/project-xbionic-01.jpg 1680w,./public/img/works-corporate/1920/project-xbionic-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-corporate/project-xbionic-01.webp": {
+    "srcset": "./public/img/works-corporate/256/project-xbionic-01.webp 256w,./public/img/works-corporate/512/project-xbionic-01.webp 512w,./public/img/works-corporate/968/project-xbionic-01.webp 968w,./public/img/works-corporate/1280/project-xbionic-01.webp 1280w,./public/img/works-corporate/1680/project-xbionic-01.webp 1680w,./public/img/works-corporate/1920/project-xbionic-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-corporate/project-xbionic-02.jpg": {
+    "srcset": "./public/img/works-corporate/256/project-xbionic-02.jpg 256w,./public/img/works-corporate/512/project-xbionic-02.jpg 512w",
+    "width": 256,
+    "height": 383
+  },
+  "./public/img/works-corporate/project-xbionic-02.webp": {
+    "srcset": "./public/img/works-corporate/256/project-xbionic-02.webp 256w,./public/img/works-corporate/512/project-xbionic-02.webp 512w",
+    "width": 256,
+    "height": 383
+  },
+  "./public/img/works-daesk/daesk-02-works-komposition-2560x1280.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-02-works-komposition-2560x1280.jpg 256w,./public/img/works-daesk/512/daesk-02-works-komposition-2560x1280.jpg 512w,./public/img/works-daesk/968/daesk-02-works-komposition-2560x1280.jpg 968w,./public/img/works-daesk/1280/daesk-02-works-komposition-2560x1280.jpg 1280w,./public/img/works-daesk/1680/daesk-02-works-komposition-2560x1280.jpg 1680w,./public/img/works-daesk/1920/daesk-02-works-komposition-2560x1280.jpg 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/works-daesk/daesk-02-works-komposition-2560x1280.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-02-works-komposition-2560x1280.webp 256w,./public/img/works-daesk/512/daesk-02-works-komposition-2560x1280.webp 512w,./public/img/works-daesk/968/daesk-02-works-komposition-2560x1280.webp 968w,./public/img/works-daesk/1280/daesk-02-works-komposition-2560x1280.webp 1280w,./public/img/works-daesk/1680/daesk-02-works-komposition-2560x1280.webp 1680w,./public/img/works-daesk/1920/daesk-02-works-komposition-2560x1280.webp 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/works-daesk/daesk-04a-smartphone-1080x1920.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-04a-smartphone-1080x1920.jpg 256w,./public/img/works-daesk/512/daesk-04a-smartphone-1080x1920.jpg 512w,./public/img/works-daesk/968/daesk-04a-smartphone-1080x1920.jpg 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/works-daesk/daesk-04a-smartphone-1080x1920.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-04a-smartphone-1080x1920.webp 256w,./public/img/works-daesk/512/daesk-04a-smartphone-1080x1920.webp 512w,./public/img/works-daesk/968/daesk-04a-smartphone-1080x1920.webp 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/works-daesk/daesk-04b-smartphone-1080x1920.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-04b-smartphone-1080x1920.jpg 256w,./public/img/works-daesk/512/daesk-04b-smartphone-1080x1920.jpg 512w,./public/img/works-daesk/968/daesk-04b-smartphone-1080x1920.jpg 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/works-daesk/daesk-04b-smartphone-1080x1920.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-04b-smartphone-1080x1920.webp 256w,./public/img/works-daesk/512/daesk-04b-smartphone-1080x1920.webp 512w,./public/img/works-daesk/968/daesk-04b-smartphone-1080x1920.webp 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/works-daesk/daesk-04c-smartphone-1080x1920.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-04c-smartphone-1080x1920.jpg 256w,./public/img/works-daesk/512/daesk-04c-smartphone-1080x1920.jpg 512w,./public/img/works-daesk/968/daesk-04c-smartphone-1080x1920.jpg 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/works-daesk/daesk-04c-smartphone-1080x1920.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-04c-smartphone-1080x1920.webp 256w,./public/img/works-daesk/512/daesk-04c-smartphone-1080x1920.webp 512w,./public/img/works-daesk/968/daesk-04c-smartphone-1080x1920.webp 968w",
+    "width": 256,
+    "height": 455
+  },
+  "./public/img/works-daesk/daesk-05-works-komposition-2560x2560.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-05-works-komposition-2560x2560.jpg 256w,./public/img/works-daesk/512/daesk-05-works-komposition-2560x2560.jpg 512w,./public/img/works-daesk/968/daesk-05-works-komposition-2560x2560.jpg 968w,./public/img/works-daesk/1280/daesk-05-works-komposition-2560x2560.jpg 1280w,./public/img/works-daesk/1680/daesk-05-works-komposition-2560x2560.jpg 1680w,./public/img/works-daesk/1920/daesk-05-works-komposition-2560x2560.jpg 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/works-daesk/daesk-05-works-komposition-2560x2560.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-05-works-komposition-2560x2560.webp 256w,./public/img/works-daesk/512/daesk-05-works-komposition-2560x2560.webp 512w,./public/img/works-daesk/968/daesk-05-works-komposition-2560x2560.webp 968w,./public/img/works-daesk/1280/daesk-05-works-komposition-2560x2560.webp 1280w,./public/img/works-daesk/1680/daesk-05-works-komposition-2560x2560.webp 1680w,./public/img/works-daesk/1920/daesk-05-works-komposition-2560x2560.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/works-daesk/daesk-07-works-komposition-2560x2560.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-07-works-komposition-2560x2560.jpg 256w,./public/img/works-daesk/512/daesk-07-works-komposition-2560x2560.jpg 512w,./public/img/works-daesk/968/daesk-07-works-komposition-2560x2560.jpg 968w,./public/img/works-daesk/1280/daesk-07-works-komposition-2560x2560.jpg 1280w,./public/img/works-daesk/1680/daesk-07-works-komposition-2560x2560.jpg 1680w,./public/img/works-daesk/1920/daesk-07-works-komposition-2560x2560.jpg 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/works-daesk/daesk-07-works-komposition-2560x2560.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-07-works-komposition-2560x2560.webp 256w,./public/img/works-daesk/512/daesk-07-works-komposition-2560x2560.webp 512w,./public/img/works-daesk/968/daesk-07-works-komposition-2560x2560.webp 968w,./public/img/works-daesk/1280/daesk-07-works-komposition-2560x2560.webp 1280w,./public/img/works-daesk/1680/daesk-07-works-komposition-2560x2560.webp 1680w,./public/img/works-daesk/1920/daesk-07-works-komposition-2560x2560.webp 1920w",
+    "width": 256,
+    "height": 256
+  },
+  "./public/img/works-daesk/daesk-08-works-komposition-2560x1280.jpg": {
+    "srcset": "./public/img/works-daesk/256/daesk-08-works-komposition-2560x1280.jpg 256w,./public/img/works-daesk/512/daesk-08-works-komposition-2560x1280.jpg 512w,./public/img/works-daesk/968/daesk-08-works-komposition-2560x1280.jpg 968w,./public/img/works-daesk/1280/daesk-08-works-komposition-2560x1280.jpg 1280w,./public/img/works-daesk/1680/daesk-08-works-komposition-2560x1280.jpg 1680w,./public/img/works-daesk/1920/daesk-08-works-komposition-2560x1280.jpg 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/works-daesk/daesk-08-works-komposition-2560x1280.webp": {
+    "srcset": "./public/img/works-daesk/256/daesk-08-works-komposition-2560x1280.webp 256w,./public/img/works-daesk/512/daesk-08-works-komposition-2560x1280.webp 512w,./public/img/works-daesk/968/daesk-08-works-komposition-2560x1280.webp 968w,./public/img/works-daesk/1280/daesk-08-works-komposition-2560x1280.webp 1280w,./public/img/works-daesk/1680/daesk-08-works-komposition-2560x1280.webp 1680w,./public/img/works-daesk/1920/daesk-08-works-komposition-2560x1280.webp 1920w",
+    "width": 256,
+    "height": 128
+  },
+  "./public/img/works-daesk/shirts.jpg": {
+    "srcset": "./public/img/works-daesk/256/shirts.jpg 256w,./public/img/works-daesk/512/shirts.jpg 512w,./public/img/works-daesk/968/shirts.jpg 968w,./public/img/works-daesk/1280/shirts.jpg 1280w,./public/img/works-daesk/1680/shirts.jpg 1680w,./public/img/works-daesk/1920/shirts.jpg 1920w",
+    "width": 256,
+    "height": 165
+  },
+  "./public/img/works-daesk/shirts.webp": {
+    "srcset": "./public/img/works-daesk/256/shirts.webp 256w,./public/img/works-daesk/512/shirts.webp 512w,./public/img/works-daesk/968/shirts.webp 968w,./public/img/works-daesk/1280/shirts.webp 1280w,./public/img/works-daesk/1680/shirts.webp 1680w,./public/img/works-daesk/1920/shirts.webp 1920w",
+    "width": 256,
+    "height": 165
+  },
+  "./public/img/works-progressive/project-daesk-01.jpg": {
+    "srcset": "./public/img/works-progressive/256/project-daesk-01.jpg 256w,./public/img/works-progressive/512/project-daesk-01.jpg 512w,./public/img/works-progressive/968/project-daesk-01.jpg 968w,./public/img/works-progressive/1280/project-daesk-01.jpg 1280w,./public/img/works-progressive/1680/project-daesk-01.jpg 1680w,./public/img/works-progressive/1920/project-daesk-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-progressive/project-daesk-01.webp": {
+    "srcset": "./public/img/works-progressive/256/project-daesk-01.webp 256w,./public/img/works-progressive/512/project-daesk-01.webp 512w,./public/img/works-progressive/968/project-daesk-01.webp 968w,./public/img/works-progressive/1280/project-daesk-01.webp 1280w,./public/img/works-progressive/1680/project-daesk-01.webp 1680w,./public/img/works-progressive/1920/project-daesk-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-progressive/project-daesk-02.jpg": {
+    "srcset": "./public/img/works-progressive/256/project-daesk-02.jpg 256w,./public/img/works-progressive/512/project-daesk-02.jpg 512w,./public/img/works-progressive/968/project-daesk-02.jpg 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-progressive/project-daesk-02.webp": {
+    "srcset": "./public/img/works-progressive/256/project-daesk-02.webp 256w,./public/img/works-progressive/512/project-daesk-02.webp 512w,./public/img/works-progressive/968/project-daesk-02.webp 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-progressive/project-lih-01.jpg": {
+    "srcset": "./public/img/works-progressive/256/project-lih-01.jpg 256w,./public/img/works-progressive/512/project-lih-01.jpg 512w,./public/img/works-progressive/968/project-lih-01.jpg 968w,./public/img/works-progressive/1280/project-lih-01.jpg 1280w,./public/img/works-progressive/1680/project-lih-01.jpg 1680w,./public/img/works-progressive/1920/project-lih-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-progressive/project-lih-01.webp": {
+    "srcset": "./public/img/works-progressive/256/project-lih-01.webp 256w,./public/img/works-progressive/512/project-lih-01.webp 512w,./public/img/works-progressive/968/project-lih-01.webp 968w,./public/img/works-progressive/1280/project-lih-01.webp 1280w,./public/img/works-progressive/1680/project-lih-01.webp 1680w,./public/img/works-progressive/1920/project-lih-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-progressive/project-lih-02.jpg": {
+    "srcset": "./public/img/works-progressive/256/project-lih-02.jpg 256w,./public/img/works-progressive/512/project-lih-02.jpg 512w,./public/img/works-progressive/968/project-lih-02.jpg 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-progressive/project-lih-02.webp": {
+    "srcset": "./public/img/works-progressive/256/project-lih-02.webp 256w,./public/img/works-progressive/512/project-lih-02.webp 512w,./public/img/works-progressive/968/project-lih-02.webp 968w",
+    "width": 256,
+    "height": 171
+  },
+  "./public/img/works-progressive/project-xbionic-01.jpg": {
+    "srcset": "./public/img/works-progressive/256/project-xbionic-01.jpg 256w,./public/img/works-progressive/512/project-xbionic-01.jpg 512w,./public/img/works-progressive/968/project-xbionic-01.jpg 968w,./public/img/works-progressive/1280/project-xbionic-01.jpg 1280w,./public/img/works-progressive/1680/project-xbionic-01.jpg 1680w,./public/img/works-progressive/1920/project-xbionic-01.jpg 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-progressive/project-xbionic-01.webp": {
+    "srcset": "./public/img/works-progressive/256/project-xbionic-01.webp 256w,./public/img/works-progressive/512/project-xbionic-01.webp 512w,./public/img/works-progressive/968/project-xbionic-01.webp 968w,./public/img/works-progressive/1280/project-xbionic-01.webp 1280w,./public/img/works-progressive/1680/project-xbionic-01.webp 1680w,./public/img/works-progressive/1920/project-xbionic-01.webp 1920w",
+    "width": 256,
+    "height": 152
+  },
+  "./public/img/works-progressive/project-xbionic-02.jpg": {
+    "srcset": "./public/img/works-progressive/256/project-xbionic-02.jpg 256w,./public/img/works-progressive/512/project-xbionic-02.jpg 512w",
+    "width": 256,
+    "height": 383
+  },
+  "./public/img/works-progressive/project-xbionic-02.webp": {
+    "srcset": "./public/img/works-progressive/256/project-xbionic-02.webp 256w,./public/img/works-progressive/512/project-xbionic-02.webp 512w",
+    "width": 256,
+    "height": 383
+  },
+  "./public/video/core-brutal/01-dean-sascha": {
+    "poster": "./public/video/core-brutal/01-dean-sascha-720.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/core-brutal/01-dean-sascha-360.mp4",
+        "imgSrc": "./public/video/core-brutal/01-dean-sascha-360.jpg",
+        "width": 360,
+        "height": 480
+      },
+      {
+        "src": "./public/video/core-brutal/01-dean-sascha-720.mp4",
+        "imgSrc": "./public/video/core-brutal/01-dean-sascha-720.jpg",
+        "width": 720,
+        "height": 960
+      }
+    ],
+    "sizes": "360,720",
+    "width": 360,
+    "height": 480
+  },
+  "./public/video/core-brutal/02-gavin": {
+    "poster": "./public/video/core-brutal/02-gavin-720.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/core-brutal/02-gavin-360.mp4",
+        "imgSrc": "./public/video/core-brutal/02-gavin-360.jpg",
+        "width": 360,
+        "height": 480
+      },
+      {
+        "src": "./public/video/core-brutal/02-gavin-720.mp4",
+        "imgSrc": "./public/video/core-brutal/02-gavin-720.jpg",
+        "width": 720,
+        "height": 960
+      }
+    ],
+    "sizes": "360,720",
+    "width": 360,
+    "height": 480
+  },
+  "./public/video/core-brutal/03-natalie": {
+    "poster": "./public/video/core-brutal/03-natalie-720.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/core-brutal/03-natalie-360.mp4",
+        "imgSrc": "./public/video/core-brutal/03-natalie-360.jpg",
+        "width": 360,
+        "height": 480
+      },
+      {
+        "src": "./public/video/core-brutal/03-natalie-720.mp4",
+        "imgSrc": "./public/video/core-brutal/03-natalie-720.jpg",
+        "width": 720,
+        "height": 960
+      }
+    ],
+    "sizes": "360,720",
+    "width": 360,
+    "height": 480
+  },
+  "./public/video/core-brutal/04-dmitry": {
+    "poster": "./public/video/core-brutal/04-dmitry-720.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/core-brutal/04-dmitry-360.mp4",
+        "imgSrc": "./public/video/core-brutal/04-dmitry-360.jpg",
+        "width": 360,
+        "height": 480
+      },
+      {
+        "src": "./public/video/core-brutal/04-dmitry-720.mp4",
+        "imgSrc": "./public/video/core-brutal/04-dmitry-720.jpg",
+        "width": 720,
+        "height": 960
+      }
+    ],
+    "sizes": "360,720",
+    "width": 360,
+    "height": 480
+  },
+  "./public/video/core-brutal/hero-anim": {
+    "poster": "./public/video/core-brutal/hero-anim-640.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/core-brutal/hero-anim-1280.mp4",
+        "imgSrc": "./public/video/core-brutal/hero-anim-1280.jpg",
+        "width": 1280,
+        "height": 860
+      },
+      {
+        "src": "./public/video/core-brutal/hero-anim-1920.mp4",
+        "imgSrc": "./public/video/core-brutal/hero-anim-1920.jpg",
+        "width": 1920,
+        "height": 1290
+      },
+      {
+        "src": "./public/video/core-brutal/hero-anim-640.mp4",
+        "imgSrc": "./public/video/core-brutal/hero-anim-640.jpg",
+        "width": 640,
+        "height": 430
+      }
+    ],
+    "sizes": "1280,1920,640",
+    "width": 1280,
+    "height": 860
+  },
+  "./public/video/core-brutal/team-anim": {
+    "poster": "./public/video/core-brutal/team-anim-996.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/core-brutal/team-anim-360.mp4",
+        "imgSrc": "./public/video/core-brutal/team-anim-360.jpg",
+        "width": 360,
+        "height": 434
+      },
+      {
+        "src": "./public/video/core-brutal/team-anim-640.mp4",
+        "imgSrc": "./public/video/core-brutal/team-anim-640.jpg",
+        "width": 640,
+        "height": 770
+      },
+      {
+        "src": "./public/video/core-brutal/team-anim-996.mp4",
+        "imgSrc": "./public/video/core-brutal/team-anim-996.jpg",
+        "width": 996,
+        "height": 1200
+      }
+    ],
+    "sizes": "360,640,996",
+    "width": 360,
+    "height": 434
+  },
+  "./public/video/work-daesk/daesk-01-start": {
+    "poster": "./public/video/work-daesk/daesk-01-start-638.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-daesk/daesk-01-start-1021.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-01-start-1021.jpg",
+        "width": 1022,
+        "height": 480
+      },
+      {
+        "src": "./public/video/work-daesk/daesk-01-start-1906.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-01-start-1906.jpg",
+        "width": 1906,
+        "height": 896
+      },
+      {
+        "src": "./public/video/work-daesk/daesk-01-start-638.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-01-start-638.jpg",
+        "width": 640,
+        "height": 300
+      }
+    ],
+    "sizes": "1022,1906,640",
+    "width": 1022,
+    "height": 480
+  },
+  "./public/video/work-daesk/daesk-03-secret-area": {
+    "poster": "./public/video/work-daesk/daesk-03-secret-area-638.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-daesk/daesk-03-secret-area-1021.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-03-secret-area-1021.jpg",
+        "width": 1024,
+        "height": 480
+      },
+      {
+        "src": "./public/video/work-daesk/daesk-03-secret-area-1906.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-03-secret-area-1906.jpg",
+        "width": 1906,
+        "height": 896
+      },
+      {
+        "src": "./public/video/work-daesk/daesk-03-secret-area-638.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-03-secret-area-638.jpg",
+        "width": 640,
+        "height": 300
+      }
+    ],
+    "sizes": "1024,1906,640",
+    "width": 1024,
+    "height": 480
+  },
+  "./public/video/work-daesk/daesk-06-manifesto": {
+    "poster": "./public/video/work-daesk/daesk-06-manifesto-639.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-daesk/daesk-06-manifesto-1023.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-06-manifesto-1023.jpg",
+        "width": 1024,
+        "height": 480
+      },
+      {
+        "src": "./public/video/work-daesk/daesk-06-manifesto-1906.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-06-manifesto-1906.jpg",
+        "width": 1906,
+        "height": 894
+      },
+      {
+        "src": "./public/video/work-daesk/daesk-06-manifesto-639.mp4",
+        "imgSrc": "./public/video/work-daesk/daesk-06-manifesto-639.jpg",
+        "width": 640,
+        "height": 300
+      }
+    ],
+    "sizes": "1024,1906,640",
+    "width": 1024,
+    "height": 480
+  },
+  "./public/video/work-lih/hero-lih-01": {
+    "poster": "./public/video/work-lih/hero-lih-01-640.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-lih/hero-lih-01-1024.mp4",
+        "imgSrc": "./public/video/work-lih/hero-lih-01-1024.jpg",
+        "width": 1024,
+        "height": 576
+      },
+      {
+        "src": "./public/video/work-lih/hero-lih-01-1920.mp4",
+        "imgSrc": "./public/video/work-lih/hero-lih-01-1920.jpg",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "./public/video/work-lih/hero-lih-01-640.mp4",
+        "imgSrc": "./public/video/work-lih/hero-lih-01-640.jpg",
+        "width": 640,
+        "height": 360
+      }
+    ],
+    "sizes": "1024,1920,640",
+    "width": 1024,
+    "height": 576
+  },
+  "./public/video/work-xbionic/x-bionic-01-startpage": {
+    "poster": "./public/video/work-xbionic/x-bionic-01-startpage-640.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-xbionic/x-bionic-01-startpage-1904.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-01-startpage-1904.jpg",
+        "width": 1904,
+        "height": 904
+      },
+      {
+        "src": "./public/video/work-xbionic/x-bionic-01-startpage-640.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-01-startpage-640.jpg",
+        "width": 640,
+        "height": 302
+      }
+    ],
+    "sizes": "1904,640",
+    "width": 1904,
+    "height": 904
+  },
+  "./public/video/work-xbionic/x-bionic-02-listview-cycling": {
+    "poster": "./public/video/work-xbionic/x-bionic-02-listview-cycling-640.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-xbionic/x-bionic-02-listview-cycling-1904.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-02-listview-cycling-1904.jpg",
+        "width": 1904,
+        "height": 904
+      },
+      {
+        "src": "./public/video/work-xbionic/x-bionic-02-listview-cycling-640.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-02-listview-cycling-640.jpg",
+        "width": 640,
+        "height": 302
+      }
+    ],
+    "sizes": "1904,640",
+    "width": 1904,
+    "height": 904
+  },
+  "./public/video/work-xbionic/x-bionic-03-product-detail-page": {
+    "poster": "./public/video/work-xbionic/x-bionic-03-product-detail-page-640.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-xbionic/x-bionic-03-product-detail-page-1904.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-03-product-detail-page-1904.jpg",
+        "width": 1904,
+        "height": 904
+      },
+      {
+        "src": "./public/video/work-xbionic/x-bionic-03-product-detail-page-640.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-03-product-detail-page-640.jpg",
+        "width": 640,
+        "height": 302
+      }
+    ],
+    "sizes": "1904,640",
+    "width": 1904,
+    "height": 904
+  },
+  "./public/video/work-xbionic/x-bionic-loader": {
+    "poster": "./public/video/work-xbionic/x-bionic-loader-640.jpg",
+    "srcSet": [
+      {
+        "src": "./public/video/work-xbionic/x-bionic-loader-1024.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-loader-1024.jpg",
+        "width": 1024,
+        "height": 512
+      },
+      {
+        "src": "./public/video/work-xbionic/x-bionic-loader-1920.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-loader-1920.jpg",
+        "width": 1920,
+        "height": 960
+      },
+      {
+        "src": "./public/video/work-xbionic/x-bionic-loader-640.mp4",
+        "imgSrc": "./public/video/work-xbionic/x-bionic-loader-640.jpg",
+        "width": 640,
+        "height": 320
+      }
+    ],
+    "sizes": "1024,1920,640",
+    "width": 1024,
+    "height": 512
+  }
+}

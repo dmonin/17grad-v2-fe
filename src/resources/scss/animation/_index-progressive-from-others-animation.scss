@@ -1,0 +1,18 @@
+.index.--view-in {
+  .index__logo {
+    transition: transform 1s ease-in-out, opacity 1s ease-out;
+  }
+
+  .index__logo {
+    transition-timing-function: ease-out;
+    transition-delay: 0.3s;
+    transform: translate(-50%, -50%);
+    transition: transform 1.2s ease-in-out 0.3s, opacity 1s ease-out 0.5s;
+  }
+}
+
+.index[data-from] {
+  .index__logo {
+    transform: translate(-50%, -200vh);
+  }
+}

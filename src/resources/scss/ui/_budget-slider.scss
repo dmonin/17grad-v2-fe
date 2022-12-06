@@ -1,0 +1,39 @@
+
+.budget-slider {
+  border-bottom: 1px solid $color-corporate-gray;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
+  position: relative;
+
+  .track {
+    left: 50px;
+    height: 5px;
+    position: absolute;
+    transform: translate(0, 50%);
+    bottom: 0;
+  }
+
+  .track-min,
+  .track-max {
+    border-radius: 50%;
+    bottom: 0;
+    height: 30px;
+    left: 0;
+    position : absolute;
+    width: 30px;
+    transform: translate(-50%, 50%);
+  }
+
+  .track-min {
+    left: 50px;
+  }
+
+  .track-max {
+    left: 150px;
+  }
+
+  .value {
+    cursor: default;
+    font-size: 2rem;
+  }
+}

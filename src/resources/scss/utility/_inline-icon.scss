@@ -1,0 +1,8 @@
+@mixin inline-icon() {
+  .svg-icon {
+    color: inherit;
+    fill: currentColor;
+    width: 100%;
+    @content;
+  }
+}

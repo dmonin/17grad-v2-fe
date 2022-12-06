@@ -1,0 +1,35 @@
+@use "sass:math";
+
+.logo {
+  $logo-height: 55px;
+  $logo-width: 77px;
+  $logo-aspect-ratio: math.div(77, 55);
+  content-visibility: auto;
+  contain: strict;
+  display: block;
+  position: fixed;
+
+  height: math.div(40px, $logo-aspect-ratio);
+  left: 30px;
+  width: 40px;
+  transition: color 0.4s ease-in-out;
+  transform: translate(0, -50%);
+  top: $spacing-header-mobile;
+  z-index: 16;
+
+  @include break('tablet') {
+    height: 55px;
+    left: $spacing-border-desktop;
+    width: 77px;
+    top: $spacing-header-desktop;
+  }
+
+  svg {
+    color: inherit;
+    fill: currentColor;
+  }
+
+  body[data-view=work-detail] & {
+    color: #fff;
+  }
+}

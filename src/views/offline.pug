@@ -1,0 +1,20 @@
+include mixins/icon
+include mixins/translation
+doctype html
+html(lang='en')
+  head
+    title= title
+    style
+      include ../../public/css/offline.css
+
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content=description)
+  body
+    a.logo(title='17GRAD',href='/')
+      include icons/logo
+    .offline
+      h2 17°Studio
+      p.nojs It seems you are not connected to internet. Here are few options to get in touch.
+      include contact-options
+
+

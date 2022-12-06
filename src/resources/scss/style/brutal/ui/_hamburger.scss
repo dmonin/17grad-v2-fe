@@ -1,0 +1,31 @@
+.hamburger {
+  right: 0;
+  top: 0;
+  width: auto;
+
+  a {
+    transition: color 0.5s ease-out;
+  }
+
+  .text {
+    color: $color-brutal-blue;
+    font-family: $ff-syne;
+    font-variation-settings: $fw-syne-bold;
+    font-size: 6vw;
+    line-height: 0.4;
+    margin-left: 0;
+    margin-top: 1.6rem;
+    position: static;
+    transform: translate(0%, 0%);
+    transition: color 0.1s ease-out, font-variation-settings 0.3s ease-out;
+  }
+
+  .text:hover {
+    color: $color-brutal-yellow;
+    font-variation-settings: "wght" 800;
+  }
+
+  .line {
+    display: none;
+  }
+}

@@ -1,0 +1,7 @@
+.logo {
+  color: $color-corporate-blue;
+
+  .nav-expanded & {
+    color: $color-corporate-white;
+  }
+}

@@ -1,0 +1,219 @@
+// Blue background at top
+.core__header__bg {
+  height: 100%;
+  transition: height 1.5s cubic-bezier(.22,.5,.06,1);
+
+  .appear:not(.--appear-in) & {
+    height: 0;
+  }
+}
+
+.core__header {
+  // yellow core
+  h1 {
+    transition: top 1.5s ease-out;
+  }
+
+  .appear:not(.--appear-in) h1 {
+    top: 160%;
+    transition: none;
+  }
+
+  // blue core
+  h1:before {
+    transition: transform 1s ease-out;
+  }
+
+  .appear:not(.--appear-in) h1:before {
+    transform: translate(30%, 50%);
+    transition: none;
+  }
+}
+
+// Headline
+.core__header {
+  h2 {
+    transition: transform 1.25s cubic-bezier(.22,.5,.06,1);
+  }
+
+  .appear:not(.--appear-in) h2 {
+    transform: translate(-20vw, 0);
+    @include break('tablet') {
+      transform: rotate(-90deg) translate(0, -30vw);
+    }
+    transition: none;
+  }
+}
+
+// Hero Image Zoom
+.core__header__picture img {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  filter: brightness(100%);
+  transform: scale(1);
+  transition: transform 1.25s cubic-bezier(.22,.5,.06,1), filter 1.25s cubic-bezier(.22,.5,.38,1), clip-path 0.5s ease-out;
+
+  .appear:not(.--appear-in) & {
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+    filter: brightness(200%);
+    transform: scale(1.8);
+    transition: none;
+  }
+}
+
+
+//TODO - object does not move
+.core__header .yellow-half-circle {
+//.yellow-half-circle {
+  transform: translate(0, 0vw);
+  transition: transform 1.5s ease-out;
+
+  .appear:not(.--appear-in) & {
+    transform: translate(0, 80vw);
+  }
+}
+
+// Big Circle
+.core__photos__photo1 .circle.appear {
+  height: 0vw;
+  width: 0vw;
+}
+
+.core__photos__photo1 .circle.--appear-in {
+  height: 40vw;
+  width: 40vw;
+  //transform: translate(-50%, 0) scale(1);
+  transition: width 0.5s ease-out, height 0.5s ease-out;
+}
+
+// Image Zoom Out effect
+.core__photos__photo1.appear img,
+.core__photos__photo2.appear img,
+.core__photos__photo3.appear img {
+  transform: scale(1.5);
+  transition-delay: 0.5s;
+  transition: transform 1.5s cubic-bezier(.22,.5,.38,1);
+}
+
+.core__photos__photo1.--appear-in img,
+.core__photos__photo2.--appear-in img,
+.core__photos__photo3.--appear-in img {
+  transform: scale(1);
+}
+
+// Value 1
+.core__values__value:nth-child(1) {
+  .highlight:after {
+    transition-delay: 0.25s;
+  }
+}
+
+// Value 2
+.core__values__value:nth-child(2) {
+  .highlight:after {
+    transition-delay: 0.5s;
+  }
+}
+
+// Value 3
+.core__values__value:nth-child(3) {
+  .highlight:after {
+    transition-delay: 0.75s;
+  }
+}
+
+@import 'core-values-appear';
+
+// People
+//.core__people__member {
+  // Default
+//  &.appear {
+//    .image-slice:nth-child(1) img {
+//      transform: scale(1.5) !important;
+//      transition: transform 0.5s ease-in-out, translate 0.5s ease-out;
+//    }
+//    .image-slice:nth-child(2) img {
+//      transform: scale(1.5) !important;
+//      }
+//    .image-slice:nth-child(3) img {
+//      transform: scale(1.5) !important;
+//      }
+//  }
+
+//  &.--appear-in {
+//    .image-slice img {
+//      transform: scale(1) !important;
+//    }
+//  }
+//}
+
+  // // Dmitry specific
+  // &.appear:nth-child(3) {
+  //   .image-slice:nth-child(1) img {
+  //     transform: scale(1.5) !important;
+  //   }
+  //   .image-slice:nth-child(2) img {
+  //     transform: scale(1.5) !important;
+  //   }
+  //   .image-slice:nth-child(3) img {
+  //     transform: scale(1.5) !important;
+  //   }
+  // }
+
+  // // Sascha
+  // &:nth-child(4) {
+  //   .image-slice img {
+  //     //transition-delay: 0.25s;
+  //   }
+  // }
+
+  // // Natalie
+  // &:nth-child(5) {
+  //   .image-slice img {
+  //     //transition-delay: 0s;
+  //   }
+  // }
+
+  // // Dean
+  // &:nth-child(6) {
+  //   .image-slice img {
+  //     //transition-delay: 0.25s;
+  //   }
+  // }
+
+  // // Gavin
+  // &:nth-child(7) {
+  //   .image-slice img {
+  //     //transition-delay: 0.5s;
+  //   }
+  // }
+// }
+
+
+// Clients
+.core__clients {
+  // Header
+  &__header {
+    h1 {
+      $parallax-value: 20%;
+      transform: translate(0, calc(#{$parallax-value} * var(--parallax, 0)));
+    }
+  .yellow-box.appear {
+    transform: translate(80%, 0%);
+    &.--appear-in {
+      transform: translate(0%, 0%);
+      transition: transform 0.5s ease-out;
+      }
+    }
+  }
+}
+// Work with us
+.core__work-with-us {
+  &__image__wrap.appear img {
+    transform: scale(1.5);
+  }
+
+  &__image__wrap.appear.--appear-in img {
+    transition: transform 0.5s ease-out;
+    transform: scale(1);
+  }
+}

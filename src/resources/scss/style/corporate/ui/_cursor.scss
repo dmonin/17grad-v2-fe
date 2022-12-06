@@ -1,0 +1,12 @@
+#cursor-bg {
+  mix-blend-mode: exclusion;
+  &.--active {
+    background: $color-corporate-blue;
+  }
+}
+
+.cursor-state {
+  font-family: $ff-accent;
+  font-size: 1.25rem;
+}
+

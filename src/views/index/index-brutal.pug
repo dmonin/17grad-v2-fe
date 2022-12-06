@@ -1,0 +1,27 @@
+.index(data-from=fromPath)
+  header.index__about
+    h1
+      span.highlight 17°Studio
+      +translation('index.start.brutal')
+  .index__big-typo
+  .index__logo
+    .index__logo__graphic
+      canvas.index__logo__canvas.cmp
+  .index__hands
+    .index__hands__left
+      canvas.masked-video.brutal-hand.hand-video.cmp(data-src=staticPath + 'video/index-brutal/hand-left.mp4')
+    .index__hands__right
+      canvas.masked-video.brutal-hand.hand-video.cmp(data-src=staticPath +  'video/index-brutal/hand-right.mp4')
+  .index__nav.cmp
+    .scrollable.cmp
+      .scrollable__content
+        ul
+          li(data-num='01')
+            a.internal-link.cmp(href='core',data-cursor='active,' + texts['index.start.navigation.core.hover'])
+              +translation('index.start.navigation.core')
+          li(data-num='02')
+            a.internal-link.cmp(href='work',data-cursor='active,' + texts['index.start.navigation.work.hover.brutal'])
+              +translation('index.start.navigation.work')
+          li(data-num='03')
+            a.internal-link.cmp(href='contact',data-cursor='hi')
+              +translation('index.start.navigation.contact')

@@ -1,0 +1,8 @@
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  &__content {
+    flex: 1 0;
+  }
+}

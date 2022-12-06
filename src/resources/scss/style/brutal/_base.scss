@@ -1,0 +1,43 @@
+html, body {
+  background: $color-brutal-pink;
+  color: $color-brutal-blue;
+  font-family: $ff-syne, Arial, Helvetica, sans-serif;
+  font-variation-settings: $fw-syne-regular;
+}
+
+h1, h2, h3 {
+  font-family: $ff-syne, Arial, Helvetica, sans-serif;
+  font-variation-settings: $fw-syne-bold;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4.5rem;
+  @include break('mobile') {
+    font-size: 12.5vw;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  @include break("mobile") {
+    font-size: calc(1.8rem + 3.3vw);
+  }
+
+  @include break("tablet") {
+    font-size: calc(1.8rem + 3.3vw);
+  }
+}
+
+h3 {
+  font-size: calc(1.5rem + 1.3vw);
+}
+
+.logo {
+  color: $color-brutal-blue;
+}
+
+.highlight {
+  font-family: $ff-syne-italic;
+}

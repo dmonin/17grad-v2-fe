@@ -1,0 +1,18 @@
+.work-list__slide {
+  &__content {
+    // -100% = it will move against scrolling 1:1 (stay horizontally)
+    $work-parallax-content-x: -100%;
+
+    // 300% from top to bottom
+    $work-parallax-content-y: 300%;
+
+    @include break($work-list-mobile-breakpoint) {
+      transform: translate3d(calc(-5rem + #{$work-parallax-content-x} * var(--parallax)), calc(#{$work-parallax-content-y} * var(--parallax)), 0);
+    }
+  }
+
+  &__image-secondary img {
+    $work-parallax-image-secondary: 80%;
+    transform: translate3d(calc(#{$work-parallax-image-secondary} * var(--parallax)), 0, 0);
+  }
+}

@@ -1,0 +1,11 @@
+.hamburger {
+  @extend %responsive-body-font-size;
+
+  .lines {
+    height: 1.25rem;
+  }
+
+  &:hover .lines {
+    height: 1.5rem;
+  }
+}

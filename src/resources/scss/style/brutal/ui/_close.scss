@@ -1,0 +1,24 @@
+.close {
+  
+  font-size: 2rem;
+  right: 3rem;
+  top: 1rem;
+  text-transform: lowercase;
+  font-family: $ff-syne;
+  font-variation-settings: $fw-syne-bold;
+  
+  & span {
+    transition: font-variation-settings 0.3s ease-out;
+  }
+
+  & span:hover {
+    font-variation-settings: "wght" 800;
+  }
+
+  svg {
+    display: none;
+  }
+  @include break('tablet') {
+    font-size: 7.1875rem;
+  }
+}

@@ -1,0 +1,140 @@
+.loading-anim {
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+.loading-anim img {
+  transform: translate(-50%, -50%);
+}
+
+.article-making-of .fold-intro {
+  padding-top: 0;
+  position: relative;
+  width: 100vw;
+}
+.article-making-of .fold-intro .browser {
+  margin-left: 30%;
+  margin-top: 5vw;
+  position: relative;
+  width: 70%;
+  flex: 0 0 50%;
+}
+.article-making-of .fold-intro .browser .top {
+  line-height: 0;
+  font-size: 0;
+  vertical-align: bottom;
+}
+.article-making-of .fold-intro .browser img, .article-making-of .fold-intro .browser video {
+  width: 100%;
+}
+.article-making-of .fold-intro .lead-in {
+  margin-top: 5vw;
+  width: 60vw;
+}
+.article-making-of .fold-intro .article__block, .article-making-of .fold-intro-text .article__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.article-making-of .fold-intro-text {
+  padding-left: 0;
+  width: 40vw;
+}
+.article-making-of .fold-loading {
+  position: relative;
+}
+.article-making-of .fold-loading .loading-anim-wrap {
+  transition: transform 0.5s ease-out, opacity 0.5s;
+}
+.article-making-of .fold-loading .loading-anim.appear .loading-anim-wrap {
+  opacity: 0;
+  transform: translate(0, 100%);
+}
+.article-making-of .fold-loading .loading-anim.--appear-in .loading-anim-wrap {
+  opacity: 1;
+  transform: translate(0, 0%);
+}
+.article-making-of .fold-loading .loading-anim.infinity {
+  left: 20vw;
+  top: 50vh;
+}
+.article-making-of .fold-loading .loading-anim.blocks {
+  left: 30vw;
+  top: 20vh;
+}
+.article-making-of .fold-loading .loading-anim.blocks.appear .loading-anim-wrap {
+  transform: translate(0, 50%);
+}
+.article-making-of .fold-loading .loading-anim.ball {
+  left: 60vw;
+  top: 10vh;
+}
+.article-making-of .fold-loading .loading-anim.pacman {
+  left: 60vw;
+  top: 70vh;
+}
+.article-making-of .fold-loading .loading-anim.dual-ball {
+  left: 90vw;
+  top: 40vh;
+}
+.article-making-of .fold-loading .loading-anim.dual-ring {
+  left: 150vw;
+  top: 30vh;
+}
+.article-making-of .fold-loading .loading-anim.eclipse {
+  left: 120vw;
+  top: 80vh;
+}
+.article-making-of .fold-loading .loading-anim.ellipsis {
+  left: 20vw;
+  top: 90vh;
+}
+.article-making-of .fold-loading .loading-anim.gear {
+  left: 120vw;
+  top: 50vh;
+}
+.article-making-of .fold-loading .article__block.loading-items {
+  width: 100vw;
+}
+.article-making-of .fold-loading .article__block.loading-text h1 span:nth-child(2n+1) {
+  position: relative;
+  z-index: 5;
+}
+
+@keyframes performance-loading-anim {
+  0% {
+    transform: translate(-10vw, 10vh);
+  }
+  50% {
+    transform: translate(10vw, -10vh);
+  }
+  100% {
+    transform: translate(-10vw, 10vh);
+  }
+}
+@keyframes performance-loading-anim-vert {
+  0% {
+    transform: translate(0, 10vh);
+  }
+  50% {
+    transform: translate(0, -10vh);
+  }
+  100% {
+    transform: translate(0, 10vh);
+  }
+}
+@keyframes performance-loading-anim-hor {
+  0% {
+    transform: translate(10vh, 0);
+  }
+  50% {
+    transform: translate(-10vh, 0);
+  }
+  100% {
+    transform: translate(10vh, 0);
+  }
+}
+
+/*# sourceMappingURL=article-making-of.css.map */

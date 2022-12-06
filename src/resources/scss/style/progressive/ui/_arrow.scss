@@ -1,0 +1,13 @@
+@mixin progressiveArrowSvg($color: 'fff') {
+  background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 28.8 20' xml:space='preserve'%3E%3Cpath fill='%23" + $color  + "' d='M18.1,2.3c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.1H3.8 c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1,1.1,1.1h19.3L18,16.2c-0.4,0.4-0.4,1.1,0,1.5c0.4,0.4,1.1,0.4,1.5,0l6.9-6.9l0,0 c0.1-0.1,0.2-0.2,0.2-0.3c0.1-0.1,0.1-0.3,0.1-0.4c0-0.3-0.1-0.6-0.3-0.8l-6.9-6.9C19.2,1.9,18.5,1.9,18.1,2.3L18.1,2.3z'/%3E%3C/svg%3E%0A") no-repeat center;
+}
+
+@mixin progressiveArrow($color: 'fff') {
+  @include progressiveArrowSvg($color);
+  height: 20px;
+  width: 28px;
+}
+
+.arrow {
+  @include progressiveArrow('fff');
+}

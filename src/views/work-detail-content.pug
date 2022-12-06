@@ -1,0 +1,16 @@
+include mixins/responsive-image.pug
+include mixins/icon.pug
+include mixins/top-button.pug
+include mixins/translation.pug
+header.work-detail-header(style='--color1:' + project.color1 + ';--color2:' + project.color2)
+  +responsiveImage(headerImage, '100vw', project.title_line1)
+  h1.appear(data-appear-duration=2000)
+    div.text-line
+      span.text-line-content= project.title_line1
+    div.text-line
+      span.text-line-content= project.title_line2
+  img.client-logo.appear(src=scriptPath + 'svg/work-' + projectId + '/logo.svg', data-appear-duration=2000000)
+section.work-detail(style='--color1:' + project.color1 + ';--color2:' + project.color2).
+  !{projectHtml}
+if style == 'progressive'
+  .background-circles.cmp

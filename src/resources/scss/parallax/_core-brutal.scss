@@ -1,0 +1,75 @@
+// --- Hero Header ---
+.core__header__picture {
+  transform: translate(0, calc(-10% * var(--parallax, 0)));
+}
+
+.core__header .since {
+  transform: translate(0, calc(-15% * var(--parallax, 0)));
+}
+
+.core__header__content h2 {
+  transform: translate(0, calc(100% * var(--parallax, 0)));
+}
+
+.core__header__content h3 {
+  transform: translate(0, calc(20% * var(--parallax, 0)));
+}
+
+// --- About ---
+.core__main h2 {
+  transform: rotate(-10deg) translate(-5vw, calc(-20% * var(--parallax, 0)));
+}
+
+.core__main__info {
+  transform: translate(0, calc(20% * var(--parallax, 0)));
+}
+
+// --- Photos & People ---
+.core__photos__sascha-dean video {
+  transform: translate(0, calc(20% * var(--parallax, 0)));
+}
+
+.core__photos__interior1 img {
+    transform: translate(0, calc(-15% * var(--parallax, 0)));
+}
+
+.core__photos__gavin video {
+  transform: translate(0, calc(30% * var(--parallax, 0)));
+}
+.core__photos__natalie video {
+  transform: translate(0, calc(30% * var(--parallax, 0)));
+}
+
+.core__photos__dmitry video {
+  transform: translate(0, calc(30% * var(--parallax, 0)));
+}
+
+
+// --- Values ---
+@import "core-values";
+
+// --- One People ---
+.core__people h1 {
+  transform: translate(0, calc(20% * var(--parallax, 0)));
+}
+
+.core__people__picture {
+  transform: translate(0, calc(-10% * var(--parallax, 0)));
+}
+
+.core__people__info {
+  transform: translate(0, calc(20% * var(--parallax, 0)));
+}
+
+// --- Clients
+.core__clients h1 {
+  transform: rotate(-90deg) translate(calc(50% + -20% * var(--parallax, 0)), -30%);
+}
+
+.core__clients h2 {
+  transform: rotate(-90deg) translate(calc(40% + -10% * var(--parallax, 0)), -30%);
+}
+
+.core__clients .section-intro {
+  transform: translate(0, calc(-10% * var(--parallax, 0)));
+}

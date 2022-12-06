@@ -1,0 +1,73 @@
+include mixins/translation.pug
+section.contact.appear(data-appear-duration=3000)
+  header
+    h1(data-content=texts['contact.h1'])
+      +translation('contact.h1')
+  .contact__about
+    p
+      +translation('contact.text.line1')
+    p
+      +translation('contact.text.line2')
+  form.contact__configurator
+    section
+      h4
+        +translation('contact.form.tags')
+      .tag-select.cmp(data-name='tags')
+        each tag in tags
+          .tag(data-cursor='active')=tag
+    section
+      h4
+        +translation('contact.form.description')
+      textarea(name='message',required,placeholder=texts['contact.form.description-placeholder'])
+    section
+      h4
+        +translation('contact.form.budget')
+      .cmp.budget-slider(data-name='budget')
+        .value
+          span.min-value 20.000
+          | &nbsp;
+          span –
+          | &nbsp;
+          span.max-value 35.000 €
+        .track-min
+        .track-max
+        .track(data-width='100px')
+    section
+      h4
+        +translation('contact.form.contact-details')
+      .contact-form
+        .form-item
+          label
+            +translation('contact.form.name')
+          .form-input.cmp
+            input(name='name',type='text',required)
+        .form-item
+          label
+            +translation('contact.form.company')
+          .form-input.cmp
+            input(name='company',type='text')
+        .form-item
+          label
+            +translation('contact.form.email')
+          .form-input.cmp
+            input(name='email',type='email',required)
+        .form-item
+          label
+            +translation('contact.form.country')
+          .form-input.cmp
+            input(name='country',type='text')
+        .form-button
+          button.button(type='submit',data-cursor='active')
+            +translation('contact.form.button')
+            .arrow
+  section.contact__finish
+    p
+      +translation('contact.thanks.start')
+      span.name Lorenz Ipsum
+      +translation('contact.thanks.end')
+    +translation('contact.thanks.text')
+    .button-wrap
+      button.button(data-cursor='active')
+        svg(version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+          path
+        +translation('contact.thanks.button')

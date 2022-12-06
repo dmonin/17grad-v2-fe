@@ -1,0 +1,10 @@
+section.core__clients.parallax
+  h1
+    +translation('core.clients.h1')
+  h2
+    +translation('core.clients.h2')
+  .section-intro
+    p
+      +translation('core.clients.text')
+  .core__clients__logo.cmp(data-clients=clients.join(','))
+    +icon(clients[0])

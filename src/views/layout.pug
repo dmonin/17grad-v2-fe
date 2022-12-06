@@ -1,0 +1,98 @@
+include mixins/icon
+include mixins/translation
+doctype html
+html(lang=locale)
+  head
+    // Doesn't this code looks nice? Join our forces and apply @17grad (com)
+    title= title
+    if isDev
+      link(rel='stylesheet', href=scriptPath + 'css/base.css')
+    else
+      style
+        include ../../public/css/base.css
+    block styles
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content=description)
+    base(href=baseUrl)
+
+    //- Fonts
+    link(rel='preload', href='/fonts/futura-medium/futura-medium.woff2', as='font', type='font/woff2', crossorigin)
+    if (style == 'progressive')
+      link(rel='preload', href='/fonts/futura-heavy/futura-heavy.woff2', as='font', type='font/woff2', crossorigin)
+    if (style == 'corporate')
+      link(rel='preload', href='/fonts/saol-display/SaolDisplay-Regular.woff2', as='font', type='font/woff2', crossorigin)
+
+    link(rel=isDev ? 'stylesheet' : 'prefetch', href=scriptPath + 'css/animations.css', id='style-animations')
+    each viewStyle in prefetchViewStyles
+      link(rel='prefetch', href=scriptPath + 'css/' + viewStyle + '.css', id='style-' + viewStyle)
+    each prefetchStyle in prefetchStyles
+      link(rel='prefetch', href=scriptPath + 'css/style-' + prefetchStyle + '.css', id='style-' + prefetchStyle)
+
+    link(rel='stylesheet', href=scriptPath + 'css/style-' + style + '.css', id='style-' + style)
+
+    //- Fav Icon
+    link(rel='apple-touch-icon',sizes='180x180',href=scriptPath + 'style/' + style + '/apple-touch-icon.png')
+    link(rel='icon',sizes='32x32',href='/style/' + style + '/favicon-32x32.png')
+    link(rel='icon',sizes='16x16',href='/style/' + style + '/favicon-16x16.png')
+    link(rel='manifest',href='/style/' + style +'/site.webmanifest')
+    link(rel='mask-icon',href='/style/' + style +'/safari-pinned-tab.svg',color=styleProps && styleProps.bgColor)
+    meta(name='msapplication-TileColor',content='#ffffff')
+    meta(name='theme-color',content='#ffffff')
+
+    //- App
+    meta(name='scriptPath',content=scriptPath)
+    meta(name='staticPath',content=staticPath)
+    meta(name='style',content=style)
+
+    if (canonical)
+      link(rel='canonical' href=canonical)
+
+    //- Open-Graph
+    meta(property="og:type", content="Website")
+    meta(property="og:url", content="https://www.17grad.com")
+    meta(property="og:title", content=texts['opengraph.title'])
+    meta(property="og:description", content=texts['opengraph.description'])
+    meta(property="og:image", content="https://www.17grad.com/meta/open-graph.jpg")
+    meta(property="og:latitute", content=texts['opengraph.latitute'])
+    meta(property="og:longitude", content=texts['opengraph.longitude'])
+    meta(property="og:street-address", content=texts['opengraph.street-address'])
+    meta(property="og:locality", content=texts['opengraph.locality'])
+    meta(property="og:postal-code", content=texts['opengraph.postal-code'])
+    meta(property="og:country-name", content=texts['opengraph.country-name'])
+    meta(property="og:email", content=texts['opengraph.email'])
+    meta(property="og:phone_number", content=texts['opengraph.phone_number'])
+
+    //- SEO
+    include seo/rich-snippet
+    include seo/analytics
+  body
+    a.logo(title='17GRAD',href=rootUrl)
+      include icons/logo
+    .hamburger(data-open=texts['navigation.open'])
+      .text
+        +translation('navigation.menu')
+      .lines
+        .line
+        .line
+        .line
+    .style-switch-button
+      svg(version='1.1',xmlns='http://www.w3.org/2000/svg',xmlns:xlink='http://www.w3.org/1999/xlink',x='0px',y='0px',viewbox='0 0 160 160',xml:space='preserve')
+        path
+    main#view-content
+      block content
+    include ui/navigation
+    #cursor
+    #cursor-bg
+    .loading
+      .loading-text
+        +translation('navigation.loading')
+    canvas#bg-canvas
+    if (initialConfig)
+      script.
+        window['config'] = !{JSON.stringify(initialConfig)};
+    script(src=scriptPath + 'js/main.js', type="module")
+    noscript
+      .offline
+        h2 17°Studio
+        p.nojs Please #[span.highlight enable JavaScript] to access full experience. Alternatevely contact us or give us a call.
+        include contact-options

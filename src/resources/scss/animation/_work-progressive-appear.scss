@@ -1,0 +1,14 @@
+.work-view.appear .work-list__slide.--start h1 {
+  transform: rotate(-17deg) translate(0, 15%);
+}
+.work-view.--appear-in .work-list__slide.--start h1 {
+  transform: rotate(-17deg) translate(0, 0%);
+}
+
+.work-list__slide .work-list__slide__content h3.appear:after {
+  width: 0;
+}
+
+.work-list__slide .work-list__slide__content h3.--appear-in:after {
+  width: 100%;
+}

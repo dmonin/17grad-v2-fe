@@ -1,0 +1,83 @@
+include ../mixins/responsive-image
+include ../mixins/responsive-video
+include ../mixins/top-button
+include ../mixins/icon
+include ../mixins/translation.pug
++topButton(texts['top-button.project-overview'], 'back', 'active', {'data-direction':'back'})
+section.work-detail__info
+  h2
+    +translation("daesk.title.short")
+  .info
+    p
+      +translation("daesk.intro.line1")
+    p
+      +translation("daesk.intro.line2")
+  .fact-sheet
+    .fact-sheet__item
+      label
+        +translation("work.detail.client")
+      .fact-sheet__item__value
+        +translation("daesk.client")
+    .fact-sheet__item
+      label
+        +translation("work.detail.expertise")
+      .fact-sheet__item__value
+        +translation("daesk.expertise")
+    .fact-sheet__item
+      label
+        +translation("work.detail.challenge")
+      p.fact-sheet__item__value
+        +translation("daesk.challenge")
+section.work-detail__showcase.media-grid
+  .mg-item.mg50.mg-primary-color.no-text.appear.fade-in-left(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-daesk/logo-a-daesk.svg',width=900,height=900)
+
+  .mg-item.mg50.mg-project-color.no-text.appear.delay100.fade-in-right(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-daesk/logo-b-daesk.svg',width=900,height=900)
+
+  .mg-item.mg50.mg-primary-color.no-text.appear.fade-in-left(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-daesk/colors-daesk.svg',width=900,height=900)
+
+  .mg-item.mg50.mg-primary-color.no-text.appear.delay100.fade-in-right(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-daesk/typography-daesk.svg',width=900,height=900)
+
+  .mg-item.mg100.appear.fade-in-down(data-appear-duration=5000)
+    +responsiveVideo(media.daesk01Start, {
+      loop: true,
+      autoplay: true,
+      muted: true,
+      crossorigin: true,
+      playsinline: true
+    })
+
+  .mg-item.mg100.mg-secondary-color.appear.fade-in-down(data-appear-duration=5000)
+    +responsiveImage(media.daesk02WorksKompositionJpg, '100vw', '#{project.name} Campaign Page')
+    label
+
+  .mg-item.mg100.appear.fade-in-dpwm(data-appear-duration=5000)
+    +responsiveVideo(media.daesk03SecretArea, {
+      loop: true,
+      autoplay: true,
+      muted: true,
+      crossorigin: true,
+      playsinline: true
+    })
+
+  .mg-item.mg33.mg-secondary-color.appear.fade-in-left(data-appear-duration=5000)
+    +responsiveImage(media.daesk04aSmartphoneJpg, '33vw', '#{project.name} Mobile Version 1')
+  .mg-item.mg33.mg-secondary-color.appear.fade-in-down(data-appear-duration=5000)
+    +responsiveImage(media.daesk04bSmartphoneJpg, '33vw', '#{project.name} Mobile Version 2')
+  .mg-item.mg33.mg-secondary-color.appear.fade-in-right(data-appear-duration=5000)
+    +responsiveImage(media.daesk04cSmartphoneJpg, '33vw', '#{project.name} Mobile Version 3')
+
+  .mg-item.mg100.mg-secondary-color.appear.fade-in-left(data-appear-duration=5000)
+    +responsiveImage(media.daesk05WorksKompositionJpg, '100vw', '#{project.name} Manifesto')
+    label
+
+  .mg-item.mg100.mg-secondary-color.appear.fade-in-right(data-appear-duration=5000)
+    +responsiveImage(media.daesk07WorksKompositionJpg, '100vw', '#{project.name} Use Cases')
+    label
+
+  .mg-item.mg100.mg-secondary-color.appear.fade-in-down(data-appear-duration=5000)
+    +responsiveImage(media.daesk08WorksKompositionJpg, '100vw', '#{project.name} Features')
+    label

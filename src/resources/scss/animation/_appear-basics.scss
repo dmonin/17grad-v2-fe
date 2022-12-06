@@ -1,0 +1,33 @@
+.appear.fade-in-down,
+.appear.fade-in-left,
+.appear.fade-in-right {
+  opacity: 0;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-property: transform, opacity;
+}
+
+.fade-in-down.appear {
+  transform: translate(0, 20%);
+}
+
+.fade-in-right.appear {
+  transform: translate(20%, 0%);
+}
+
+.fade-in-left.appear {
+  transform: translate(-20%, 0%);
+}
+
+.appear.delay100 {
+  transition-delay: 0.1s;
+}
+
+.appear.fade-in-down,
+.appear.fade-in-right,
+.appear.fade-in-left {
+  &.--appear-in {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}

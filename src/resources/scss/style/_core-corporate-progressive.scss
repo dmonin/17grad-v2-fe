@@ -1,0 +1,94 @@
+.core__main {
+  padding: $spacing-border-mobile;
+
+  @include break('tablet') {
+    padding-top: 30vw;
+    width: 75vw;
+  }
+
+  h2 {
+    line-height: 1.3;
+    position: relative;
+    // text-indent: 1.2em;
+    z-index: 2;
+
+    @include break('tablet') {
+      margin-left: 7vw;
+    }
+  }
+
+  &__info {
+    font-size: 1.5rem;
+    // padding: 0 $pad;
+    // padding-left: 5vw;
+
+    @include break("tablet") {
+      padding-left: 50vw;
+      width: 40vw;
+    }
+
+    @include break("tablet-landscape") {
+      padding-left: 60vw;
+      width: 20vw;
+    }
+  }
+
+}
+
+.core__photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__photo1 {
+    margin-top: -2rem;
+    padding-right: 4vw;
+    position: relative;
+    width: 54vw;
+    z-index: 3;
+    order: 2;
+
+    @include break('mobile') {
+      padding-right: 12vw;
+      padding-top: 20vw;
+      order: 1;
+      width: 48vw;
+    }
+
+  }
+
+  &__photo2 {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    margin-left: 30vw;
+    // padding-top: 10vw;
+    width: 70vw;
+    order: 1;
+
+    @include break('mobile') {
+    //   order: 2;
+      margin-left: 0;
+      width: 38vw;//calc(40vw-100px);
+    }
+
+    img {
+      // position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__photo3 {
+    margin-left: 36vw;
+    margin-top: -10vw;
+    position: relative;
+    width: 48vw;
+
+    order: 3;
+
+    img {
+      // position: relative;
+      z-index: 2;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.imprint {
+  padding: 5rem 0;
+}
+@media only screen and (min-width: 480px) {
+  .imprint {
+    padding: 11rem 0;
+  }
+}
+.imprint .container {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+@media only screen and (min-width: 480px) {
+  .imprint .container {
+    padding: 0 7vw;
+  }
+}
+.imprint .container h2 {
+  width: 100%;
+  line-height: 1.2;
+}
+.imprint .container .column {
+  box-sizing: border-box;
+  flex: 1 0 50%;
+  padding-top: 5rem;
+}
+@media only screen and (min-width: 768px) {
+  .imprint .container .column:nth-child(2) {
+    padding-right: 3em;
+  }
+  .imprint .container .column:nth-child(3) {
+    padding-left: 3em;
+  }
+}
+
+/*# sourceMappingURL=view-imprint.css.map */

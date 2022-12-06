@@ -1,0 +1,19 @@
+section.core__work-with-us.parallax
+  h1
+    div
+      +translation('core.work-with-us.h1.line1')
+    div
+      +translation('core.work-with-us.h1.line2')
+  .core__work-with-us__image
+    .core__work-with-us__image__wrap.appear
+      +responsiveImage(media.imgWorkWithUs, '49vw', 'Corporate Cool Team', {loading: 'lazy'})
+  .core__work-with-us__text.section-intro
+    p.appear(data-letter=texts['core.work-with-us.text.line1'].substr(0, 1))
+      span
+        +translation('core.work-with-us.text.line1')
+    p
+      +translation('core.work-with-us.text.line2')
+    p
+      button.button.cmp.internal-link(data-cursor='hi',data-url=baseUrl + 'contact')
+        +translation('core.work-with-us.text.button')
+        .arrow

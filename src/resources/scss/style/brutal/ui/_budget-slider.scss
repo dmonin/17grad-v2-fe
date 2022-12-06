@@ -1,0 +1,17 @@
+.budget-slider {
+  border-color: $color-brutal-yellow;
+  border-width: 2px;
+
+  .track {
+    background: $color-brutal-blue;
+  }
+
+  .value {
+    color: $color-brutal-blue;
+  }
+
+  .track-min,
+  .track-max {
+    background: $color-brutal-blue;
+  }
+}

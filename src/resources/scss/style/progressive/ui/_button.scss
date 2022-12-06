@@ -1,0 +1,8 @@
+.button {
+  background: $color-progressive-yellow;
+  color: $color-progressive-blue;
+
+  .arrow {
+    @include progressiveArrowSvg('4747FE');
+  }
+}

@@ -1,0 +1,16 @@
+.progress-slider {
+  background: $color-corporate-blue-dark;
+  font-family: $ff-accent;
+
+  .value {
+    display: inline-block;
+    min-width: 0.6em;
+  }
+
+  button {
+    color: #fff;
+  }
+  button:hover {
+    color: $color-corporate-gray-light;
+  }
+}

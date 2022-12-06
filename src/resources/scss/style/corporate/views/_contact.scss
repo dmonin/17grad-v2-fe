@@ -1,0 +1,80 @@
+.contact {
+  header {
+    padding-top: $spacing-top-mobile;
+    width: 100%;
+
+    @include break('tablet') {
+      padding-top: $spacing-top-desktop;
+    }
+  }
+
+  textarea,
+  input[type=text],
+  input[type=email] {
+    &:active, &:focus {
+      border-bottom-color: $color-corporate-blue;
+    }
+  }
+
+  &.--finish h1 {
+    color: #000;
+    transition: color 0.5s ease-out;
+  }
+
+  &__finish {
+    p {
+      width: 100%;
+      @include break('tablet') {
+        width: 95%;
+      }
+
+      &:first-child {
+        font-family: $ff-accent;
+        margin-bottom: 1em;
+        line-height: 1.2;
+      }
+
+      &:nth-child(2) {
+        position: relative;
+
+        @include break('tablet') {
+          text-indent: 5rem;
+        }
+
+        &:before,
+        &:after {
+          border-bottom: 1px solid $color-corporate-blue;
+          content: "";
+          display: block;
+          left: 0;
+          position: absolute;
+          top: 0.65em;
+          width: 4rem;
+        }
+
+        &:after {
+          left: auto;
+          right: 100%;
+          width: 6rem;
+        }
+
+        @include break('tablet', 'max') {
+          &:before {
+            display: none;
+          }
+          &:after {
+            right: 105%;
+          }
+        }
+      }
+    }
+
+    // .button-wrap {
+    //   width: 100%;
+    // }
+
+    button svg {
+      fill: $color-corporate-blue;
+    }
+  }
+}

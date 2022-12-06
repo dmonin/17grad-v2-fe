@@ -1,0 +1,123 @@
+.work-list__slide {
+  @include break('mobile') {
+    align-items: center;
+  }
+
+  &.--start {
+    color: $color-progressive-gray-dark;
+
+    h1 {
+      color: $color-progressive-yellow;
+      margin-bottom: 5rem;
+      position: relative;
+      text-transform: lowercase;
+      transform: rotate(-17deg);
+      &:after {
+        @extend %pseudo-element;
+        content: attr(data-label);
+        color: $color-progressive-blue;
+        font-family: $ff-accent;
+        mix-blend-mode: multiply;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translate(-10%, 40%);
+      }
+    }
+  }
+
+  h3 {
+    color: $color-progressive-blue;
+  }
+
+  &.--project &__content__info {
+    background: white;
+    box-shadow: 0px 15px 40px -5px rgba(0, 0, 0, 0.2);
+    //box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.1);
+    // padding-bottom: 5rem;
+
+    h3 {
+      font-family: $ff-bold;
+      position: relative;
+      span {
+        position: relative;
+        z-index: 2;
+      }
+
+      &:after {
+        @extend %pseudo-element;
+        background: $color-progressive-yellow;
+        bottom: -0.5em;
+        height: 1em;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        transition: width 1s ease-out 0.5s;
+      }
+    }
+  }
+
+  &__content &__button {
+    background: $color-progressive-yellow;
+    border-radius: 50%;
+    transform: translate(1.5rem, -50%);
+    height: 80px;
+    width: 80px;
+
+    span {
+      display: none;
+    }
+
+    .arrow {
+      @include progressiveArrow('4747FE');
+      line-height: 0;
+      transition: transform 1s;
+      transform: translateX(25%);
+      vertical-align: middle;
+    }
+  }
+
+  //TODO: Hoverbereich sollte kompletter Button sein. Sowie Headline und Bild. Ist es moeglich die Transition zuerst auszuführen und dann erst die Animation?
+  &:hover .arrow {
+    transition: transition transform 0.5s ease-in;
+    transform: translateX(0%);
+    animation: arrow-move 0.75s 0.5s infinite ease-out;    
+  }
+
+  @keyframes arrow-move {
+    0%   { transform: translateX(0%); }
+    50%  { transform: translateX(50%); }
+    100% { transform: translateX(0%); }
+    //100% { transform: translateX(23%); }
+  }
+
+
+  &__image-secondary .shadow {
+    background: $color-progressive-yellow;
+    mix-blend-mode: multiply;
+    opacity: 1;
+  }
+}
+
+.work-detail-header {
+  h1 {
+    color: #fff;
+    font-family: $ff-default;
+  }
+}
+
+.work-detail {
+  color: $color-progressive-gray-dark;
+
+  h2 {
+    color: var(--color2, #f00);
+  }
+
+  .info > p {
+    font-family: $ff-default;
+  }
+
+  .fact-sheet__item label {
+    color: $color-progressive-gray;
+  }
+}

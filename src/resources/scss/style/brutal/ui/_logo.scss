@@ -1,0 +1,21 @@
+.logo {
+  color: $color-brutal-blue;
+  left: 0;
+  top: 55px * 1.5;
+  // transform: scale(3);
+  // transform-origin: 0 0;
+  width: 77px *3;
+  height: 55px *3;
+
+
+  .nav-expanded & {
+    color: $color-brutal-pink;
+  }
+
+  body[data-view=index] & svg path {
+    // color: transparent;
+    stroke: currentColor;
+    stroke-width: 0.25px;
+    fill: none;
+  }
+}

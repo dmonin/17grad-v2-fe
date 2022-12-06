@@ -1,0 +1,76 @@
+.close {
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  right: $spacing-border-mobile;
+  z-index: 5;
+  top: $spacing-header-mobile;
+  @include break('tablet') {
+    top: $spacing-header-desktop;
+    right: $spacing-border-desktop;
+  }
+
+  span {
+    display: block;
+  }
+
+  svg {
+    color: white;
+    height: 2rem;
+    margin-left: 1rem;
+    width: 2rem;
+
+    line {
+      fill: none;
+      stroke: currentColor;
+      transition: transform 0.25s ease-out;
+      transform-origin: 50% 50%;
+    }
+  }
+
+  &:hover line:first-child {
+    transform: rotate(-45deg);
+  }
+  &:hover line:last-child {
+    transform: rotate(45deg);
+  }
+
+  .style-switcher-expanded &,
+  .nav-expanded & {
+    animation: appearCloseButton 0.6s $easing-inout-function 0.4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  .nav-out & {
+    animation: dissapearCloseButton 0.4s $easing-inout-function;
+  }
+
+}
+
+
+
+
+@keyframes appearCloseButton {
+  0% {
+    opacity: 0;
+    transform: translate(0, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+@keyframes dissapearCloseButton {
+  0% {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+}

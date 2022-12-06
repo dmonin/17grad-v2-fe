@@ -1,0 +1,93 @@
+.index {
+  // height: 100vh;
+
+  &__logo {
+    &__graphic {
+      // $ratio: 612/1044;
+      // position: relative;
+      // padding-top: $ratio * 100%;
+
+      @include break('mobile') {
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 10;
+      }
+    }
+
+
+    &__progressive {
+      height: 100%;
+      width: 100%;
+      @include break('mobile') {
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+
+  }
+
+  &__about {
+    // font-size: 7vw;
+    h1 {
+      color: $color-progressive-gray-dark;
+      font-family: $ff-default;
+    }
+
+    z-index: 3;
+  }
+
+  &__about .highlight {
+    font-family: $ff-bold;;
+    color: $color-progressive-blue;
+  }
+
+  &__nav {
+    // font-size: 2rem;
+    // @include break('mobile') {
+    //   font-size: 6vw;
+    // }
+    position: relative;
+    z-index: 2;
+    li {
+      &:before {
+        color: $color-corporate-blue;
+        content: attr(data-num);
+        font-size: 0.75rem;
+        left: 0;
+        line-height: 1;
+        position: absolute;
+        top: 1em;
+        @include break('mobile') {
+          font-size: 1rem;
+          top: 2.2em;
+        }
+        transform: translate(0, -100%);
+
+        @include break('tablet-landscape') {
+          top: 0.8rem;
+        }
+      }
+    }
+
+    a {
+      color: $color-progressive-gray-dark;
+      font-family: $ff-bold;
+      text-transform: lowercase;
+      &:hover {
+        color: $color-progressive-blue;
+      }
+    }
+  }
+}
+
+.index.--view-out {
+  .index__logo {
+    transform: translate(0%, -100vh);
+    transition: transform 0.75s ease-out;
+  }
+}

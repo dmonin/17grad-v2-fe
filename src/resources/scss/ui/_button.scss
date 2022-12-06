@@ -1,0 +1,26 @@
+button {
+  border-radius: 50%;
+}
+
+.button {
+  align-items: center;
+  border: 0px none;
+  border-radius: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 1rem;
+  outline: none;
+  padding: 1rem 3rem 1rem;
+
+  @include break('tablet') {
+    font-size: 1.25rem;
+  }
+  // padding: 0.6rem 3rem 0.4rem;
+
+  .arrow {
+    margin-left: 0.75rem;
+  }
+}

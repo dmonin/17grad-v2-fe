@@ -1,0 +1,6 @@
+.core__top {
+  height: 6.25rem;
+  @include break('tablet') {
+    height: 177px;
+  }
+}

@@ -1,0 +1,42 @@
+.contact {
+  header {
+    overflow: hidden;
+    // text-indent: -3rem;
+    width: 100%;
+  }
+}
+
+textarea,
+input[type=text],
+input[type=email] {
+  border-bottom-color: $color-brutal-yellow;
+  &:focus, &:active {
+    border-bottom-color: $color-brutal-blue;
+  }
+
+  &::placeholder {
+    color: transparentize($color-brutal-blue, 0.5);
+  }
+
+  &:focus::placeholder {
+    color: transparentize($color-brutal-blue, 0.6);
+  }
+}
+
+.contact {
+
+  &__finish {
+    p:first-child {
+      font-family: $ff-syne;
+      font-variation-settings: $fw-syne-bold;
+    }
+  }
+
+  &.--finish h1 {
+    color: $color-brutal-yellow;
+  }
+
+  button svg {
+    fill: $color-brutal-yellow;
+  }
+}

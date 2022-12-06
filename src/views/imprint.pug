@@ -1,0 +1,12 @@
+extends layout
+
+block styles
+  if isDev
+    link(rel='stylesheet', href=scriptPath + 'css/view-imprint.css')
+  else
+    style
+      include ../../public/css/view-imprint.css
+
+block content
+  include imprint-content
+

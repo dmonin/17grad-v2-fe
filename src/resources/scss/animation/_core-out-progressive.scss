@@ -1,0 +1,25 @@
+.core.--view-out {
+  .core__header h2 {
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+
+  .core__header__content {
+    opacity: 0;
+    transform: translate(0, 50vh);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+
+  .core__header__bg {
+    transition: transform 0.5s ease-in;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    // height: 0;
+  }
+
+  .yellow-half-circle {
+    transform: translate(100%, 0);
+    transition: transform 0.5s ease-out;
+  }
+}

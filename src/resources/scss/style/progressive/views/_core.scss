@@ -1,0 +1,534 @@
+.core__header {
+  margin-bottom: 11rem;
+  min-height: 47vh;
+  position: relative;
+
+  .yellow-half-circle {
+    background: $color-progressive-yellow;
+    border-top-left-radius: 22vw;
+    height: 25vw;
+    mix-blend-mode: multiply;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    width: 35vw;
+    z-index: 10;
+    top: calc(11rem + 40vw);
+    @include break('tablet') {
+      top:   calc(11rem + 32vw);
+    }
+
+  }
+
+  &__bg {
+    background: $color-progressive-blue;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  h1 {
+    &:before {
+      content: attr(data-label);
+      color: $color-corporate-blue;
+      font-family: $ff-accent;
+      mix-blend-mode: multiply;
+      position: absolute;
+      transform: translate(30%, 35%);
+    }
+
+    color: $color-progressive-yellow;
+    left: -5%;
+    padding-left: 0%;
+    position: absolute;
+    text-transform: lowercase;
+    top: 100%;
+  }
+
+  h2 {
+    @extend %custom-header;
+    color: $color-progressive-yellow;
+    mix-blend-mode: multiply;
+    font-family: $ff-default;
+    font-size: calc(4rem + 8vw);
+    left: 10%;
+    visibility: hidden;
+    position: absolute;
+    top: 12rem;
+    z-index: 5;
+
+    @include break('tablet', 'max') {
+      transform: translate(-10%, -1.7em);
+      visibility: visible;
+    }
+
+    @include break('tablet') {
+      &:before, &:after {
+        content: attr(data-label);
+        display: block;
+      }
+
+      top: 10%;
+      transform: rotate(-90deg) translate(0, -7vw);
+      visibility: visible;
+    }
+  }
+
+  &__content {
+    color: #fff;
+    // color: $color-progressive-yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 1;
+    padding: 8% 0 10% 10%;
+    z-index: 2;
+
+    @include break('tablet') {
+      bottom: 2rem;
+      left: 10%;
+      padding: 0;
+      position: absolute;
+      transform: translate(-50%, 0);
+    }
+
+    h3 {
+      @extend %custom-header;
+      font-size: calc(2rem + 5vw);
+      margin-bottom: 0.5em;
+      position: relative;
+      // z-index: 2;
+      // order: 2;
+
+      @include break('tablet') {
+        font-size: calc(4vw);
+        span {
+          display: block;
+
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            font-family: $ff-accent;
+          }
+        }
+      }
+    }
+
+    p {
+      color: #fff;
+      font-family: $ff-accent;
+      font-size: 1.25rem;
+      margin: 0;
+      position: relative;
+      // order: 3;
+    }
+    & .before {
+      display: none;
+    }
+  }
+
+  &__picture {
+    line-height: 0;
+    font-size: 0;
+
+    @include break("tablet") {
+      margin-bottom: -14%;
+      position: absolute;
+      top: 11rem;
+    }
+
+    &__wrap {
+      // padding-top: 67%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    // img.resp-img {
+    //   left: 0;
+    //   position: absolute;
+    //   top: 0;
+    //   width: 100%;
+    // }
+
+  }
+}
+
+.core__main {
+  h2 {
+    color: $color-progressive-blue;
+    font-family: $ff-accent;
+  }
+
+  &__info {
+    color: $color-progressive-gray-dark;
+  }
+}
+
+.core__photos {
+  overflow: hidden;
+  position: relative;
+
+  &__photo1,
+  &__photo3 {
+    position: relative;
+    &__wrap {
+      padding-top: 66%;
+      overflow: hidden;
+      position: relative;
+      img {
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
+  &__photo2 {
+    overflow: hidden;
+  }
+
+  &__interior__x {
+    color: $color-progressive-yellow;
+    left: 48vw;
+    position: absolute;
+    width: 5rem;
+    top: 20vw;
+  }
+
+  &__photo1 .circle {
+    background: $color-progressive-yellow;
+    top: 50%;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    height: 40vw;
+    left: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+  }
+
+  &__photo2__wrap {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__photo3 {
+    margin-top: -5vw;
+    z-index: 3;
+
+    .square-blue {
+      background: $color-progressive-blue;
+      border-radius: 6vw 0 0 0;
+      right: -20vw;
+      height: 28vw;
+      position: absolute;
+      top: -3vw;
+      width: 48vw;
+    }
+
+    .square-yellow {
+      background: $color-progressive-yellow;
+      left: -5vw;
+      height: 14vw;
+      mix-blend-mode: multiply;
+      position: absolute;
+      bottom: -2vw;
+      width: 28vw;
+      z-index: 2;
+    }
+  }
+}
+
+.core__values {
+  h3, p {
+    padding-left: 2em;
+  }
+  p {
+    color: $color-progressive-gray-dark;
+  }
+
+  .value-image img {
+    filter: drop-shadow(2vw 2vw 3px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.section-intro p {
+  color: $color-progressive-gray-dark;
+}
+
+.core__people {
+  margin-top: 20vw;
+  h1 {
+
+    @include break('tablet') {
+      left:0;
+      font-size: 5vw;
+      position: absolute;
+      transform: rotate(-90deg);
+    }
+    text-transform: lowercase;
+    width: auto;
+  }
+  h3 {
+    color: $color-progressive-yellow;
+    margin: 0;
+    padding-top: 0;
+    margin-top: -0.5em;
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p:first-child {
+      position: relative;
+    }
+  }
+
+  &__member__picture {
+    line-height: 0;
+    position: relative;
+    vertical-align: top;;
+
+    &:before, &:after {
+      background: $color-progressive-blue;
+      content: "";
+      display: block;
+      mix-blend-mode: color;
+      position: absolute;
+      z-index: 3;
+    }
+    .safari &:before {
+      mix-blend-mode: multiply;
+      opacity: 0.7;
+    }
+
+    &:after {
+      background: $color-progressive-yellow;
+      mix-blend-mode: multiply;
+    }
+  }
+
+  &__member {
+    &__picture__slices {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .image-slice {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+
+      &:first-child {
+        position: static;
+      }
+    }
+
+    // Dmitry
+    &:nth-child(3) {
+      .core__people__member__picture__slices {
+        border-top-right-radius: 7vw;
+
+      }
+
+      .core__people__member__picture:before {
+        height: 40%;
+        left: 0;
+        top: 0;
+        width: 75%;
+      }
+
+      .core__people__member__picture:after {
+        height: 40%;
+        left: 15%;
+        top: 40%;
+        width: 85%;
+      }
+    }
+
+    // Sascha
+    &:nth-child(4) {
+      position: relative;
+      .core__people__member__picture__slices {
+        border-bottom-right-radius: 8vw;
+      }
+
+      .core__people__member__picture:before {
+        height: 45%;
+        left: 0;
+        top: 55%;
+        width: 50%;
+      }
+
+      .core__people__member__picture:after {
+        clip-path: polygon(50% 55%, 0 0, 100% 0);
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+
+    }
+
+    // Gavin
+    &:nth-child(5) {
+      .core__people__member__picture__slices {
+        border-top-left-radius: 8vw;
+      }
+
+      .core__people__member__picture:before {
+        height: 40%;
+        left: 0;
+        top: 60%;
+        width: 100%;
+      }
+
+      .core__people__member__picture:after {
+        height: 40%;
+        left: 0;
+        top: 20%;
+        width: 100%;
+        transform: translate(-20%, 0);
+      }
+
+    }
+
+    // Dean
+    &:nth-child(6) {
+      .core__people__member__picture__slices {
+        border-bottom-right-radius: 8vw;
+      }
+
+      .core__people__member__picture:before {
+        height: 35%;
+        left: 0;
+        top: 65%;
+        width: 100%;
+      }
+
+      .core__people__member__picture:after {
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 80% 65%, 80% 25%, 20% 25%, 20% 65%, 0 65%);
+        border-top-left-radius: 4vw;
+        height: 100%;
+        left: 0;
+        top: 0%;
+        width: 100%;
+      }
+
+    }
+
+    // Gavin
+    &:nth-child(7) {
+      .core__people__member__picture__slices {
+        border-bottom-left-radius: 8vw;
+      }
+
+      .core__people__member__picture:before {
+        height: 35%;
+        left: 0;
+        top: 0%;
+        width: 100%;
+      }
+
+      .core__people__member__picture:after {
+        height: 70%;
+        left: 60%;
+        top: 35%;
+        width: 50%;
+      }
+
+    }
+  }
+}
+
+.core__clients {
+  position: relative;
+  h1 {
+    font-size: 6rem;
+    line-height: 1;
+    text-transform: lowercase;
+    @include break('tablet') {
+      font-size: 19vw;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    @include border-padding(padding-left);
+    align-items: flex-end;
+    width: min-content;
+  }
+
+  .section-intro {
+    margin-bottom: 25%;
+  }
+
+
+
+  &__logo {
+    height: 40vh;
+    overflow: hidden;
+    padding-bottom: 20vh;
+    position: relative;
+  }
+
+  &__logo__right,
+  &__logo__left {
+    height: 40vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40vw;
+  }
+
+  .yellow-box {
+    background: $color-progressive-yellow;
+    border-radius: 7vw 0 0 0;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    height: 70vh;
+    width: 15vw;
+  }
+}
+
+.core__work-with-us {
+  background: $color-progressive-blue;
+  border-radius: 0 0 7vw 0;
+  color: $color-progressive-white;
+  z-index: 3;
+  position: relative;
+  h1 {
+    color: inherit;
+    margin-bottom: -0.3em;
+    text-transform: lowercase;
+  }
+  h1 div:last-child {
+    color: $color-progressive-yellow;
+    font-family: $ff-accent;
+  }
+
+  &__image__wrap {
+    overflow: hidden;
+    position: relative;
+    padding-top: 66.7%;
+    img {
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .section-intro p {
+    color: inherit;
+  }
+}

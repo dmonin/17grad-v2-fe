@@ -1,0 +1,20 @@
+.loading {
+  mix-blend-mode: difference;
+}
+
+.loading .loading-text {
+  color: $color-brutal-blue;
+  font-size: 10vw;
+  // letter-spacing: 0.4em;
+  white-space: nowrap;
+  width: fit-content;
+  font-variation-settings: $fw-syne-regular;
+  transition: transform 1s ease-in, font-variation-settings 1s ease-in;
+}
+
+.loading.--visible .loading-text {
+  font-variation-settings: $fw-syne-extra;
+  transition: transform 1s ease-out, font-variation-settings 1s ease-out;
+  // letter-spacing: 0;
+}
+

@@ -1,0 +1,21 @@
+.work-detail-header h1.appear {
+  .text-line {
+    position: relative;
+    overflow: hidden;
+  }
+  .text-line-content {
+    display: block;
+    transform: translate(0, 100%);
+    transition: transform 0.5s ease-out;
+  }
+
+  .text-line:nth-child(2) .text-line-content {
+    transition-delay: 0.15s;
+  }
+}
+
+.work-detail-header h1.--appear-in {
+  .text-line-content {
+    transform: translate(0, 0);
+  }
+}

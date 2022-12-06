@@ -1,0 +1,9 @@
+.style-switch-button {
+  mix-blend-mode: difference;
+
+  //mix-blend-mode: exclusion;
+
+  svg path {
+    fill: $color-brutal-blue;
+  }
+}

@@ -1,0 +1,21 @@
+.--project[data-name=daesk] {
+  .work-list__slide__image-secondary {
+    left: 10%;
+    bottom: -10%;
+    width: 40vw;
+
+    @include break('mobile') {
+      left: 10%;
+      bottom: -10%;
+      width: 25vw;
+    }
+
+    .shadow {
+      transform: translate3d(calc(10% + 115% * var(--parallax)), 10%, 0);
+      @include break('mobile') {
+        transform: translate3d(calc(10% + 50% * var(--parallax)), 10%, 0);
+      }
+    }
+    // transform: translate(20%, 10%);
+  }
+}

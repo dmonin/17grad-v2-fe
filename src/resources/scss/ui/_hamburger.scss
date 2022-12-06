@@ -1,0 +1,44 @@
+.hamburger {
+  align-items: center;
+  cursor: default;
+  display: flex;
+  height: 1rem;
+  position: fixed;
+  right: $spacing-border-mobile;
+  transform: translate(0, -50%);
+  top: $spacing-header-mobile;
+  z-index: 4;
+  @include break('tablet') {
+    right: $spacing-border-desktop;
+    top: 80px;
+  }
+
+  .text {
+    color: inherit;
+    margin-left: -1rem;
+    margin-top:-0.2rem;
+    line-height: 1;
+    text-transform: lowercase;
+  }
+
+  .lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    margin-left: 1rem;
+    transition: height 0.25s ease-out;
+    width: 24px;
+
+    @include break('tablet') {
+      width: 30px;
+    }
+  }
+
+  .line {
+    border-bottom: 1px solid currentColor;
+    color: inherit;
+    // margin: 7px 0;
+    transition: transform 0.25s ease-out;
+  }
+}

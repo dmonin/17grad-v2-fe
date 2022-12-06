@@ -1,0 +1,97 @@
+.media-grid {
+  display: flex;
+  max-width: 86vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.mg-item {
+  box-sizing: border-box;
+  padding: 0.5rem;
+
+  .no-text {
+    line-height: 0;
+    font-size: 0;
+    vertical-align: top;
+  }
+
+  @include break('mobile') {
+    padding: 1.25rem;
+  }
+
+  img, svg, video {
+    height: auto;
+    width: 100%;
+  }
+  svg {
+    height: 100%;
+  }
+  label {
+    display: block;
+    text-align: right;
+  }
+}
+
+.mg100 {
+  width: 100%;
+}
+
+.mg-full-width {
+  margin: 10% 0 10% -50vw;
+  max-width: 100vw;
+  left: 50%;
+  position: relative;
+  width: 100vw;
+  padding: 0;
+}
+
+.mg50 {
+  width: 50%;
+}
+
+.mg33 {
+  width: 33.333%;
+}
+
+.mg__long-design {
+  display: flex;
+  width: 100%;
+  img {
+    width: 60%;
+  }
+
+  &.right {
+    img {
+      order: 2;
+    }
+  }
+
+  &.--overlap {
+    margin-top: var(--overlap);
+  }
+
+  &__text {
+    position: relative;
+    width: 40%;
+    .mg-text-item {
+      left: 20%;
+      position: absolute;
+      width: 60%;
+      top: var(--position);
+
+      &:before {
+        border-top: 1px solid #aaa;
+        @extend %pseudo-element;
+        opacity: 0.5;
+        left: 0;
+        position: absolute;
+        top: -1rem;
+        width:  40%;
+      }
+    }
+  }
+}
+
+.mg-project-color img {
+  background: var(--color2, #f00);
+}

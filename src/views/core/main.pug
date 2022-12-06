@@ -1,0 +1,18 @@
+section.core__main.parallax
+  if style == 'brutal'
+    h2
+      .marquee.cmp(data-speed=2)
+        .marquee__content Berlin based webdesign studio specialized&nbsp;
+      .marquee.cmp(data-speed=-2)
+        .marquee__content high-quality digital experiences.&nbsp;
+  else
+    h2.appear(data-appear-visibility=0.5, data-appear-duration=5000)
+      span.highlight.appear(data-letter=texts['core.intro.first-word'].substr(0, 3), data-appear-duration=2000, data-appear-visibility=0.01)
+        span
+          +translation('core.intro.first-word')
+      span.header-text
+        +translation('core.intro.' + style)
+  .core__main__info.appear(data-appear-visibility=0.7)
+    p
+      +translation('core.about.line1')
+      +translation('core.about.line2')

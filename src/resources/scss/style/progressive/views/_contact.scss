@@ -1,0 +1,75 @@
+.contact {
+  background: $color-progressive-blue;
+  min-height: 100vh;
+
+  header {
+    background: $color-progressive-white;
+    height: 15vh;
+    padding: 2rem 0 1rem 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.contact h1 {
+  color: $color-progressive-yellow;
+  line-height: 1;
+  text-transform: lowercase;
+  position: relative;
+  width: auto;
+  @include break('tablet') {
+    // @extend %custom-header;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -80%);
+    top: 50%;
+    width: fit-content;
+  }
+
+  &:before {
+    content: attr(data-content);
+    color: $color-corporate-blue;
+    font-family: $ff-accent;
+    mix-blend-mode: multiply;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(10%, 35%);
+
+    @include break('tablet') {
+      transform: translate(-10%, 35%);
+    }
+  }
+}
+
+.contact {
+  &__about {
+    color: $color-progressive-white;
+    padding-top: 3rem;
+  }
+
+  &__configurator {
+    background: $color-progressive-white;
+    color: $color-progressive-gray-dark;
+    padding-top: 3rem;
+  }
+
+  textarea,
+  input[type=text],
+  input[type=email] {
+    &:active, &:focus {
+      border-bottom-color: $color-corporate-blue;
+    }
+  }
+
+  &__finish {
+    background: $color-progressive-blue;
+    color: $color-progressive-white;
+    min-height: 70vh;
+    padding-top: 4rem;
+  }
+
+  button svg {
+    fill: $color-progressive-blue;
+  }
+}

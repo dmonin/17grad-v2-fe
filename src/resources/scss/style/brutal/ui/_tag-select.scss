@@ -1,0 +1,9 @@
+.tag {
+  background: $color-brutal-yellow;
+  border-color:  $color-brutal-blue;
+  color: $color-brutal-blue;
+}
+.tag.--active {
+  background: $color-brutal-blue;
+  color: #fff;
+}

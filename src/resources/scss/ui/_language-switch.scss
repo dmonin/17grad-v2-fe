@@ -1,0 +1,59 @@
+.language-switch {
+  color: #fff;
+  cursor: pointer;
+  height: 1.6em;
+  overflow: hidden;
+  position: fixed;
+  right: 0vw;
+  transform: translate(0, -50%);
+  transition: right 0.5s ease-in, transform 0.5s ease-in;
+  top: $spacing-header-desktop;
+  font-size: 2vw;
+  line-height: 1.6;
+  width: 100%;
+  z-index: 5;
+  .line {
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  &:hover {
+    .line {
+      transform: translate(0, -1.6em);
+    }
+  }
+
+  .char {
+    display: inline-block;
+    opacity: 0;
+    transform: translate(0, -5px);
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  }
+
+  @for $i from 1 through 50 {
+    .char:nth-child(#{$i}) {
+      transition-delay: $i * 15ms;
+    }
+
+    &.out .char:nth-child(#{$i}) {
+      transition-delay: 500ms - $i * 10ms;
+      transition-timing-function: ease-in;
+      transition-duration: 0.5s;
+      transform: translate(5em + 0.3em * $i, 0);
+    }
+  }
+
+  &.visible .char {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  // &.out {
+  //   right: $spacing-border-desktop;
+  //   transform: translate(0%, -50%);
+  // }
+
+  &.out .char {
+    opacity: 0;
+  }
+
+}

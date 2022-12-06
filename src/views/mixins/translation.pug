@@ -1,0 +1,8 @@
+mixin translation(key, index)
+  - var richKey= key + '_rich'
+  if !texts[key]
+    span.no-translation= key
+  else if texts[richKey]
+    | !{texts[richKey]}
+  else
+    | #{texts[key]}

@@ -1,0 +1,27 @@
+$ff-path: '/';
+@font-face{
+  font-family: $ff-syne;
+  font-variation-settings: $fw-syne-bold;
+  src:url($ff-path + "/fonts/syne/Syne-Bold.woff2") format("woff2"), url($ff-path + "/fonts/syne/Syne-Bold.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face{
+  font-family: $ff-syne;
+  font-variation-settings: $fw-syne-regular;
+  src:url($ff-path + "/fonts/syne/Syne-Regular.woff2") format("woff2"), url($ff-path + "/fonts/syne/Syne-Regular.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face{
+  font-family: $ff-syne;
+  font-variation-settings: $fw-syne-extra;
+  src:url($ff-path + "/fonts/syne/Syne-Extra.woff2") format("woff2"), url($ff-path + "/fonts/syne/Syne-Extra.woff") format("woff");
+  font-display: fallback;
+}
+
+@font-face{
+  font-family: $ff-syne-italic;
+  src:url($ff-path + "/fonts/syne/Syne-Italic.woff2") format("woff2"), url($ff-path + "/fonts/syne/Syne-Italic.woff") format("woff");
+  font-display: fallback;
+}

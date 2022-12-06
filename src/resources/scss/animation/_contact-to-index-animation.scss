@@ -1,0 +1,32 @@
+.contact.--view-out {
+  h1,
+  h2,
+  h4,
+  p,
+  .budget-slider,
+  .tag,
+  textarea {
+    transition: transform 1s ease-in;
+    transform: translate(0, 100vh);
+  }
+
+  h1 {
+    transition-duration: 0.65s;
+    transition-delay: 0.35s;
+  }
+
+  h2 {
+    transition-delay: 0.25s;
+  }
+
+  p {
+    transition-delay: 0.1s;
+  }
+
+  @for $i from 1 through 30 {
+    .tag:nth-child(#{$i}) {
+      transition-delay: 0.02s*$i;
+      transition-duration: 0.5s;
+    }
+  }
+}

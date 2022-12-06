@@ -1,0 +1,29 @@
+.--out-to-detail {
+  .work-list__slide h2,
+  .work-list__slide h3 {
+    transition: transform 0.5s ease-out;
+    transform: translate(100px, 0);
+  }
+
+  .work-list__slide__content {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+
+  .work-list__slide__button {
+    transition: transform 0.5s ease-out;
+    transform: translate(100px, 0);
+  }
+
+  .work-list__slide__image-secondary {
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translate(0, 20%);
+  }
+
+  .progress-slider {
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translate(0, 100%);
+  }
+}

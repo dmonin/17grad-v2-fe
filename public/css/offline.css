@@ -1,0 +1,73 @@
+.offline {
+  background: #ffffff;
+  box-sizing: border-box;
+  color: #101014;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.3;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 4rem;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+}
+.offline h2, .offline h3 {
+  color: #4747FE;
+}
+.offline h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 480px) {
+  .offline h2 {
+    font-size: 6vw;
+  }
+}
+.offline h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+.offline p, .offline .email {
+  margin: 0.25rem 0;
+}
+@media only screen and (min-width: 480px) {
+  .offline p, .offline .email {
+    margin: 1rem 0;
+  }
+}
+.offline .contact-options {
+  display: flex;
+  margin-top: 1rem;
+  max-width: 1024px;
+  flex-wrap: wrap;
+}
+.offline .contact-item {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 1rem;
+}
+.offline .email {
+  display: flex;
+}
+.offline .email .email-item {
+  margin: 0 0.1rem;
+}
+.offline .address span {
+  display: block;
+}
+.offline .rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=offline.css.map */

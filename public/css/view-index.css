@@ -1,0 +1,102 @@
+.index {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 25px;
+  position: relative;
+  width: 100%;
+}
+.index h1 {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  font-style: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+@media only screen and (min-width: 480px) {
+  .index {
+    padding-top: 5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .index {
+    overflow: hidden;
+  }
+}
+.index__logo {
+  margin: 0 auto;
+  width: 80vw;
+  z-index: 2;
+}
+@media only screen and (min-width: 1024px) {
+  .index__logo {
+    flex: 1;
+    width: 70vw;
+  }
+}
+.index__about {
+  line-height: 1.2;
+  margin: 0 auto;
+  text-indent: 2rem;
+  font-size: 8vw;
+  width: auto;
+  padding: 30px;
+}
+@media only screen and (min-width: 1024px) {
+  .index__about {
+    padding: 7vw;
+    text-indent: 6rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .index__about {
+    bottom: 7vw;
+    font-size: 3.2vw;
+    padding: 0;
+    right: 7vw;
+    position: absolute;
+    width: 36%;
+    text-indent: 1em;
+  }
+}
+.index__nav {
+  box-sizing: border-box;
+  font-size: 25vw;
+  overflow: hidden;
+  width: 100vw;
+  z-index: 3;
+}
+@media only screen and (min-width: 480px) {
+  .index__nav {
+    font-size: 10vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .index__nav {
+    font-size: 3.5vw;
+  }
+}
+.index__nav .scrollable__content {
+  padding: 0 30px;
+}
+@media only screen and (min-width: 1024px) {
+  .index__nav .scrollable__content {
+    padding: 7vw;
+  }
+}
+.index__nav ul {
+  display: flex;
+}
+.index__nav li {
+  margin-right: 3rem;
+  position: relative;
+  line-height: 1.2;
+}
+.index__nav a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=view-index.css.map */

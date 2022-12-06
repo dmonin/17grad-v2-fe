@@ -1,0 +1,132 @@
+#cursor,
+#cursor-bg {
+  display: none;
+  height: 80px;
+  left: 0px;
+  pointer-events: none;
+  position: fixed;
+  top: 0px;
+  width: 80px;
+  z-index: 2000;
+}
+
+#cursor {
+  // overflow: hidden;
+  z-index: 2001;
+
+  &.--hi {
+    font-size: 1.5rem;
+  }
+}
+
+#cursor-bg {
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  color: $color-corporate-blue;
+  mix-blend-mode: difference;
+
+  $ease: $ease-out-back;
+  transition: top 0.25s $ease;
+  transition-property: color, background-color, border-color, width, height;
+  will-change: color, background-color, border-color;
+
+  &.--inactive {
+    border-color: #707070;
+  }
+
+  &.--eye,
+  &.--active,
+  &.--hi,
+  &.--details,
+  &.--drag,
+  &.--dragging {
+    background-color: currentColor;
+    // color: $color-corporate-blue;
+    height: 120px;
+    width: 120px;
+  }
+
+  &.--dragging {
+    height: 100px;
+    width: 100px;
+  }
+
+  &.--style-hover {
+    animation: cursorStyleAnim 1s steps(2, end) infinite alternate;
+  }
+}
+
+.cursor-state {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  left: 50%;
+  line-height: 1.2;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 80px;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.25s ease-out;
+  transition-property: opacity, transform;
+
+  .icon-container {
+    height: 30px;
+    width: 50px;
+    svg {
+      width: 100%;
+    }
+    transition: opacity 0.5s 0.25s;
+  }
+
+  &__text {
+    color: #fff;
+  }
+
+  &.--out {
+    opacity: 0;
+    transform: translate3d(-50%, -300%, 0);
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+    .icon-container {
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+  }
+  &.--in {
+    opacity: 0;
+    transform: translate(-50%, 50%);
+    .icon-container {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes cursorStyleAnim {
+  0% {
+    background-color: $color-corporate-blue;
+    border-color: $color-corporate-blue;
+  }
+
+  25% {
+    background-color: $color-progressive-white;
+    border-color: $color-progressive-white;
+  }
+
+  50% {
+    background-color: $color-progressive-yellow;
+    border-color: $color-progressive-yellow;
+  }
+
+  75% {
+    background-color: $color-brutal-pink;
+    border-color: $color-brutal-pink;
+  }
+
+  100% {
+    background-color: $color-brutal-yellow;
+    border-color: $color-brutal-yellow;
+  }
+}

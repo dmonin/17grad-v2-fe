@@ -1,0 +1,141 @@
+.navigation {
+  background: $color-progressive-yellow;
+  color: $color-progressive-gray-dark;
+
+  a {
+    text-decoration: none;
+
+  }
+
+  @include break('tablet-landscape', 'max') {
+    .close svg {
+      color: #000;
+    }
+  }
+
+  &__content-bg-menu {
+    background: #fff;
+  }
+
+  h3 {
+    font-family: $ff-light;
+    text-transform: uppercase;
+  }
+
+  &__links nav.main {
+    a {
+      font-family: $ff-bold;
+      transition: color 0.2s ease-out;
+    }
+
+    a span {
+      display: block;
+      transition: color 0.2s ease-out, transform 0.1s ease-out;
+    }
+
+    li.active {
+      color: $color-progressive-blue;
+    }
+
+    li.active .prefix {
+      color: $color-progressive-blue;
+    }
+
+    li.active a {
+      font-family: $ff-accent;
+    }
+
+    li:hover {
+      color: $color-progressive-blue;
+      transform: rotateZ(17);
+    }
+
+    li:hover span {
+      transform: translateX(1rem);
+    }
+  }
+
+  // @include break('tablet-landscape', 'max') {
+  //   &__content,
+  //   &__footer {
+  //     // background: $color-progressive-blue;
+  //   }
+  // }
+
+  &__footer {
+    a span {
+      display: block;
+      transition: color 0.2s ease-out, transform 0.1s ease-out;
+    }
+
+    h3 {
+      color: $color-corporate-gray-light;
+      font-size: 1rem;
+    }
+
+    &__item ul span {
+      a:hover {
+        transform: translateY(10px) !important;
+
+      }
+    }
+
+    &__item:last-child {
+      color: $color-progressive-white;
+    }
+
+    &__item a {
+      font-family: $ff-default;
+      @include break('tablet-landscape', 'max') {
+        color: #fff;
+      }
+    }
+
+    & a:hover span {
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  &__content-bg {
+    background: $color-progressive-blue;
+  }
+
+  &__content {
+    color: $color-progressive-white;
+
+    a span {
+      display: block;
+      transition: color 0.2s ease-out, transform 0.1s ease-out;
+    }
+
+    .address p:first-of-type {
+      font-family: $ff-bold;
+    }
+
+    // .address a:after {
+    //   @extend %pseudo-element;
+    //   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 28.8 20' xml:space='preserve'%3E%3Cpath fill='%23ffffff' d='M18.1,2.3c-0.4,0.4-0.4,1.1,0,1.5l5.1,5.1H3.8 c-0.6,0-1.1,0.5-1.1,1.1c0,0.6,0.5,1,1.1,1.1h19.3L18,16.2c-0.4,0.4-0.4,1.1,0,1.5c0.4,0.4,1.1,0.4,1.5,0l6.9-6.9l0,0 c0.1-0.1,0.2-0.2,0.2-0.3c0.1-0.1,0.1-0.3,0.1-0.4c0-0.3-0.1-0.6-0.3-0.8l-6.9-6.9C19.2,1.9,18.5,1.9,18.1,2.3L18.1,2.3z'/%3E%3C/svg%3E%0A");
+    //   background-repeat: no-repeat;
+    //   color: #fff;
+    //   height: 0.825em;
+    //   margin-left: 8px;
+    //   width: 26px;
+    // }
+
+    &__item:last-child a span {
+      font-family: $ff-bold;
+      &:after {
+        border-bottom: 2px solid $color-progressive-yellow;
+      }
+    }
+    
+    a:hover span {
+      color: $color-progressive-yellow;
+      transform: translateY(-0.5rem);
+    }
+    
+    a:hover:after {
+      top: 0.8em;            
+    }
+  }
+}

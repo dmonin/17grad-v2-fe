@@ -1,0 +1,46 @@
+{
+  "visible": ["xbionic", "lih", "daesk"],
+
+  "xbionic": {
+    "color1": "#FE5000",
+    "color2": "#FE5000",
+    "image1": "project-xbionic-01",
+    "image1Title": "X-BIONIC Biking TWYCE",
+    "image2": "project-xbionic-02",
+    "image2Title": "X-BIONIC Biking TWYCE",
+    "image2Style": [
+      {"property": "width", "value": "25%"},
+      {"property": "left", "value": "10%"},
+      {"property": "bottom", "value": "-10%"}
+    ],
+    "image2ShadowPosition": {
+      "x": "-1rem",
+      "y": "1rem"
+    }
+  },
+  "lih": {
+    "color1": "#6BC7AB",
+    "color2": "#167889",
+    "image1": "project-lih-01",
+    "image1Title": "Compensaid – Sustainable Airtravel",
+    "image2": "project-lih-02",
+    "image2Title": "Compensaid – Sustainable Airtravel",
+    "image2Style": [
+      {"property": "width", "value": "45%"},
+      {"property": "right", "value": "5%"},
+      {"property": "top", "value": "-5%"}
+    ],
+    "image2ShadowPosition": {
+      "x": "1rem",
+      "y": "-1rem"
+    }
+  },
+  "daesk": {
+    "color1": "#6BC7AB",
+    "color2": "#167889",
+    "image1": "project-daesk-01",
+    "image1Title": "DAESK Time Tracking Tool",
+    "image2": "project-daesk-02",
+    "image2Title": "DAESK Time Tracking Tool"
+  }
+}

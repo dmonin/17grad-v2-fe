@@ -1,0 +1,21 @@
+.index(data-from=fromPath)
+  header.index__about
+    h1
+      span.highlight 17°Studio
+      +translation('index.start.corporate')
+  .index__logo.cmp
+    .index__logo__graphic
+      include ../icons/corporate-logo
+    .index__logo__angle 17°
+  .index__nav.scrollable.cmp
+    .scrollable__content
+      ul
+        li(data-num='01')
+          a.internal-link.cmp(href='core',data-cursor='active,' + texts['index.start.navigation.core.hover'])
+            +translation('index.start.navigation.core')
+        li(data-num='02')
+          a.internal-link.cmp(href='work',data-cursor='active,' + texts['index.start.navigation.work.hover'])
+            +translation('index.start.navigation.work')
+        li(data-num='03')
+          a.internal-link.cmp(href='contact',data-cursor='hi')
+            +translation('index.start.navigation.contact')

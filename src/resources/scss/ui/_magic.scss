@@ -1,0 +1,151 @@
+.magic {
+  align-items: center;
+  height: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(0, -100%);
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10;
+
+  .--corporate & {
+    background: $color-corporate-black;
+
+    .magic-text {
+      animation: corporateMagicAnimation 3s ease-out forwards;
+      color: $color-corporate-dark;
+      font-family: $ff-accent;
+      font-size: 30vw;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, 100vh);
+    }
+  }
+
+  // Progressive
+  .--progressive & {
+    background: $color-progressive-yellow;
+
+    .letter {
+      color: $color-progressive-blue;
+      font-size: 15vw;
+      font-family: $ff-bold;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+      transform: rotate(-17deg) translate(-50%, -50%);
+      text-transform: uppercase;
+      animation: letterAnimation 1s 1s ease-out forwards;
+    }
+
+    .letter-m {
+      left: 15%;
+      top: 70%
+    }
+
+    .letter-a {
+      left: 35%;
+      top: 45%;
+      animation-delay: 1.1s;
+    }
+
+    .letter-g {
+      left: 70%;
+      top: 65%;
+      animation-delay: 1.2s;
+    }
+
+    .letter-i {
+      left: 75%;
+      top: 10%;
+      animation-delay: 1.3s;
+    }
+
+    .letter-c {
+      left: 95%;
+      top: 30%;
+      animation-delay: 1.4s
+    }
+  }
+
+  .--brutal & {
+    background: $color-brutal-yellow;
+    color: $color-brutal-blue;
+    video {
+      position: relative;
+      z-index: 2;
+    }
+
+    .decoration {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      overflow: hidden;
+      top: 0;
+      width: 100%;
+    }
+
+    .marquee {
+      font-family: $ff-syne;
+      font-variation-settings: $fw-syne-bold;
+      font-size: 30vw;
+      line-height: 1;
+      &:nth-child(2) {
+        color: $color-brutal-pink;
+      }
+      position: relative;
+      transform: rotate(17deg);
+      width: 120vw;
+      transform: translate(-10vw, 0) rotate(17deg);
+    }
+  }
+
+  &.--visible {
+    transform: translate(0, 0%);
+    visibility: visible;
+    transition: transform 1s ease-out;
+  }
+}
+
+
+@keyframes corporateMagicAnimation {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 100vh);
+  }
+
+  80% {
+    filter: none;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+  }
+}
+
+@keyframes letterAnimation {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg) translate(-50%, -50%) translate(0, -80vh);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotate(-17deg) translate(-50%, -50%) translate(0, 5vh);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(-17deg) translate(-50%, -50%);
+  }
+}

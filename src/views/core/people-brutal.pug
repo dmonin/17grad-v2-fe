@@ -1,0 +1,17 @@
+section.core__people.parallax.appear(data-appear-visibility=0.05, data-appear-duration=3000)
+  h1
+    span One<br />&nbsp;&nbsp;people
+  div.core__people__info
+    p
+      +translation('core.people.text.line1')
+    p
+      +translation('core.people.text.line2')
+  div.core__people__picture.cmp
+    +responsiveImage(media.imgOnePeople, '50vw', 'One People', {loading: 'lazy'})
+    +responsiveVideo(media.videoOnePeople, {
+      loop: true,
+      autoplay: false,
+      muted: true,
+      crossorigin: true,
+      playsinline: true
+    })

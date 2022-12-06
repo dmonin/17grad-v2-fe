@@ -1,0 +1,7 @@
+%responsive-body-font-size {
+  font-size: 1rem;
+  
+  @include break('tablet') {
+    font-size: 1.25rem;
+  }  
+}

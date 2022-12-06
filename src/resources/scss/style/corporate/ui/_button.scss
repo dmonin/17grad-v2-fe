@@ -1,0 +1,9 @@
+.button {
+  background: #000;
+  box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.1);
+  font-family: $ff-accent;
+
+  .arrow {
+    @include corporateArrowSvg('4747FE');
+  }
+}

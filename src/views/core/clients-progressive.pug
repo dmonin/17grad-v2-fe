@@ -1,0 +1,13 @@
+section.core__clients.parallax
+  .core__clients__header
+    h1
+      +translation('core.clients.h1')
+    .section-intro
+      p
+        +translation('core.clients.text')
+  .core__clients__logo.cmp(data-clients=clients.join(','))
+    .core__clients__logo__left.--in
+      +icon(clients[0])
+    .core__clients__logo__right.--in
+      +icon(clients[0])
+  .yellow-box.appear

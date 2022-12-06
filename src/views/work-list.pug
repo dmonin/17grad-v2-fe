@@ -1,0 +1,12 @@
+extends layout
+
+block styles
+  if isDev
+    link(rel='stylesheet', href=scriptPath + 'css/view-work.css')
+  else
+    style
+      include ../../public/css/view-work.css
+
+block content
+  include work-list-content
+

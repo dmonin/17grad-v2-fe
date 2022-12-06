@@ -1,0 +1,39 @@
+.imprint {
+  padding: $spacing-top-mobile 0;
+  @include break('mobile') {
+    padding: $spacing-top-desktop 0;
+  }
+
+  .container {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 $spacing-border-mobile;
+
+    @include break('mobile') {
+      padding: 0 $spacing-border-desktop;
+    }
+
+    h2 {
+      width: 100%;
+      line-height: 1.2;
+    }
+
+    .column {
+      box-sizing: border-box;
+      flex: 1 0 50%;
+      padding-top: $spacing-header-desktop;
+
+      @include break('tablet') {
+        &:nth-child(2) {
+          padding-right: 3em;
+        }
+
+        &:nth-child(3) {
+          padding-left: 3em;
+        }
+      }
+    }
+  }
+}

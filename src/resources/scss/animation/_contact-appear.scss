@@ -1,0 +1,59 @@
+// General / H1
+.contact.appear h1,
+.contact.appear h2,
+.contact.appear h4,
+.contact.appear .tag,
+.contact.appear textarea,
+.contact.appear input,
+.contact.appear .budget-slider,
+.contact.appear p {
+  opacity: 0;
+  transform: translate(0, 15%);
+}
+
+.contact.--appear-in h1,
+.contact.--appear-in h2,
+.contact.--appear-in h4,
+.contact.--appear-in .tag,
+.contact.--appear-in textarea,
+.contact.--appear-in input,
+.contact.--appear-in .budget-slider,
+.contact.--appear-in p {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+// Subheader
+.contact.appear h2 {
+  transform: translate(0, 15%);
+}
+
+.contact.--appear-in h2 {
+  transform: translate(0, 0);
+  transition-duration: 0.5s;
+  transition-delay: 0.15s;
+}
+
+// Paragraph
+.contact.appear p {
+  transform: translate(0, 15%);
+}
+
+.contact.--appear-in p {
+  transform: translate(0, 0);
+  transition-duration: 0.5s;
+  transition-delay: 0.25s;
+}
+
+// Tag
+.contact.appear .tag {
+  transform: none;
+}
+
+@for $i from 1 through 30 {
+  .contact.--appear-in .tag:nth-child(#{$i}) {
+    transition-delay: 0.02s*$i;
+    transition-duration: 0.5s;
+  }
+}

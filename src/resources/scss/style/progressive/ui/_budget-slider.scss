@@ -1,0 +1,14 @@
+.budget-slider {
+  .track {
+    background: $color-progressive-blue;
+  }
+
+  .value {
+    color: $color-progressive-blue;
+  }
+
+  .track-min,
+  .track-max {
+    background: $color-corporate-blue;
+  }
+}

@@ -1,0 +1,16 @@
+.top-button {
+  font-family: $ff-accent;
+  @include break('tablet') {
+    background: transparentize(#000, 0.65);
+    backdrop-filter: blur(5px);
+
+    .arrow {
+      @include corporateArrow('4747FE');
+
+    }
+
+    &:before {
+      @include corporateArrow('4747FE');
+    }
+  }
+}

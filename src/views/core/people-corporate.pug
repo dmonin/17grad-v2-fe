@@ -1,0 +1,54 @@
+section.core__people.parallax
+  h1.appear(data-appear-duration=2000)
+    +translation('core.people.title')
+  .section-intro.appear
+    p.appear.parallax(data-letter=texts['core.people.text.line1'].substr(0, 1))
+      span
+        +translation('core.people.text.line1')
+    p
+      +translation('core.people.text.line2')
+  .core__people__member.parallax
+    .core__people__member__picture.cmp(data-displacement='/webgl/corporate-core-people/displacement-dmitry.jpg')
+      +responsiveImage(media.imgDmitry, '30vw', 'Dmitry Monin', {loading: 'lazy'})
+      +responsiveImage(media.imgDmitryHover, '30vw', 'Dmitry Monin', {loading: 'lazy'})
+    h3
+      span Dmitry
+      span Monin
+    p
+      +translation('core.people.dmitry.position')
+  .core__people__member.parallax
+    .core__people__member__picture.cmp(data-displacement='/webgl/corporate-core-people/displacement-sascha.jpg')
+      +responsiveImage(media.imgSascha, '30vw', 'Sascha Geerdts', {loading: 'lazy'})
+      +responsiveImage(media.imgSaschaHover, '30vw', 'Sascha Geerdts', {loading: 'lazy'})
+    h3
+      span Sascha
+      span Geerdts
+    p
+      +translation('core.people.sascha.position')
+  .core__people__member.parallax
+    .core__people__member__picture.cmp(data-displacement='/webgl/corporate-core-people/displacement-natalie.jpg')
+      +responsiveImage(media.imgNatalie, '30vw', 'Natalie Pawlik', {loading: 'lazy'})
+      +responsiveImage(media.imgNatalieHover, '30vw', 'Natalie Pawlik', {loading: 'lazy'})
+    h3
+      span Natalie
+      span Pawlik
+    p
+      +translation('core.people.natalie.position')
+  .core__people__member.parallax
+    .core__people__member__picture.cmp(data-displacement='/webgl/corporate-core-people/displacement-dean.jpg')
+      +responsiveImage(media.imgDean, '30vw', 'Dean Jürges', {loading: 'lazy'})
+      +responsiveImage(media.imgDeanHover, '30vw', 'Dean Jürges', {loading: 'lazy'})
+    h3
+      span Dean
+      span Jürges
+    p
+      +translation('core.people.dean.position')
+  .core__people__member.parallax
+    .core__people__member__picture.cmp(data-displacement='/webgl/corporate-core-people/displacement-gavin.jpg')
+      +responsiveImage(media.imgGavin, '30vw', 'Gavin Auerswald', {loading: 'lazy'})
+      +responsiveImage(media.imgGavinHover, '30vw', 'Gavin Auerswald', {loading: 'lazy'})
+    h3
+      span Gavin
+      span Auerswald
+    p
+      +translation('core.people.gavin.position')

@@ -1,0 +1,14 @@
+.close {
+  @extend %responsive-body-font-size;
+  font-family: $ff-bold;
+  text-transform: lowercase;
+
+  svg line {
+    stroke-width: 2;
+    stroke-linecap: round;
+  }
+
+  &:hover span {
+    transform: scale(1.1);
+  }
+}

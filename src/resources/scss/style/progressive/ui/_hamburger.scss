@@ -1,0 +1,28 @@
+.hamburger {
+  @extend %responsive-body-font-size;
+  color: $color-progressive-yellow;
+  justify-content: space-between;
+  line-height: 0;
+  mix-blend-mode: difference;
+
+  .lines {
+    height: 0.75rem;
+  }
+
+  .text {
+    font-family: $ff-bold;
+  }
+
+  &:hover .lines {
+    height: 1.25rem;
+  }
+
+  .line {
+    border-width: 2px;
+    border-radius: 2px;
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}

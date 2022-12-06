@@ -1,0 +1,17 @@
+section.core__header.parallax.appear(data-appear-duration=3000)
+  .core__header__content
+    h2
+      span
+        +translation('core.header.h2.brutal')
+    h3
+      span
+        +translation('core.header.text.line1')
+      span
+        +translation('core.header.text.line2')
+    .since
+      .since-wrap
+        +translation('core.header.since.text')
+        br
+        +translation('core.header.since.year')
+  .core__header__picture
+    +responsiveVideo(media.videoTeam, videoAttrInlineVideo)

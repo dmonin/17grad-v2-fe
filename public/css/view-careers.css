@@ -1,0 +1,10 @@
+.core__top {
+  height: 6.25rem;
+}
+@media only screen and (min-width: 768px) {
+  .core__top {
+    height: 177px;
+  }
+}
+
+/*# sourceMappingURL=view-careers.css.map */

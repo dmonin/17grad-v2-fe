@@ -1,0 +1,65 @@
+include ../mixins/responsive-image
+include ../mixins/responsive-video
+include ../mixins/top-button
+include ../mixins/icon
+include ../mixins/translation.pug
++topButton(texts['top-button.project-overview'], 'back', 'active', {'data-direction':'back'})
+section.work-detail__info
+  h2.appear.fade-in-left
+    +translation("lih.title.short")
+  .info.appear.fade-in-left
+    p
+      +translation("lih.intro.line1")
+    p
+      +translation("lih.intro.line2")
+  .fact-sheet
+    .fact-sheet__item.appear.fade-in-right
+      label
+        +translation("work.detail.client")
+      .fact-sheet__item__value.appear.fade-in-down
+        +translation("lih.client")
+    .fact-sheet__item.appear.fade-in-right
+      label
+        +translation("work.detail.expertise")
+      div.fact-sheet__item__value.appear.fade-in-down
+        +translation("lih.expertise")
+    .fact-sheet__item.appear.fade-in-right
+      label
+        +translation("work.detail.challenge")
+      p.fact-sheet__item__value.appear.fade-in-down
+        +translation("lih.challenge")
+section.work-detail__showcase.media-grid
+  .mg-item.mg50.mg-primary-color.no-text.appear.fade-in-left(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-lih/logo-1-compensaid.svg',width=900,height=900)
+
+  .mg-item.mg50.mg-project-color.no-text.appear.delay100.fade-in-right(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-lih/logo-2-compensaid.svg',width=900,height=900)
+
+  .mg-item.mg50.mg-primary-color.no-text.appear.fade-in-left(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-lih/colors-compensaid.svg',width=900,height=900)
+
+  .mg-item.mg50.mg-secondary-color.no-text.appear.delay100.fade-in-right(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-lih/typography-compensaid.svg',width=900,height=900)
+
+  .mg-item.mg100.mg-secondary-color.appear.fade-in-down(data-appear-duration=5000)
+    img(src=scriptPath + 'svg/work-lih/infographic-en-carbon-lifecycle-chart.svg',width=960,height=930)
+    label
+
+  .mg-item.mg100.appear.fade-in-right(data-appear-duration=5000)
+    +responsiveVideo(media.heroLih01, {
+      loop: true,
+      autoplay: true,
+      muted: true,
+      crossorigin: true,
+      playsinline: true
+    })
+  .mg-item.mg__long-design.appear.fade-in-left(data-appear-visibility=0.001, data-appear-duration=5000)
+    +responsiveImage(media.compensaidFull01StartpageJpg, '56vw', '#{project.name} Start page')
+    .mg__long-design__text
+      .mg-text-item(style='--position:20%')
+      .mg-text-item(style='--position:40%')
+      .mg-text-item(style='--position:60%')
+  .mg-item.mg__long-design.right.--overlap.appear.fade-in-right(data-appear-visibility=0.001, data-appear-duration=5000, style='--overlap:-40%')
+    +responsiveImage(media.compensaidFull02ProjectJpg, '56vw', '#{project.name} Project')
+    .mg__long-design__text
+      .mg-text-item(style='--position:60%')

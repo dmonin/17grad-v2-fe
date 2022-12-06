@@ -1,0 +1,13 @@
+include mixins/icon.pug
+include mixins/responsive-image.pug
+
+.play-view.scrollable.cmp(data-name='scrollable',data-drag-speed=0.8)
+  .play-area.cmp.scrollable__content(data-name='play-area')
+    each element in elements
+      .element(style=element.style,id=element.id,data-alignment=element.position.bottomAlignment ? 'bottom' : 'top')
+        each collageItem in element.collage
+          .collage-item(style=collageItem.style)
+            +responsiveImage(collageItem.responsive, Math.round(element.width * collageItem.width / 100) + 'vw', 'Alt Text', {loading: 'lazy'})
+
+
+

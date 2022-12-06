@@ -1,0 +1,9 @@
+%content-container {
+  padding-left: $spacing-border-mobile;
+  padding-right: $spacing-border-mobile;
+
+  @include break('mobile') {
+    padding-left: $spacing-border-desktop;
+    padding-right: $spacing-border-desktop;
+  }
+}

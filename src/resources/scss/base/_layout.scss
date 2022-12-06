@@ -1,0 +1,87 @@
+:root {
+  --mouse-x: 0;
+  --mouse-y: 0;
+  --parallax: 0;
+}
+
+html, body {
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+a {
+  -webkit-text-decoration-skip: objects;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga","kern";
+  text-rendering: optimizelegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+img {
+  -ms-interpolation-mode: bicubic
+}
+
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+body.--view-transition {
+  overflow: hidden;
+}
+
+// We always apply our custom margins to those elements to be sure.
+h1, h2, h3, h4, h5, h6, ul, li {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+p {
+  font-size: 0.875rem;
+
+  @include break("mobile") {
+    font-size: 1rem;
+  }
+
+  @include break("tablet") {
+    font-size: 1.125rem;
+  }
+
+  @include break("desktop") {
+    font-size: 1.25rem;
+  }
+}
+
+body {
+  &.--overlay-open {
+    overflow: hidden;
+  }
+}
+
+.futura {
+  font-family: $ff-default;
+}
+
+#view-content {
+  position: relative;
+  z-index: 2;
+}

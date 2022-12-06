@@ -1,0 +1,35 @@
+//before
+.work-view.appear {
+  .work-list__slide.--project {
+    opacity: 0;
+    transform: translate(15%, 0);
+  }
+
+  .work-list__slide.--start h1,
+  .work-list__slide.--start p {
+    opacity: 0;
+  }
+
+  .work-list__slide.--start h1 {
+    transform: translate(0, 15%);
+  }
+  .work-list__slide.--start p {
+    transform: translate(0, 20%);
+  }
+}
+//after
+.work-view.--appear-in {
+  .work-list__slide.--project {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: opacity 0.5s ease-out 0.2s, transform 0.7s ease-out 0.2s;
+  }
+
+  .work-list__slide.--start {
+    h1, p {
+      opacity: 1;
+      transform: translate(0, 0);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+  }
+}

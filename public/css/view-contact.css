@@ -1,0 +1,188 @@
+.contact {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact header {
+  padding-top: 5rem;
+}
+.contact h1 {
+  box-sizing: border-box;
+  padding-left: 30px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .contact h1 {
+    padding-left: 7vw;
+  }
+}
+.contact__about {
+  box-sizing: border-box;
+  padding-left: 30px;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .contact__about {
+    padding-left: 7vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact__about {
+    width: 40%;
+  }
+}
+.contact__about h2 {
+  text-indent: 2rem;
+}
+.contact__about p {
+  max-width: 80%;
+}
+@media only screen and (min-width: 768px) {
+  .contact__about p {
+    max-width: 60%;
+  }
+}
+.contact__about p:first-of-type {
+  text-indent: 2rem;
+}
+.contact__configurator {
+  box-sizing: border-box;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  width: 100%;
+}
+.contact__configurator label {
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .contact__configurator {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact__configurator {
+    width: 60%;
+  }
+}
+.contact__configurator section {
+  margin-bottom: 5rem;
+}
+.contact__configurator h4 {
+  color: inherit;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact .form-button {
+  margin-top: 4rem;
+}
+.contact .form-item {
+  margin: 1.5rem 0;
+}
+.contact .form-item label {
+  opacity: 0.5;
+  transition: opacity 0.25s ease-in;
+}
+.contact .form-item.--focused label {
+  opacity: 1;
+  transition-timing-function: ease-out;
+}
+.contact textarea,
+.contact input[type=text],
+.contact input[type=email] {
+  background: transparent;
+  border: 0px none;
+  border-bottom: 1px solid #707070;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  padding: 0.5rem 0.25rem;
+  transition: border 0.25s ease-out;
+  resize: vertical;
+  width: 100%;
+}
+.contact textarea:active, .contact textarea:focus,
+.contact input[type=text]:active,
+.contact input[type=text]:focus,
+.contact input[type=email]:active,
+.contact input[type=email]:focus {
+  border-bottom-width: 2px;
+}
+.contact.--out .contact__about, .contact.--out .contact__configurator {
+  opacity: 0;
+  transform: translate(0, -3rem);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+.contact.--finish .contact__about, .contact.--finish .contact__configurator {
+  display: none;
+}
+.contact.--finish .contact__finish {
+  animation: appearContactFinish 0.5s ease-out forwards;
+  display: block;
+}
+.contact__finish {
+  box-sizing: border-box;
+  width: 100%;
+  display: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10vh;
+}
+@media only screen and (min-width: 768px) {
+  .contact__finish {
+    padding-left: 7vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact__finish {
+    padding-right: 7vw;
+  }
+}
+.contact__finish p {
+  margin: 0 0 1.5rem 0;
+}
+.contact__finish p:first-child {
+  font-size: 2rem;
+  line-height: 1;
+}
+@media only screen and (min-width: 768px) {
+  .contact__finish p:first-child {
+    font-size: 5vw;
+    line-height: 1;
+  }
+}
+.contact__finish .button-wrap {
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+@media only screen and (min-width: 480px) {
+  .contact__finish p,
+  .contact__finish .button-wrap {
+    max-width: 60vw;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact__finish p,
+  .contact__finish .button-wrap {
+    max-width: 38rem;
+  }
+}
+.contact__finish button svg {
+  height: 1.25rem;
+  margin-right: 1rem;
+  width: 1.25rem;
+}
+
+@keyframes appearContactFinish {
+  0% {
+    opacity: 0;
+    transform: translate(0, 5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0rem);
+  }
+}
+
+/*# sourceMappingURL=view-contact.css.map */

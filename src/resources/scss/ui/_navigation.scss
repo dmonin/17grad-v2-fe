@@ -1,0 +1,327 @@
+@use "sass:math";
+
+.navigation {
+  display: none;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+
+  a {
+    color: inherit;
+  }
+
+  &__header {
+    $logo-aspect-ratio: math.div(77, 55);
+    display: block;
+    @extend %responsive-body-font-size;
+    font-family: $ff-bold;
+    height: math.div(40px, $logo-aspect-ratio);
+    line-height: math.div(40px, $logo-aspect-ratio);
+    justify-content: center;
+    left: calc(#{$spacing-border-mobile} + 7rem);
+    position: absolute;
+    transform: translate(0, -50%);
+    top: $spacing-header-mobile;
+    z-index: 2;
+    @include break('tablet-landscape') {
+      height: 55px;
+      line-height: 55px;
+      left: calc(#{$spacing-border-desktop} + 7rem);
+      top: $spacing-header-desktop;
+    }
+  }
+
+  &__loader {
+    background: #fff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: 0% 50%;;
+
+    .loading & {
+      transform: scaleX(1);
+    }
+  }
+
+  &__wrap {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+
+    @include break('tablet-landscape') {
+      overflow: hidden;
+      padding-top: $spacing-header-desktop * 2;
+    }
+
+    position: relative;
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+
+  &__links,
+  &__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: $spacing-border-mobile;
+    width: 100%;
+
+    @include break('tablet-landscape') {
+      padding: 0 $spacing-border-desktop;
+      width: 50%;
+    }
+  }
+
+  &__links {
+    padding-top: $spacing-header-mobile * 2;
+    @include break('tablet-landscape') {
+      padding-top: $spacing-header-desktop;
+    }
+
+    @include break('tablet-landscape', 'max') {
+      position: relative;
+    }
+  }
+
+  // &__content {
+  //   padding-bottom: $spacing-border-mobile;
+  //   @include break('tablet-landscape') {
+  //     padding-bottom: $spacing-border-mobile * 2;
+  //   }
+  // }
+
+  // &__links {
+  //   padding-bottom: $spacing-border-mobile * 2;
+  // }
+
+  h3,
+  &__links nav.main li .prefix {
+    margin-right: 1rem;
+    width: 6rem;
+  }
+
+  &__links nav.main {
+    height: 100%;
+    display: flex;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  // @include break('tablet-landscape', 'max') {
+  //   margin-right: 1rem;
+  //   width: 5em;
+  // }
+
+  &__links nav.main li {
+    font-size: 15vw;
+    display: flex;
+    line-height: 1;
+
+    a {
+      color: currentColor;
+    }
+
+    @include break('mobile') {
+      font-size: 12vw;
+    }
+
+    @include break('tablet') {
+      font-size: 7vw;
+    }
+
+    @include break('tablet-landscape') {
+      font-size: 4.5vw;
+    }
+
+    .prefix {
+      &:after {
+        bottom: 0.125em;
+        border-bottom: 1px solid currentColor;
+        content: "";
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+
+      box-sizing: border-box;
+      content: "";
+      color: currentColor;
+      display: block;
+      padding-top: 0.25em;
+      position: relative;
+
+
+      .num {
+        font-size: 0.75rem;
+        @include break('tablet-landscape') {
+          font-size: 1rem;
+        }
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__content-bg,
+  &__content-bg-menu {
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    width: 100%;
+    @include break('tablet-landscape') {
+      width: 50vw;
+    }
+  }
+
+  &__content-bg {
+    right: 0;
+  }
+
+  &__content-bg-menu {
+    left: 0;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding-top: 4rem;
+    position: relative;
+    z-index: 2;
+
+    $icon-aspect-ratio: math.div(46, 20);
+    @include inline-icon() {
+      height: 20px;
+      margin-left: 1rem;
+      width: 20px * $icon-aspect-ratio;
+    }
+
+    h3 {
+      opacity: 0.5;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      display: flex;
+      width: 100%;
+
+      &:nth-child(2) h3 {
+        margin-top: 1rem;
+        @include break('tablet-landscape') {
+          margin-top: 0;
+        }
+      }
+
+      @include break('tablet-landscape') {
+        display: block;
+        width: 50%;
+      }
+    }
+
+    &__item:last-child a {
+      display: inline-block;
+      &:after {
+        @extend %pseudo-element;
+        border-bottom: 1px solid $color-corporate-white;
+        margin-top: 0.5rem;
+        width: 100%;
+        transition: transform 0.5s ease-out;
+        transform-origin: 0 0;
+      }
+
+      &:hover:after {
+        transform: scaleX(0);
+        transform-origin: 100% 0;
+      }
+    }
+  }
+
+  .address p {
+    margin: 0;
+  }
+
+  .address {
+    position: relative;
+    perspective: 2000px;
+
+    span {
+      display: block;
+    }
+
+    .arrow {
+      display: inline-block;
+      margin-left: 0.5rem;
+      transition: transform 0.5s ease-in-out;
+      transform-origin: 50% 46%;
+    }
+    a:hover .arrow {
+      animation: arrowAnimation 2s infinite ease-in-out;
+    }
+  }
+
+  &__footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__footer__item {
+    box-sizing: border-box;
+    display: flex;
+    height: 13vw;
+    padding: 0 $spacing-border-mobile 0 $spacing-border-mobile;
+    width: 100%;
+
+    @include break('tablet-landscape') {
+      align-items: center;
+      padding: 0 $spacing-border-desktop 0 $spacing-border-desktop;
+      width: 50%;
+    }
+
+    ul {
+      font-size: 1rem;
+
+      @include break('tablet-landscape') {
+        font-size: 1.5rem;
+        display: flex;
+      }
+
+      li {
+        margin-right: 1em;
+      }
+    }
+  }
+}
+
+
+@keyframes arrowAnimation {
+  0% {
+    transform: rotateX(0);
+  }
+
+  100% {
+    transform: rotateX(360deg);
+  }
+}

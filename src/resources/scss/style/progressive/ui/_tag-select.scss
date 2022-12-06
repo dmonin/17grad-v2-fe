@@ -1,0 +1,8 @@
+.tag {
+  border-color: $color-progressive-gray;
+  &.--active {
+    background: $color-progressive-blue;
+    border-color: $color-progressive-blue;
+    color: #fff;
+  }
+}

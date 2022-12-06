@@ -1,0 +1,147 @@
+.core__people {
+  &__member {
+    .image-slice img {
+      transform-origin: 50% 50%;
+      transition: transform 0.65s cubic-bezier(.07,.8,.32,1);
+      will-change: transform, transform-origin;
+    }
+
+    // Dmitry
+    &:nth-child(3) {
+      .image-slice img {
+        transform-origin: 50% 40%;
+        transform: scale(1.05);
+      }
+
+      .image-slice:nth-child(2) {
+        transition: transform 0.25s ease-out;
+        clip-path: polygon(0 0, 75% 0, 75% 40%, 0 40%);
+      }
+
+      .image-slice:nth-child(3) {
+        clip-path: polygon(15% 40%, 100% 40%, 100% 80%, 15% 80%);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(1) img {
+        transform: scale(1.00);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(2) img {
+        transform: scale(1.2);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(3) img {
+        transform: scale(1.4);
+      }
+    }
+
+    // Sascha
+    &:nth-child(4) {
+      img {
+        transform: scale(1.1);
+      }
+
+      .image-slice:nth-child(2) {
+        clip-path: polygon(0 55%, 50% 55%, 50% 100%, 0 100%);
+      }
+
+      .image-slice:nth-child(3) {
+        clip-path: polygon(50% 55%, 0 0, 100% 0);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(1) img {
+        transform: scale(1);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(2) img {
+        transform: scale(1.2);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(3) img {
+        transform: scale(1.3);
+      }
+    }
+
+    // Natalie
+    &:nth-child(5) {
+      img {
+        transform: scale(1.1);
+      }
+
+      .image-slice:nth-child(2) {
+        clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+      }
+
+      .image-slice:nth-child(3) {
+        clip-path: polygon(0% 20%, 100% 20%, 100% 60%, 0 60%);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(1) img {
+        transform: scale(1);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(2) img {
+        transform: scale(1.2);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(3) img {
+        transform: scale(1.4);
+      }
+    }
+
+    // Dean
+    &:nth-child(6) {
+      img {
+        transform: scale(1.10);
+      }
+
+      .image-slice:nth-child(2) {
+        clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+      }
+
+      .image-slice:nth-child(3) {
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 80% 65%, 80% 25%, 20% 25%, 20% 65%, 0 65%);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(1) img {
+        transform: scale(1);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(2) img {
+        transform: scale(1.6);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(3) img {
+        transform: scale(1.25);
+      }
+    }
+
+    // Gavin
+    &:nth-child(7) {
+      img {
+        transform: scale(1.1);
+      }
+
+      .image-slice:nth-child(2) {
+        clip-path: polygon(0 0%, 100% 0%, 100% 35%, 0 35%);
+
+      }
+
+      .image-slice:nth-child(3) {
+        clip-path: polygon(60% 35%, 100% 35%, 100% 100%, 60% 100%);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(1) img {
+        transform: scale(1);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(2) img {
+        transform: scale(1.25);
+      }
+
+      .core__people__member__picture:hover .image-slice:nth-child(3) img {
+        transform: scale(1.5);
+      }
+    }
+  }
+}

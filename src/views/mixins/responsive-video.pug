@@ -1,0 +1,3 @@
+mixin responsiveVideo(video, attr)
+  video(class="cmp responsive-video lazy-video",poster=video.poster,width=video.width,height=video.height,data-sizes=video.sizes,data-src=video.srcSet[0].src)&attributes(attr)
+

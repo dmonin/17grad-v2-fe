@@ -1,0 +1,308 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+@import "../variables/spacing";
+
+@import "../utility/all";
+
+.loading-anim {
+  height: 200px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+
+  img {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.article-making-of {
+  .fold-intro {
+    padding-top: 0;
+    position: relative;
+    width: 100vw;
+    .browser {
+      margin-left: 30%;
+      margin-top: 5vw;
+      position: relative;
+      width: 70%;
+      // &:after {
+      //   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+      //   @extend %pseudo-element;
+      //   bottom: 6px;
+      //   position: absolute;
+      //   right: 0;
+      //   top: 0;
+      //   width: 200px;
+      // }
+
+
+
+      .top {
+        line-height: 0;
+        font-size: 0;
+        vertical-align: bottom;
+      }
+
+      img, video {
+        width: 100%;
+      }
+      flex: 0 0 50%;
+    }
+
+    .lead-in {
+      margin-top: 5vw;
+      width: 60vw;
+    }
+  }
+
+  .fold-intro, .fold-intro-text {
+    .article__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .fold-intro-text {
+    padding-left: 0;
+    width: 40vw;
+  }
+
+  .fold-loading {
+    position: relative;
+    $parallaxX: calc(0vw * var(--parallax, 0));
+
+    .loading-anim-wrap {
+      transition: transform 0.5s ease-out, opacity 0.5s;
+    }
+
+    .loading-anim {
+      &.appear {
+        .loading-anim-wrap {
+          opacity: 0;
+          transform: translate(0, 100%);
+        }
+      }
+
+      &.--appear-in {
+        .loading-anim-wrap {
+          opacity: 1;
+          transform: translate(0, 0%);
+        }
+      }
+    }
+
+    .loading-anim:nth-child(2n) img {
+      // animation: performance-loading-anim 5s linear infinite;
+    }
+    .loading-anim:nth-child(2n+1) img {
+      // animation: performance-loading-anim-vert 5s linear infinite;
+    }
+
+    .loading-anim.infinity {
+      left: 20vw;
+      top: 50vh;
+    }
+
+    .loading-anim.blocks {
+      left: 30vw;
+      top: 20vh;
+      &.appear .loading-anim-wrap {
+        transform: translate(0, 50%);
+      }
+    }
+
+    .loading-anim.ball {
+      left: 60vw;
+      top: 10vh;
+    }
+
+    .loading-anim.pacman {
+      left: 60vw;
+      top: 70vh;
+    }
+
+    .loading-anim.dual-ball {
+      left: 90vw;
+      top: 40vh;
+    }
+
+    .loading-anim.dual-ring {
+      left: 150vw;
+      top: 30vh;
+    }
+
+    .loading-anim.eclipse {
+      left: 120vw;
+      top: 80vh;
+    }
+
+    .loading-anim.ellipsis {
+      left: 20vw;
+      top: 90vh;
+    }
+
+    .loading-anim.gear {
+      left: 120vw;
+      top: 50vh;
+    }
+
+    // .loading-anim.pulse {
+    //   left: 150vw;
+    //   top: 30vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 55w * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.radio {
+    //   left: 130vw;
+    //   top: 80vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 70vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.reload {
+    //   left: 160vw;
+    //   top: 40vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 45vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.ripple {
+    //   left: 150vw;
+    //   top: 80vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 25vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.rolling {
+    //   left: 80vw;
+    //   top: 15vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 20vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.spin {
+    //   left: 80vw;
+    //   top: 80vh;
+    //   img {
+    //     transform: translate(calc(-50% - 15vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.spinner {
+    //   left: 40vw;
+    //   top: 50vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 60vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // .loading-anim.wedges {
+    //   left: 40vw;
+    //   top: 80vh;
+
+    //   img {
+    //     transform: translate(calc(-50% - 40vw * var(--parallax, 0)), -50%);
+    //   }
+    // }
+
+    // &.appear {
+    //   .loading-anim img {
+    //     transform: translate(#{$parallaxX}, 100vh);
+    //     transition: opacity 1s ease-in-out 0.5s, transform 1s ease-out 0.5s;
+    //   }
+    // }
+
+    // &.--appear-in {
+    //   .loading-anim img {
+    //     opacity: 1;
+    //     transform: translate(#{$parallaxX}, 0px);
+    //   }
+    // }
+
+    // &:not(.appear) {
+    //   .loading-anim img {
+    //     transform: translate(#{$parallaxX}, 0);
+    //   }
+    // }
+
+    // .loading-anim:nth-child(2) {
+    //   left: 50vw;
+    //   &:not(.appear) {
+    //     img {
+    //       transform: translate(calc(-50vw * var(--parallax, 1)), 0);
+    //     }
+    //   }
+    // }
+
+    .article__block.loading-items {
+      width: 100vw;
+    }
+
+    .article__block.loading-text {
+      h1 span:nth-child(2n + 1) {
+        position: relative;
+        z-index: 5;
+      }
+    }
+
+    // .article__block.loading-content {
+    //   padding-left: 100vw;
+    // }
+  }
+}
+
+@keyframes performance-loading-anim {
+  0% {
+    transform: translate(-10vw, 10vh);
+  }
+
+  50% {
+    transform: translate(10vw, -10vh);
+  }
+
+  100% {
+    transform: translate(-10vw, 10vh);
+  }
+}
+
+@keyframes performance-loading-anim-vert {
+  0% {
+    transform: translate(0, 10vh);
+  }
+
+  50% {
+    transform: translate(0, -10vh);
+  }
+
+  100% {
+    transform: translate(0, 10vh);
+  }
+}
+
+@keyframes performance-loading-anim-hor {
+  0% {
+    transform: translate(10vh, 0);
+  }
+
+  50% {
+    transform: translate(-10vh, 0);
+  }
+
+  100% {
+    transform: translate(10vh, 0);
+  }
+}

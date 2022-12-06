@@ -1,0 +1,38 @@
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/spacing";
+
+@import "utility/all";
+
+@import 'style/corporate/base';
+
+@import 'style/corporate/ui/arrow';
+@import 'style/corporate/ui/budget-slider';
+@import 'style/corporate/ui/button';
+@import 'style/corporate/ui/close';
+@import 'style/corporate/ui/cursor';
+@import 'style/corporate/ui/hamburger';
+@import 'style/corporate/ui/loading';
+@import 'style/corporate/ui/logo';
+@import 'style/corporate/ui/media-grid';
+@import 'style/corporate/ui/navigation';
+@import 'style/corporate/ui/progress-slider';
+@import 'style/corporate/ui/tag-select';
+@import 'style/top-button-corporate-progressive';
+@import 'style/corporate/ui/top-button';
+
+@import 'style/corporate/views/index';
+@import 'style/corporate/views/core';
+@import 'style/corporate/views/work';
+
+@import 'style/core-corporate-progressive';
+@import 'style/corporate/views/contact';
+
+@import 'animation/index-from-others-animation';
+@import 'animation/core-corporate-appear';
+@import 'animation/core-out-animation';
+@import 'animation/work-appear';
+@import 'animation/work-out-animation';
+@import 'animation/contact-appear';
+@import 'animation/contact-to-index-animation';
+@import 'parallax/core-corporate';

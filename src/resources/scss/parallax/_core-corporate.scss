@@ -1,0 +1,127 @@
+// --- Hero Area ---
+// Blue Area
+.core__header__content:before {
+  transform: translate(0, calc(5% * var(--parallax, 0)));
+}
+
+// Hero Image
+.core__header__picture {
+  transform: translate(0, calc(-5% * var(--parallax, 0)));
+}
+
+.core__header__content__info {
+  @include break('mobile') {
+    transform: translate(-50%, calc(50% * var(--parallax, 0)));
+  }
+}
+
+// --- About Area ---
+.core__main h2 {
+  @include break('mobile') {
+    transform: translate(0%, calc(-10% * var(--parallax, 0)));
+  }
+}
+
+.core__photos__photo1,
+.core__photos__photo2,
+.core__photos__photo3 {
+  .image-wrap {
+    transform: translate(0%, calc(10% * var(--parallax, 0)));
+    content-visibility: auto;
+    contain: strict;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  img {
+    content-visibility: auto;
+    contain: strict;
+    transform: scale(calc(1.1 + var(--parallax) * 0.1)) translate(0%, calc(5% * var(--parallax, 0)));
+  }
+}
+
+.core__photos__photo2 .image-wrap {
+  transform: translate(0%, calc(-5% * var(--parallax, 0)));
+}
+
+.core__photos__photo3 .image-wrap {
+  transform: translate(0%, calc(7% * var(--parallax, 0)));
+}
+
+.core__photos__photo3 .ornament {
+  stroke-dasharray: 300;
+  stroke-dashoffset: calc(400 * (var(--parallax) + 0.5));
+}
+
+.core__photos__photo3 .square {
+  transform: translate(calc(10% * var(--parallax, 0)), 0);
+}
+
+// --- Values ---
+@import "core-values";
+.core__values__value:nth-child(1) {
+  g:last-child {
+    transform: translate(calc(2% * var(--parallax, 0)), 0);
+  }
+}
+
+.core__values__value:nth-child(2) {
+  svg > g:last-child {
+    transform: translate(calc(-5% + 5% * var(--parallax, 0)), 0);
+  }
+}
+
+.core__values__value:nth-child(3) {
+  svg > g:last-child {
+    transform: translate(calc(10% * var(--parallax, 0)), 0);
+  }
+}
+
+// --- People ---
+.core__people h1 {
+  transform: translate(0, calc(15% + -5% * var(--parallax, 0)));
+}
+
+.core__people .section-intro {
+  @include break('mobile') {
+    transform: translate(0, calc(10% + -5% * var(--parallax, 0)));
+  }
+
+  p:before {
+    transform: translate(-50%, calc(-50% - 10% * var(--parallax, 0)));
+    transition: transform 1s ease-out;
+  }
+}
+
+// .core__people__member .core__people__member__picture {
+  // transform: translate(0%, calc(-10% * var(--parallax, 0)));
+  // transition: transform 1s ease-in-out;
+// }
+
+.core__people__member h3 {
+  transform: translate(0%, calc(5% * var(--parallax, 0)));
+}
+
+.core__people__member p {
+  transform: translate(0%, calc(5% * var(--parallax, 0)));
+}
+
+// --- Trust ---
+.core__clients h1 {
+  transform: translate(0, calc(-15% * var(--parallax, 0)));
+}
+
+.core__clients .section-intro {
+  @include break('mobile') {
+    transform: translate(0, calc(-5% * var(--parallax, 0)));
+  }
+}
+
+.core__clients__list {
+  @include break('mobile') {
+    transform: translate(0, calc(-10% * var(--parallax, 0)));
+  }
+}
+
+// Work with us
+.core__work-with-us h1 {
+  transform: translate(0, calc(-15% * var(--parallax, 0)));
+}

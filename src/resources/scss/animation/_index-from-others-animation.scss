@@ -1,0 +1,39 @@
+.index.--view-in {
+  .index__logo__angle,
+  .index__logo__graphic,
+  .index__nav,
+  .index__about {
+    transition: transform 1s ease-in-out, opacity 1s ease-out;
+  }
+
+
+
+  .index__logo__graphic {
+    transition-timing-function: ease-out;
+    transition-delay: 0.3s;
+    @include break('tablet-landscape') {
+      transform: translate(-50%, -50%);
+    }
+    transition: transform 1.2s ease-in-out 0.3s, opacity 1s ease-out 0.5s;
+  }
+
+  .index__about {
+    transition-delay: 0.2s;
+  }
+}
+
+.index[data-from] {
+  .index__logo__angle,
+  .index__logo__graphic {
+    transform: translate(0, -200vh);
+    @include break('tablet-landscape') {
+      transform: translate(-50%, -200vh);
+    }
+  }
+
+  .index__nav,
+  .index__about {
+    opacity: 0;
+    transform: translate(0, -100vh);
+  }
+}

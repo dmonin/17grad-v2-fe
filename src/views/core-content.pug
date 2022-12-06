@@ -1,0 +1,59 @@
+include mixins/icon.pug
+include mixins/responsive-image.pug
+include mixins/responsive-image-background.pug
+include mixins/responsive-video.pug
+include mixins/top-button.pug
+include mixins/translation.pug
+.core
+  - var coreValueAppearDuration = 5000000
+  +topButton(texts['top-button.get-in-touch'], '/contact', 'hi')
+  include core/header
+  include core/main
+  include core/photos
+  section.core__values.scrollable.cmp(data-drag-speed=1.5, data-snap='true', data-snap-delay=50)
+    .scrollable__content
+      .core__values__value.scrollable__item.parallax
+        .value-icon.appear(data-appear-duration=coreValueAppearDuration)
+          if style == 'corporate'
+            include icons/corporate-value-01
+          else
+            include icons/value-01
+          if media.imgValueHonesty
+            .value-image
+              +responsiveImage(media.imgValueHonesty, '30vw', texts['core.values.honesty.title'], {loading: 'lazy'})
+        h3
+          .highlight.appear(data-appear-duration=coreValueAppearDuration)
+            +translation('core.values.honesty.title')
+        p.appear(data-appear-duration=coreValueAppearDuration)
+          +translation('core.values.honesty.text')
+      .core__values__value.scrollable__item.parallax
+        .value-icon.appear(data-appear-duration=coreValueAppearDuration)
+          if style == 'corporate'
+            include icons/corporate-value-02
+          else
+            include icons/value-02
+          if media.imgValueAdaptive
+            .value-image
+              +responsiveImage(media.imgValueAdaptive, '30vw', texts['core.values.adaptive.title'], {loading: 'lazy'})
+        h3
+          .highlight.appear(data-appear-duration=coreValueAppearDuration)
+            +translation('core.values.adaptive.title')
+        p.appear(data-appear-duration=coreValueAppearDuration)
+          +translation('core.values.adaptive.text')
+      .core__values__value.scrollable__item.parallax
+        .value-icon.appear(data-appear-duration=coreValueAppearDuration)
+          if style == 'corporate'
+            include icons/corporate-value-03
+          else
+            include icons/value-03
+          if media.imgValueExcellence
+            .value-image
+              +responsiveImage(media.imgValueExcellence, '30vw', texts['core.values.excellence.title'], {loading: 'lazy'})
+        h3
+          .highlight.appear(data-appear-duration=coreValueAppearDuration)
+            +translation('core.values.excellence.title')
+        p.appear(data-appear-duration=coreValueAppearDuration)
+          +translation('core.values.excellence.text')
+  include core/people
+  include core/clients
+  include core/work-with-us

@@ -1,0 +1,67 @@
+.progress-slider {
+  $slider-mini-breakpoint: 'tablet';
+  // height: 70px;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: bottom;
+  width: 100px;
+  z-index: 8;
+
+  @include break($slider-mini-breakpoint) {
+    height: auto;
+    margin: 0;
+    padding: 0 70px;
+    width: auto;
+  }
+
+  svg {
+    @include break($slider-mini-breakpoint, 'max') {
+      height: 50px;
+      width: 100px;
+    }
+
+    @include break($slider-mini-breakpoint) {
+      width: 250px;
+    }
+
+    path.bar {
+      stroke: $color-brutal-yellow;
+    }
+
+    path.track {
+      stroke: $color-brutal-blue;
+      stroke-width: 3px;
+      stroke-dasharray: 370;
+      stroke-dashoffset: calc(370 - var(--percent, 0) / 100 * 370);
+    }
+  }
+
+  .position {
+    left: 0;
+    top: 0px;
+    position: absolute;
+    transform: translate(0, -100%);
+    offset-path: path('M 10 50 A 25 25, 0, 0, 1, 100 50');
+    offset-distance: calc(max(5%, min(var(--percent, 0) * 1%, 95%)));
+    @include break($slider-mini-breakpoint) {
+      left: 70px;
+      offset-path: path('M 10 125 A 115 115, 0, 0, 1, 240 125');
+    }
+  }
+
+  .value-of {
+    display: none;
+  }
+
+  button {
+    color: $color-brutal-blue;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -25%);
+
+    @include break($slider-mini-breakpoint) {
+      transform: translate(-50%, 50%);
+    }
+  }
+}
