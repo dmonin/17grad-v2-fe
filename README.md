@@ -1,5 +1,8 @@
 # 17GRAD Website
 
+## See it in action
+https://www.17grad.com
+
 ## Why we open up code of our website?
 
 I felt nostalgic about the times, when you could click View Source button of websites like Yahoo, or most of the websites, and learn from it, see how it works.
